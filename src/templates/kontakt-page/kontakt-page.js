@@ -1,7 +1,7 @@
 import React from 'react';
-import Content, { HTMLContent } from '../components/Content';
+import Content, { HTMLContent } from '../../components/Content';
 
-export const IndexPageTemplate = ({ title, content, contentComponent }) => {
+export const KontaktPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return <section className="section section--gradient">
     <div className="container">
@@ -19,15 +19,15 @@ export const IndexPageTemplate = ({ title, content, contentComponent }) => {
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
-  return <IndexPageTemplate
+  return <KontaktPageTemplate
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
     content={post.html}
   />;
 };
 
-export const indexPageQuery = graphql`
-  query IndexPage($path: String!) {
+export const KontaktPageQuery = graphql`
+  query kontaktPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

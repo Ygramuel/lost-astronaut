@@ -1,7 +1,7 @@
 import React from 'react';
-import Features from '../components/Features';
-import Testimonials from '../components/Testimonials';
-import Pricing from '../components/Pricing';
+import Features from '../../components/Features';
+import Testimonials from '../../components/Testimonials';
+import Pricing from '../../components/Pricing';
 
 export const ProductPageTemplate = ({
     image, title, heading, description, intro, main, testimonials, fullImage, pricing
