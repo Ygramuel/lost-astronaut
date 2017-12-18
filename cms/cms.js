@@ -13,7 +13,8 @@ import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
   const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
-  return <TeamPageTemplate title={entry.getIn(['data', 'title'])} beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
+  return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])} 
+      beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
   };
 
   CMS.registerPreviewTemplate('team', TeamPreview);
