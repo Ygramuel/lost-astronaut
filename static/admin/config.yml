@@ -39,6 +39,24 @@ collections:
               {label: Beschreibung, name: beschreibung, widget: text},
             ]}
 
+      - file: "src/pages/index/index.md"
+        label: "Startseite"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Titelbild", name: image, widget: image, required: false}
+          - {label: "Slogan", name: slogans, widget: list, fields: [
+              {label: "Slogane-Text", name: "slogan", widget: "string"},
+             ]}
+          - {label: "Kunden", name: kunden, widget: list, fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Bild", name: "bild", widget: "image"},
+              {label: "Link", name: "url", widget: "string"},
+          ]}
+
+
       - file: "src/pages/product/product.md"
         label: "Products Page"
         name: "products"
