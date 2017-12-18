@@ -1,15 +1,17 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
+import Mitarbeiter from '../../components/Mitarbeiter/Mitarbeiter'
 import style from "./team.module.less"
 
-export const TeamPageTemplate = ({ title, content, contentComponent }) => {
+export const TeamPageTemplate = ({ title, beschreibung, contentComponent, mitarbeiter }) => {
   const PageContent = contentComponent || Content;
-  console.log("und hier die styles");
-  console.log(style);
   return (
     <section>
-      <style>{style.toString()}</style>
-      <div className={style.main}>Ich bin das Team page TEmplate</div>
+      <h3>{title}</h3>
+      <p>{beschreibung}</p>
+      {mitarbeiter.map((arbeiter) =>
+        <Mitarbeiter name={arbeiter.name} mail={arbeiter.mail} beschreibung={arbeiter.beschreibung}/>
+      )}
     </section>
   )
 }
@@ -19,7 +21,8 @@ export default ({ data }) => {
   return <TeamPageTemplate
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
-    content={post.html}
+    beschreibung={post.html}
+    mitarbeiter={[]}
   />;
 };
 

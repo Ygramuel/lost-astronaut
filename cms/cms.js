@@ -3,12 +3,18 @@ import CMS from 'netlify-cms'
 
 import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 
-const TeamPreview = ({ entry, widgetFor }) => (
-  <div>
-    <p>Hallo Ich bin das Team Preview-Ding</p>
-    <TeamPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
-  </div>
-);
+
+
+/*
+*   Team-Section
+*/
+
+
+const TeamPreview = ({ entry, widgetFor, getAsset }) => {
+  const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
+  const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
+  return <TeamPageTemplate title={entry.getIn(['data', 'title'])} beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
+  };
 
   CMS.registerPreviewTemplate('team', TeamPreview);
   CMS.registerPreviewStyle('/admin/stylesCMS.css')

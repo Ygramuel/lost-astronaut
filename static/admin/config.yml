@@ -1,7 +1,7 @@
 backend:
-  name: test-repo
-  #name: git-gateway
-  #branch: master
+  #name: test-repo
+  name: git-gateway
+  branch: master
 
 media_folder: static/img
 public_folder: /img
@@ -29,8 +29,16 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/team/"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Titelbild", name: image, widget: image, required: false}
+          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: Mitarbeiter, name: mitarbeiter, widget: list, fields: [
+              {label: Name, name: "name", widget: string},
+              {label: Bild, name: bild, widget: image, required: false},
+              {label: E-Mail, name: mail, widget: string},
+              {label: Beschreibung, name: beschreibung, widget: text},
+            ]}
+
       - file: "src/pages/product/product.md"
         label: "Products Page"
         name: "products"
