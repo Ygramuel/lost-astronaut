@@ -2,22 +2,45 @@ import React from 'react'
 import CMS from 'netlify-cms'
 
 import { TeamPageTemplate } from 'site/templates/team-page/team-page';
+import { IndexPageTemplate } from 'site/templates/index-page/index-page';
 
 
 
 /*
 *   Team-Section
 */
-
-
 const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
   const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
-  return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])} 
+  return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])}
       beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
   };
 
   CMS.registerPreviewTemplate('team', TeamPreview);
+
+
+
+  /*
+  *   Index-Section
+  */
+const IndexPreview = ({ entry, widgetFor, getAsset }) => {
+  const entrySlogans = entry.getIn(['data', 'slogans']);
+  const slogans = entrySlogans ? entrySlogans.toJS() : []
+
+  const entryKunden = entry.getIn(['data', 'kunden']);
+  const kunden = entryKunden ? entryKunden.toJS() : []
+
+  return <IndexPageTemplate
+    title={entry.getIn(['data', 'title'])}
+    image={entry.getIn(['data', 'image'])}
+    slogans={slogans}
+    kunden={kunden}
+  />
+  };
+
+  CMS.registerPreviewTemplate('index', IndexPreview);
+
+
   CMS.registerPreviewStyle('/admin/stylesCMS.css')
 
 /*

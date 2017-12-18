@@ -1,20 +1,28 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 
-export const IndexPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-  return <section className="section section--gradient">
-    <div className="container">
-      <div className="columns">
-        <div className="column is-10 is-offset-1">
-          <div className="section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
-            <PageContent className="content" content={content} />
-          </div>
-        </div>
+export const IndexPageTemplate = ({ title, content, contentComponent, image, slogans, kunden}) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <img src={image}/>
+      <div>
+        {slogans.map((slogan) =>
+          <p>{slogan.slogan}</p>
+        )}
+      </div>
+      <div>
+        {kunden.map((kunde) =>
+          <a href={kunde.url}>
+            <img src={kunde.bild}/>
+            <p>
+              {kunde.name}
+            </p>
+          </a>
+        )}
       </div>
     </div>
-  </section>;
+  )
 }
 
 export default ({ data }) => {
@@ -22,6 +30,9 @@ export default ({ data }) => {
   return <IndexPageTemplate
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
+    image={post.frontmatter.image}
+    slogans={post.frontmatter.slogans}
+    kunden={post.frontmatter.kunden}
     content={post.html}
   />;
 };
@@ -33,6 +44,15 @@ export const indexPageQuery = graphql`
       frontmatter {
         path
         title
+        image
+        slogans{
+          slogan
+        }
+        kunden {
+          bild
+          name
+          url
+        }
       }
     }
   }
