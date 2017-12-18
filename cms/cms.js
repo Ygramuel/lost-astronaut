@@ -1,13 +1,18 @@
 import React from 'react'
 import CMS from 'netlify-cms'
 
-/*import { TeamTemplate } from 'site/templates/team-page/team-page';
+import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 
-const TeamPreview = ({ entry, widgetFor }) =>
-  <TeamTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
+const TeamPreview = ({ entry, widgetFor }) => (
+  <div>
+    <p>Hallo Ich bin das Team Preview-Ding</p>
+    <TeamPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
+  </div>
+);
 
   CMS.registerPreviewTemplate('team', TeamPreview);
-*/
+  CMS.registerPreviewStyle('/admin/stylesCMS.css')
+
 /*
 import Features from 'site/components/Features'
 import Testimonials from 'site/components/Testimonials'

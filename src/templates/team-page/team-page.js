@@ -1,10 +1,16 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
+import style from "./team.module.less"
 
 export const TeamPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
+  console.log("und hier die styles");
+  console.log(style);
   return (
-    <div>Ich bin das Team page TEmplate</div>
+    <section>
+      <style>{style.toString()}</style>
+      <div className={style.main}>Ich bin das Team page TEmplate</div>
+    </section>
   )
 }
 
