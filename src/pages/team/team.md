@@ -1,6 +1,10 @@
 ---
-templateKey: 'team-page'
+templateKey: team-page
 path: /team
-title: About our values
+title: Team
+mitarbeiter:
+  - beschreibung: lorem ipsum
+    mail: ardek@spam.com
+    name: Aaron Ardek
 ---
-# Sebastian macht alles!
+Hallo Welt
