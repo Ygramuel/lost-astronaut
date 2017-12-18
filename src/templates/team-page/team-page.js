@@ -22,7 +22,7 @@ export default ({ data }) => {
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
     beschreibung={post.html}
-    mitarbeiter={[]}
+    mitarbeiter={post.frontmatter.mitarbeiter}
   />;
 };
 
@@ -33,6 +33,11 @@ export const teamPageQuery = graphql`
       frontmatter {
         path
         title
+        mitarbeiter {
+          beschreibung
+          mail
+          name
+        }
       }
     }
   }
