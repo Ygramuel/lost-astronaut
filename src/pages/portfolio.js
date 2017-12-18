@@ -3,34 +3,17 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import Script from 'react-load-script';
 
-export default class IndexPage extends React.Component {
-  handleScriptLoad() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
-        }
-      });
-    }
-    window.netlifyIdentity.init();
-  }
-
+export default class PortfolioPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
     return (
       <section className="section">
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={this.handleScriptLoad.bind(this)}
-        />
         <div className="container">
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
           </div>
-          {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
+          {posts.filter(post => post.node.frontmatter.templateKey === 'portfolio-post').map(({ node: post }) => {
             return (
               <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
                 <p>
@@ -57,8 +40,8 @@ export default class IndexPage extends React.Component {
   }
 }
 
-export const pageQuery = graphql`
-  query IndexQuery {
+export const portfolioQuery = graphql`
+  query PortfolioQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
