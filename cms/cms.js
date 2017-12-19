@@ -4,6 +4,7 @@ import CMS from 'netlify-cms'
 import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 import { IndexPageTemplate } from 'site/templates/index-page/index-page';
 import { KontaktPageTemplate } from 'site/templates/kontakt-page/kontakt-page';
+import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
 
 
 
@@ -54,6 +55,18 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
   CMS.registerPreviewTemplate('kontakt', KontaktPreview);
 
 
+    /*
+    *   Artikel-Section
+    */
+  const ArtikelPreview = ({ entry, widgetFor, getAsset }) => {
+    return <ArtikelPageTemplate
+      title={entry.getIn(['data', 'title'])}
+      image={entry.getIn(['data', 'image'])}
+      text={widgetFor('body')}  />
+    };
+
+    CMS.registerPreviewTemplate('impressum', ArtikelPreview);
+    CMS.registerPreviewTemplate('404', ArtikelPreview);
 
 
   CMS.registerPreviewStyle('/admin/stylesCMS.css')
