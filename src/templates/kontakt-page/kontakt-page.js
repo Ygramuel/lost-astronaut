@@ -1,28 +1,24 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
+import DefaultPage from '../../components/DefaultPage/DefaultPage'
+import KontaktForm from '../../components/KontaktForm/KontaktForm'
 
-export const KontaktPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-  return <section className="section section--gradient">
-    <div className="container">
-      <div className="columns">
-        <div className="column is-10 is-offset-1">
-          <div className="section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
-            <PageContent className="content" content={content} />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>;
+
+export const KontaktPageTemplate = ({ title, text, image }) => {
+  return (
+    <section>
+      <DefaultPage title={title} text={text} image={image} />
+      <KontaktForm />
+    </section>
+    );
 }
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <KontaktPageTemplate
-    contentComponent={HTMLContent}
     title={post.frontmatter.title}
-    content={post.html}
+    text={<HTMLContent content={post.html} />}
+    image={post.frontmatter.image}
   />;
 };
 
@@ -33,6 +29,7 @@ export const KontaktPageQuery = graphql`
       frontmatter {
         path
         title
+        image
       }
     }
   }
