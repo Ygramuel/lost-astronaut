@@ -9,7 +9,9 @@ import './global.less';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet>
+      <html lang="de" />
+    </Helmet>
     <Header />
     <div>{children()}</div>
     <Footer />
