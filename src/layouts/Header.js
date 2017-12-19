@@ -8,7 +8,9 @@ export const Header = ({  }) => {
      {title:"Home", path:"/"},
      {title:"Team", path:"/team/"},
      {title:"Kontakt", path:"/kontakt/"},
-     {title:"Portfolio", path:"/portfolio/"}
+     {title:"Portfolio", path:"/portfolio/"},
+     {title:"Impressum", path:"/impressum/"},
+     {title:"404", path:"/404/"}
   ];
 
   return (

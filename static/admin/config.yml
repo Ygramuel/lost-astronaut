@@ -74,17 +74,17 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/impressum/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
 
       - file: "src/pages/404.md"
         label: "404"
         name: "404"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "artikel-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/404/"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/404.html"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
 
 
 
