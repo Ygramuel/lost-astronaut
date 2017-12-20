@@ -1640,12 +1640,12 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000783"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000783.tgz#16b30d47266a4f515cc69ae0316b670c9603cdbe"
+  version "1.0.30000784"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000784.tgz#1be95012d9489c7719074f81aee57dbdffe6361b"
 
 caniuse-lite@^1.0.30000780:
-  version "1.0.30000783"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000783.tgz#9b5499fb1b503d2345d12aa6b8612852f4276ffd"
+  version "1.0.30000784"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000784.tgz#129ced74e9a1280a441880b6cd2bce30ef59e6c0"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -3527,9 +3527,9 @@ gatsby-1-config-css-modules@^1.0.8:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-cli@^1.1.27:
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.27.tgz#40be97cde1721ee61c25d21a21c84867e7ba3678"
+gatsby-cli@^1.1.28:
+  version "1.1.28"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.28.tgz#0d0a397566154a3ce3e4680d545c9cfdc33ad95b"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3676,8 +3676,8 @@ gatsby-transformer-sharp@^1.6.13:
     image-size "^0.6.0"
 
 gatsby@^1.9.63:
-  version "1.9.143"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.143.tgz#cfd72477808e5315d0de3a3a2fc29ef645a56d3b"
+  version "1.9.144"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.144.tgz#1b0b3a0c547b617b07b7c99c4c1a146525cf0708"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3717,7 +3717,7 @@ gatsby@^1.9.63:
     front-matter "^2.1.0"
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.8"
-    gatsby-cli "^1.1.27"
+    gatsby-cli "^1.1.28"
     gatsby-link "^1.6.30"
     gatsby-module-loader "^1.0.9"
     gatsby-react-router-scroll "^1.0.7"
@@ -4588,12 +4588,12 @@ is-absolute@^0.1.5:
   dependencies:
     is-relative "^0.1.0"
 
-is-absolute@^0.2.3:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/is-absolute/-/is-absolute-0.2.6.tgz#20de69f3db942ef2d87b9c2da36f172235b1b5eb"
+is-absolute@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-absolute/-/is-absolute-1.0.0.tgz#395e1ae84b11f26ad1795e73c17378e48a301576"
   dependencies:
-    is-relative "^0.2.1"
-    is-windows "^0.2.0"
+    is-relative "^1.0.0"
+    is-windows "^1.0.1"
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -4859,6 +4859,12 @@ is-relative@^0.2.1:
   dependencies:
     is-unc-path "^0.1.1"
 
+is-relative@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-relative/-/is-relative-1.0.0.tgz#a1bb6935ce8c5dba1e8b9754b9b2dcc020e2260d"
+  dependencies:
+    is-unc-path "^1.0.0"
+
 is-retry-allowed@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
@@ -4890,6 +4896,12 @@ is-unc-path@^0.1.1:
   resolved "https://registry.yarnpkg.com/is-unc-path/-/is-unc-path-0.1.2.tgz#6ab053a72573c10250ff416a3814c35178af39b9"
   dependencies:
     unc-path-regex "^0.1.0"
+
+is-unc-path@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-unc-path/-/is-unc-path-1.0.0.tgz#d731e8898ed090a12c352ad2eaed5095ad322c9d"
+  dependencies:
+    unc-path-regex "^0.1.2"
 
 is-url@^1.2.0:
   version "1.2.2"
@@ -6503,10 +6515,10 @@ parse-entities@^1.0.2:
     is-hexadecimal "^1.0.0"
 
 parse-filepath@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/parse-filepath/-/parse-filepath-1.0.1.tgz#159d6155d43904d16c10ef698911da1e91969b73"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/parse-filepath/-/parse-filepath-1.0.2.tgz#a632127f53aaf3d15876f5872f3ffac763d6c891"
   dependencies:
-    is-absolute "^0.2.3"
+    is-absolute "^1.0.0"
     map-cache "^0.2.0"
     path-root "^0.1.1"
 
@@ -9312,7 +9324,7 @@ ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
 
-unc-path-regex@^0.1.0:
+unc-path-regex@^0.1.0, unc-path-regex@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
 
