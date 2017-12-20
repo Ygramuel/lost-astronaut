@@ -11,7 +11,9 @@ export const PortfoliioPageTemplate = ({ title, bild, text, portfolios}) => {
       <h1>{title}</h1>
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}
-                    path={work.frontmatter.path} />
+                    path={work.frontmatter.path}
+                    text={work.frontmatter.description}
+                    image=""/>
         )}
     </div>
   );
@@ -44,6 +46,7 @@ export const portfolioQuery = graphql`
           id
           frontmatter {
             title
+            description
             templateKey
             date(formatString: "MMMM DD, YYYY")
             path

@@ -1,30 +1,21 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
-import Helmet from 'react-helmet';
+import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
-export const BlogPostTemplate = ({ content, contentComponent, description, title, helmet }) => {
+export const BlogPostTemplate = ({ content, contentComponent, description, title }) => {
   const PostContent = contentComponent || Content;
-  return <section className="section">
-    { helmet ? helmet : ""}
-    <div className="container content">
-      <div className="columns">
-        <div className="column is-10 is-offset-1">
-          <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
-          <p>{description}</p>
-          <PostContent content={content} />
-        </div>
-      </div>
-    </div>
-  </section>;
+  return (
+    <section>
+      <DefaultPage title={title} text={content} image="" />
+    </section>
+  );
 }
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <BlogPostTemplate
-    content={post.html}
-    contentComponent={HTMLContent}
+    content={<HTMLContent content={post.html} />}
     description={post.frontmatter.description}
-    helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
     title={post.frontmatter.title}
   />;
 }
