@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Helmet from 'react-helmet';
 
 import Header from "./Header.js"
@@ -9,7 +8,9 @@ import './global.less';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet>
+    <Helmet
+    //  titleTemplate="%s | MyAwesomeWebsite.com" 
+    >
       <html lang="de" />
     </Helmet>
     <Header />

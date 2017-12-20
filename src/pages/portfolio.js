@@ -1,9 +1,13 @@
 import React from 'react';
 import PortBox from '../components/PortBox/PortBox';
+import Helmet from 'react-helmet';
 
 export const PortfoliioPageTemplate = ({ title, bild, text, portfolios}) => {
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <h1>{title}</h1>
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}

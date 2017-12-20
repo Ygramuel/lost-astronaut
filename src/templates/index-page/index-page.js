@@ -1,9 +1,13 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
+import Helmet from 'react-helmet';
 
 export const IndexPageTemplate = ({ title, content, contentComponent, image, slogans, kunden}) => {
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <h1>{title}</h1>
       <img src={image}/>
       <div>
