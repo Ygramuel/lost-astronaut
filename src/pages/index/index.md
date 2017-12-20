@@ -10,9 +10,9 @@ slogans:
 kunden:
   - bild: /img/tutorials.png
     name: B&G GMh
-    url: nirvana.com
+    url: 'https://www.test.de/'
   - bild: /img/coffee-gear.png
     name: Kaffeee
-    url: caffee.com
+    url: 'https://www.google.de/'
 ---
 
