@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link"
 import Menu from "../components/Menu/Menu"
-//import style from "./Header.module.less"
+import style from "./Header.module.less"
 
 export const Header = ({  }) => {
   const menuItems = [
