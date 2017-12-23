@@ -47,9 +47,16 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
+          - {label: "Box", name: box, widget: object, fields: [
+              {label: "Text", name: "text", widget: "string"},
+              {label: "URL", name: "url", widget: "string"},
+             ]}
           - {label: "Slogan", name: slogans, widget: list, fields: [
               {label: "Slogane-Text", name: "slogan", widget: "string"},
              ]}
+          #- {label: "Portfolio", name: portfolio, widget: list, fields: [
+          #    {label: "Seite", name: "url", widget: "relation", collection: portfolio, searchFields: [title], valueField: path},
+          #  ]}
           - {label: "Kunden", name: kunden, widget: list, fields: [
               {label: "Name", name: "name", widget: "string"},
               {label: "Bild", name: "bild", widget: "image"},

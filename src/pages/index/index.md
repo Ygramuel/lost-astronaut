@@ -10,8 +10,7 @@ slogans:
   - slogan: Der Kunde ist König
   - slogan: 'Besser etwas morgen machen, als übermorgen'
   - slogan: Der frühe Vogel wird nass
-portfolio:
-  - portfolio-page: /jamaica-blue
+portfolio: /jamaica-blue
 kunden:
   - bild: /img/tutorials.png
     name: B&G GMh
@@ -20,4 +19,3 @@ kunden:
     name: Kaffeee
     url: 'https://www.google.de/'
 ---
-

@@ -1,8 +1,10 @@
 import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 import Helmet from 'react-helmet';
+import Link from 'gatsby-link'
 
-export const IndexPageTemplate = ({ title, content, contentComponent, image, slogans, kunden}) => {
+export const IndexPageTemplate =
+  ({ title, content, contentComponent, image, slogans, kunden, box}) => {
   return (
     <div>
       <Helmet>
@@ -25,6 +27,9 @@ export const IndexPageTemplate = ({ title, content, contentComponent, image, slo
           </a>
         )}
       </div>
+      <Link to={box.url}>
+        <p>{box.text}</p>
+      </Link>
     </div>
   )
 }
@@ -38,6 +43,7 @@ export default ({ data }) => {
     slogans={post.frontmatter.slogans}
     kunden={post.frontmatter.kunden}
     content={post.html}
+    box={post.frontmatter.box}
   />;
 };
 
@@ -51,6 +57,10 @@ export const indexPageQuery = graphql`
         image
         slogans{
           slogan
+        }
+        box{
+          text
+          url
         }
         kunden {
           bild
