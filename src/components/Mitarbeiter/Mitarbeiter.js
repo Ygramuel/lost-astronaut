@@ -5,7 +5,7 @@ import style from "./Mitarbeiter.module.less"
 export const Mitarbeiter = ({ name, mail, text, bild }) => {
   bild = encodeURI(bild);
   return (
-    <div>
+    <div className={style.person}>
       <h5 className={style.name}>{name}</h5>
       <img src={bild} />
       <a href={"mailto:" + mail}>{mail}</a>

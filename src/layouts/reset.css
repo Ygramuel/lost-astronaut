@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 Normalize
 --------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -46,6 +50,7 @@ template {
 
 a {
 	background-color: transparent;
+    text-decoration: none;
 }
 
 a:active,
@@ -98,6 +103,11 @@ sub {
 
 img {
 	border: 0;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
 }
 
 svg:not(:root) {
