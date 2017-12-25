@@ -20,7 +20,7 @@ export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <TeamPageTemplate
     title={post.frontmatter.title}
-    beschreibung={<HTMLContent content={post.html} />}
+    text={<HTMLContent content={post.html} />}
     image={post.frontmatter.image}
     mitarbeiter={post.frontmatter.mitarbeiter}
   />;

@@ -19,8 +19,9 @@ import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
 const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
   const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
+  
   return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])}
-      beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
+      text={widgetFor('body')} mitarbeiter={mitarbeiter} />
   };
 
   CMS.registerPreviewTemplate('team', TeamPreview);
@@ -37,9 +38,13 @@ const IndexPreview = ({ entry, widgetFor, getAsset }) => {
   const entryKunden = entry.getIn(['data', 'kunden']);
   const kunden = entryKunden ? entryKunden.toJS() : []
 
+  const box = entry.getIn(['data', 'box']).toJS();
+
   return <IndexPageTemplate
     title={entry.getIn(['data', 'title'])}
     image={entry.getIn(['data', 'image'])}
+    content=''
+    box={box}
     slogans={slogans}
     kunden={kunden}
   />

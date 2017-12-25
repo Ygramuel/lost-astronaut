@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link'
 
 export const IndexPageTemplate =
-  ({ title, content, contentComponent, image, slogans, kunden, box}) => {
+  ({ title, content, image, slogans, kunden, box}) => {
   return (
     <div>
       <Helmet>
@@ -27,9 +27,9 @@ export const IndexPageTemplate =
           </a>
         )}
       </div>
-      <Link to={box.url}>
+      <a href={box.url}>
         <p>{box.text}</p>
-      </Link>
+      </a>
     </div>
   )
 }
@@ -37,12 +37,11 @@ export const IndexPageTemplate =
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <IndexPageTemplate
-    contentComponent={HTMLContent}
     title={post.frontmatter.title}
     image={post.frontmatter.image}
     slogans={post.frontmatter.slogans}
     kunden={post.frontmatter.kunden}
-    content={post.html}
+    content={<HTMLContent content={post.html} />}
     box={post.frontmatter.box}
   />;
 };
