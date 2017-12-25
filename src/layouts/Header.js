@@ -3,19 +3,14 @@ import Link from "gatsby-link"
 import Menu from "../components/Menu/Menu"
 import style from "./Header.module.less"
 
-export const Header = ({  }) => {
-  const menuItems = [
-     {title:"Home", path:"/"},
-     {title:"Team", path:"/team/"},
-     {title:"Kontakt", path:"/kontakt/"},
-     {title:"Portfolio", path:"/portfolio/"},
-     {title:"Impressum", path:"/impressum/"},
-     {title:"404", path:"/404.html"}
-  ];
+import data from './header.json'
 
+export const Header = ({  }) => {
   return (
     <header>
-      <Menu elements={menuItems}/>
+      {/* TODO replace this with a picture */}
+      <Link to='/'>{data.title}</Link>
+      <Menu elements={data.menu}/>
     </header>
   );
 };

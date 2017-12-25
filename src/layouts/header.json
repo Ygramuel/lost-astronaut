@@ -1,0 +1,11 @@
+{
+  "title": "Go Back Home",
+  "menu": [
+    {"title":"Home", "path":"/"},
+    {"title":"Team", "path":"/team/"},
+    {"title":"Kontakt", "path":"/kontakt/"},
+    {"title":"Portfolio", "path":"/portfolio/"},
+    {"title":"Impressum", "path":"/impressum/"},
+    {"title":"404", "path":"/404.html"}
+  ]
+}
