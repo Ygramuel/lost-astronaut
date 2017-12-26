@@ -23,7 +23,7 @@ mitarbeiter:
       brisket salami pastrami kevin ham cupim drumstick. Brisket chuck leberkas
       meatloaf, boudin picanha sausage landjaeger. Leberkas bresaola pork loin,
       porchetta ground round salami shank andouille beef.
-    bild: /img/profile-42914_1280.png
+    bild: /img/anigif_enhanced-27067-1409867582-2.gif
     mail: cc@spaaam.com
     name: Carol Coperni
 ---
