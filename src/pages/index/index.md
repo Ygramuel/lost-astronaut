@@ -1,4 +1,6 @@
 ---
+templateKey: index-page
+path: /
 title: Startseite
 image: /img/products-grid1.jpg
 slogan:
@@ -14,25 +16,27 @@ features:
 box:
   text: Hiho Welst
   title: unser Profil
+mockupimage: /img/products-grid1.jpg
 portfolios:
-  - titel: portfolio titel1
-    undefined: /img/jumbotron.jpg
+  - title: portfolio titel1
+    image: /img/jumbotron.jpg
     url: /making-sense
-  - titel: portfolio2
-    undefined: /img/tutorials.png
+  - title: portfolio2
+    image: /img/tutorials.png
     url: /making-sense
 kunden:
   kunde:
-    - bild: /img/jumbotron.jpg
+    - image: /img/jumbotron.jpg
       name: Kunde1
       url: 'https://google.com'
-  titel: Unsere kunden
+    - image: /img/jumbotron.jpg
+      name: Kunde2
+      url: 'https://google.com'      
+  title: Unsere kunden
 kontakt:
   bild: /img/jumbotron.jpg
   buttontext: BUTTON
   text: bitte rede mit uns
   titel: Kontakt
   url: /kontakt/
-undefined: /img/chemex.jpg
 ---
-
