@@ -63,21 +63,21 @@ collections:
               - {label: "Titel", name: title , widget: string}
               - {label: "Bild", name: image , widget: image}
               - {label: "Text", name: text , widget: text}
-          - {label: "Mockup-Bild", name:"mockupImage" , widget: image}
+          - {label: "Mockup-Bild", name: "mockupimage" , widget: image}
           - {label: "Profil", name: box, widget: object, fields: [
               {label: "Titel", name: "title", widget: "string"},
               {label: "Text", name: "text", widget: "markdown"},
              ]}
           - {label: "Portfolio", name: portfolios, widget: list, fields: [
-              {label: "Titel", name: "titel", widget: "string"},
+              {label: "Titel", name: "title", widget: "string"},
               {label: "URL", name: "url", widget: "relation", collection: "portfolio", searchFields: [title, description, path], valueField: path},
-              {label: "Bild", name:"image" , widget: image},
+              {label: "Bild", name: "image" , widget: image},
              ]}
           - {label: "Kunden", name: kunden, widget: object, fields: [
-              {label: "Titel", name: "titel", widget: "string"},
+              {label: "Titel", name: "title", widget: "string"},
               {label: "Kunde", name: kunde, widget: list, fields: [
                   {label: "Name", name: "name", widget: "string"},
-                  {label: "Bild", name: "bild", widget: "image"},
+                  {label: "Bild", name: "image", widget: "image"},
                   {label: "Link", name: "url", widget: "string"},
                 ]}
               ]}
