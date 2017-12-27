@@ -8,9 +8,9 @@ import logo from '../img/LostAstronaut.svg'
 
 export const Header = ({  }) => {
   return (
-    <header>
+    <header className={style.header}>
       <Link to='/'>
-        <img src={logo} alt='Home'/>
+        <img src={logo} className={style.logo} alt='Home'/>
       </Link>
       <Menu elements={data.menu}/>
     </header>

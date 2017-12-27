@@ -4,7 +4,9 @@ import Helmet from 'react-helmet';
 import Header from "./Header.js"
 import Footer from "./Footer.js"
 import style from "./index.module.less"
-import './reset.css';
+import './reset.less';
+import './font.less';
+
 
 
 const TemplateWrapper = ({ children }) => (

@@ -1,0 +1,63 @@
+@import "../components/theme/theme.less";
+
+*{
+  font-family: sans-serif;
+  color: @dark-gray;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  color: @dark-gray;
+  padding: 1em 0;
+  display: block;
+}
+
+blockquote p{
+  padding: @klein @gross; 
+  color: @primary;
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 1em;
+  display: block;
+}
+
+h1{font-size: 2em;}
+
+h2{font-size: 1.7em;}
+
+h3{font-size: 1.5em;}
+
+h4{font-size: 1.4em;}
+
+h5{font-size: 1.3em;}
+
+h6{font-size: 1.1em;}
+
+a{
+  color: @primary;
+  text-decoration: none;  
+
+  &:hover{
+    color: @primary-light;
+  }
+}
+
+em{
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul, ol{
+  padding: 1.5em;
+  
+  li{
+    margin: 5px;
+  }
+}

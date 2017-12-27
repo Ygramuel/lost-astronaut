@@ -1,0 +1,35 @@
+@import "../theme/theme.less";
+
+.wrapper{
+  display: grid;
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-template-areas: 
+    "title"
+    "image"
+    "text"; 
+}
+
+.wrapper>*{  
+  padding: @gross;
+}
+
+.title{
+  grid-area: title;
+  font-size: 2.3em;
+  color: @primary;
+}
+
+.image{
+  grid-area: image;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  padding: 0;
+}
+
+.text{
+  grid-area: text;
+}
+
+

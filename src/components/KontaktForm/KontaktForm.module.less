@@ -1,3 +1,5 @@
+@import "../theme/theme.less";
+
 .form{
   width: 100%;
   padding: 20px;
@@ -16,8 +18,12 @@
     width: 100%;
     background: #efefef;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: @gross;
+  }
+  
+  p{
+    margin: @klein;
   }
 }
 
@@ -39,10 +45,11 @@
 
 .button{
   grid-area: button;
-  
   width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   padding: 10px;
-  background: orange;
+  background: @primary;
+  color: @bright;
+  font-weight: 600;
 }
