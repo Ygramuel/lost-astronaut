@@ -54,12 +54,19 @@ export const indexPageQuery = graphql`
         path
         title
         image
-        slogans{
-          slogan
-        }
-        box{
+        slogan{
+          title
           text
-          url
+        }
+        features{
+          title
+          image
+          text
+        }
+        mockupImage
+        box {
+          title
+          text
         }
         kunden {
           bild
