@@ -4,7 +4,8 @@ import CMS from 'netlify-cms'
 // load a global CSS FOR THE PREVIEW !!
 // is bundled with the other CSS in a stylesheet
 // look at webpack.config.js
-import '../src/layouts/reset.css'
+import '../src/layouts/reset.less'
+import '../src/layouts/font.less'
 
 import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 import { IndexPageTemplate } from 'site/templates/index-page/index-page';
