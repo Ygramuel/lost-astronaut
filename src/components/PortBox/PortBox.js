@@ -5,7 +5,7 @@ import style from "./PortBox.module.less"
 export const PortBox = ({ title, path, text, image }) => {
   return (
     <Link to={path}>
-        <h3>{title}</h3>
+        <h3 className={style.title}>{title}</h3>
         <p>{text}</p>
       </Link>
   );
