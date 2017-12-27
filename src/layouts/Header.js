@@ -1,21 +1,18 @@
 import React from "react";
 import Link from "gatsby-link"
 import Menu from "../components/Menu/Menu"
-//import style from "./Header.module.less"
+import style from "./Header.module.less"
+
+import data from './header.json'
+import logo from '../img/LostAstronaut.svg'
 
 export const Header = ({  }) => {
-  const menuItems = [
-     {title:"Home", path:"/"},
-     {title:"Team", path:"/team/"},
-     {title:"Kontakt", path:"/kontakt/"},
-     {title:"Portfolio", path:"/portfolio/"},
-     {title:"Impressum", path:"/impressum/"},
-     {title:"404", path:"/404.html"}
-  ];
-
   return (
     <header>
-      <Menu elements={menuItems}/>
+      <Link to='/'>
+        <img src={logo} alt='Home'/>
+      </Link>
+      <Menu elements={data.menu}/>
     </header>
   );
 };

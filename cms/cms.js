@@ -1,6 +1,11 @@
 import React from 'react'
 import CMS from 'netlify-cms'
 
+// load a global CSS FOR THE PREVIEW !!
+// is bundled with the other CSS in a stylesheet
+// look at webpack.config.js
+import '../src/layouts/reset.css'
+
 import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 import { IndexPageTemplate } from 'site/templates/index-page/index-page';
 import { KontaktPageTemplate } from 'site/templates/kontakt-page/kontakt-page';
@@ -14,8 +19,9 @@ import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
 const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
   const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
+
   return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])}
-      beschreibung={widgetFor('body')} mitarbeiter={mitarbeiter} />
+      text={widgetFor('body')} mitarbeiter={mitarbeiter} />
   };
 
   CMS.registerPreviewTemplate('team', TeamPreview);
@@ -32,15 +38,19 @@ const IndexPreview = ({ entry, widgetFor, getAsset }) => {
   const entryKunden = entry.getIn(['data', 'kunden']);
   const kunden = entryKunden ? entryKunden.toJS() : []
 
+  const box = entry.getIn(['data', 'box']).toJS();
+
   return <IndexPageTemplate
     title={entry.getIn(['data', 'title'])}
     image={entry.getIn(['data', 'image'])}
+    content=''
+    box={box}
     slogans={slogans}
     kunden={kunden}
   />
   };
 
-  CMS.registerPreviewTemplate('index', IndexPreview);
+  //CMS.registerPreviewTemplate('index', IndexPreview);
 
   /*
   *   Kontakt-Section

@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+media_folder: /static/img
 public_folder: /img
 
 collections:
@@ -31,30 +31,59 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/team/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
           - {label: Mitarbeiter, name: mitarbeiter, widget: list, fields: [
               {label: Name, name: "name", widget: string},
               {label: Bild, name: bild, widget: image, required: false},
               {label: E-Mail, name: mail, widget: string},
-              {label: Beschreibung, name: beschreibung, widget: text},
+              {label: Funktion, name: text, widget: string},
             ]}
 
       - file: "src/pages/index/index.md"
         label: "Startseite"
         name: "index"
+        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/"}
           - {label: "Titel", name: "title", widget: "string"}
-          - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Slogan", name: slogans, widget: list, fields: [
-              {label: "Slogane-Text", name: "slogan", widget: "string"},
+          - {label: "Titelbild", name: image, widget: "image"}
+            ## Sachen sind gelinkt
+          - {label: "Slogan", name: slogan, widget: "object", fields: [
+              {label: "Titel", name:"title" , widget: "string"},
+              {label: "Text", name:"text" , widget: "text"}
+            ]}
+            ## Sachen sind gelinkt
+          - {label: "Fatures", name: features, widget: "list", fields: [
+              {label: "Titel", name:"title" , widget: "string"},
+              {label: "Bild", name:"image" , widget: "image"},
+              {label: "Text", name:"text" , widget: "text"}
+            ]}
+          - {label: "Mockup-Bild", name:"mockupImage" , widget: image}
+          - {label: "Profil", name: box, widget: object, fields: [
+              {label: "Titel", name: "title", widget: "string"},
+              {label: "Text", name: "text", widget: "markdown"},
              ]}
-          - {label: "Kunden", name: kunden, widget: list, fields: [
-              {label: "Name", name: "name", widget: "string"},
+          - {label: "Portfolio", name: portfolios, widget: list, fields: [
+              {label: "Titel", name: "titel", widget: "string"},
+              {label: "URL", name: "url", widget: "relation", collection: "portfolio", searchFields: [title, description, path], valueField: path},
+              {label: "Bild", name:"image" , widget: image},
+             ]}
+          - {label: "Kunden", name: kunden, widget: object, fields: [
+              {label: "Titel", name: "titel", widget: "string"},
+              {label: "Kunde", name: kunde, widget: list, fields: [
+                  {label: "Name", name: "name", widget: "string"},
+                  {label: "Bild", name: "bild", widget: "image"},
+                  {label: "Link", name: "url", widget: "string"},
+                ]}
+              ]}
+          - {label: "Kontakt", name: kontakt, widget: object, fields: [
+              {label: "Titel", name: "titel", widget: "string"},
+              {label: "Text", name: "text", widget: "text"},
               {label: "Bild", name: "bild", widget: "image"},
-              {label: "Link", name: "url", widget: "string"},
-    ]}
+              {label: "URL", name: "url", widget: "string"},
+              {label: "Button Text", name: "buttontext", widget: "string"},
+            ]}
 
       - file: "src/pages/kontakt/kontakt.md"
         label: "Kontakt"
@@ -64,7 +93,7 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/kontakt/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
 
       - file: "src/pages/impressum.md"
         label: "Impressum"

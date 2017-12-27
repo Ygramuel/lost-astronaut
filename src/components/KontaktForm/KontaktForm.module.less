@@ -1,0 +1,48 @@
+.form{
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "name"
+    "mail"
+    "message"
+    "button";
+
+  input,
+  textarea{
+    width: 100%;
+    background: #efefef;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+.name{
+  grid-area: name;
+}
+
+.mail{
+  grid-area: mail;
+}
+
+.message{
+  grid-area: message;
+  
+  textarea{
+    height: 150px;
+  }
+}
+
+.button{
+  grid-area: button;
+  
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: orange;
+}

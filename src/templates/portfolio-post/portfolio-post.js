@@ -2,21 +2,22 @@ import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
-export const BlogPostTemplate = ({ content, contentComponent, description, title }) => {
-  const PostContent = contentComponent || Content;
+export const PortfolioPostTemplate = ({ text, title, image }) => {
   return (
     <section>
-      <DefaultPage title={title} text={content} image="" />
+      <DefaultPage title={title} text={text} image={image} />
+      <h3>Gallerie:</h3>
+      <p>Das ist ein TODO. Sagt mir wie es aussehen soll... </p>
     </section>
   );
 }
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
-  return <BlogPostTemplate
-    content={<HTMLContent content={post.html} />}
-    description={post.frontmatter.description}
+  return <PortfolioPostTemplate
+    text={<HTMLContent content={post.html} />}
     title={post.frontmatter.title}
+    image={post.frontmatter.image}
   />;
 }
 
@@ -27,6 +28,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         date(formatString: "MMMM DD, YYYY")
+        image
         title
         description
       }

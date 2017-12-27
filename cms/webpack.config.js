@@ -32,14 +32,9 @@ module.exports = {
       {
             test: /\.less$/,
             use: extractLess.extract({
-              use: [/*{
-                  loader: "style-loader", // creates style nodes from JS strings
-                  /*options: {
-                    insertInto: 'iframe'
-                  }*/
-              /*},*/ {
+              use: [
+              {
                   loader: "css-loader?modules&importLoaders=1&localIdentName=[path]---[name]---[local]---[hash:base64:5]'" // translates CSS into CommonJS
-                  //  loader: 'style-loader!css-loader?modules' // &importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
               }, {
                   loader: "less-loader" // compiles Less to CSS
               }],
@@ -48,6 +43,16 @@ module.exports = {
               fallback: "style-loader"
             })
         },
+        {
+         test: /\.css$/,
+         use: extractLess.extract({
+           use: [
+           {
+                // TODO: remove duplicate loader
+               loader: "css-loader?modules&importLoaders=1&localIdentName=[path]---[name]---[local]---[hash:base64:5]'" // translates CSS into CommonJS
+           }],
+         })
+      },
     ],
   },
   plugins: [
