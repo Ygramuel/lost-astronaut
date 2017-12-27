@@ -19,7 +19,7 @@ import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
 const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   const entryMitarbeiter = entry.getIn(['data', 'mitarbeiter'])
   const mitarbeiter = entryMitarbeiter ? entryMitarbeiter.toJS() : []
-  
+
   return <TeamPageTemplate title={entry.getIn(['data', 'title'])} image={entry.getIn(['data', 'image'])}
       text={widgetFor('body')} mitarbeiter={mitarbeiter} />
   };
@@ -50,7 +50,7 @@ const IndexPreview = ({ entry, widgetFor, getAsset }) => {
   />
   };
 
-  CMS.registerPreviewTemplate('index', IndexPreview);
+  //CMS.registerPreviewTemplate('index', IndexPreview);
 
   /*
   *   Kontakt-Section

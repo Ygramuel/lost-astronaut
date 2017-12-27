@@ -31,17 +31,18 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/team/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
           - {label: Mitarbeiter, name: mitarbeiter, widget: list, fields: [
               {label: Name, name: "name", widget: string},
               {label: Bild, name: bild, widget: image, required: false},
               {label: E-Mail, name: mail, widget: string},
-              {label: Beschreibung, name: beschreibung, widget: text},
+              {label: Funktion, name: text, widget: string},
             ]}
 
       - file: "src/pages/index/index.md"
         label: "Startseite"
         name: "index"
+        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/"}
@@ -63,7 +64,7 @@ collections:
              ]}
           - {label: "Portfolio", name: portfolios, widget: list, fields: [
               {label: "Titel", name: "titel", widget: "string"},
-              {label: "URL", name: "url", widget: "string"},
+              {label: "URL", name: "url", widget: "relation", collection: "portfolio", searchFields: [title, description, path], valueField: path},
               {label: "Bild", name:"image" , widget: image},
              ]}
           - {label: "Kunden", name: kunden, widget: object, fields: [
@@ -90,7 +91,7 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/kontakt/"}
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: image, required: false}
-          - {label: "Beschreibung des Unternehmens", name: "body", widget: "markdown"}
+          - {label: "Text", name: "body", widget: "markdown"}
 
       - file: "src/pages/impressum.md"
         label: "Impressum"
