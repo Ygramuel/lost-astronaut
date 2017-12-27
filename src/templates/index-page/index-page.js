@@ -7,7 +7,7 @@ import Feature from './Feature'
 import Zeile from './Zeile'
 
 export const IndexPageTemplate =
-  ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle}) => {
+  ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt}) => {
   return (
     <div>
       <Helmet>
@@ -41,18 +41,25 @@ export const IndexPageTemplate =
       {/* Alle Kunden Elemente */}
       <div>
         <h5>{kundenTitle}</h5>
-        {kunden.map((kunde) =>
+        <Zeile elements={kunden.map((kunde) =>
           <a href={kunde.url}>
             <img src={kunde.image}/>
-            <p>
-              {kunde.name}
-            </p>
+            {/*<p>{kunde.name}</p>*/}
           </a>
-        )}
+        )} />
       </div>
-      <a href={box.url}>
-        <p>{box.text}</p>
-      </a>
+
+      {/* Kontakt */}
+      <div>
+        <img src={kontakt.image} />
+        <h3>{kontakt.title}</h3>
+        <p>{kontakt.text}</p>
+
+        {/*TODO use button component */}
+        <Link to={kontakt.path}>
+          <button>{kontakt.buttontext}</button>
+        </Link>
+      </div>
     </div>
   )
 }
@@ -68,6 +75,7 @@ export default ({ data }) => {
     mockupImage={post.frontmatter.mockupimage}
     kundenTitle={post.frontmatter.kunden.title}
     kunden={post.frontmatter.kunden.kunde}
+    kontakt={post.frontmatter.kontakt}
   />;
 };
 
@@ -104,7 +112,13 @@ export const indexPageQuery = graphql`
             url
           }
         }
-
+        kontakt{
+          title
+          text
+          image
+          path
+          buttontext
+        }
       }
     }
   }

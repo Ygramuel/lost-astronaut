@@ -4,7 +4,7 @@ export default ({ elements }) => {
 return (
   <div>
     {elements.map((element) =>
-      {element}
+      <div>{element}</div>
     )}
   </div>
 ); }

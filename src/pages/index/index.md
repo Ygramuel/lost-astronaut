@@ -33,10 +33,11 @@ kunden:
       name: Kunde2
       url: 'https://google.com'      
   title: Unsere kunden
+  
 kontakt:
-  bild: /img/jumbotron.jpg
+  image: /img/jumbotron.jpg
   buttontext: BUTTON
-  text: bitte rede mit uns
-  titel: Kontakt
-  url: /kontakt/
+  text: "bitte rede mit uns"
+  title: Kontakt
+  path: /kontakt/
 ---
