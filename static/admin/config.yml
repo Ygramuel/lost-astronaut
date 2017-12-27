@@ -49,16 +49,20 @@ collections:
           - {label: "Titel", name: "title", widget: "string"}
           - {label: "Titelbild", name: image, widget: "image"}
             ## Sachen sind gelinkt
-          - {label: "Slogan", name: slogan, widget: "object", fields: [
-              {label: "Titel", name:"title" , widget: "string"},
-              {label: "Text", name:"text" , widget: "text"}
-            ]}
-            ## Sachen sind gelinkt
-          - {label: "Fatures", name: features, widget: "list", fields: [
-              {label: "Titel", name:"title" , widget: "string"},
-              {label: "Bild", name:"image" , widget: "image"},
-              {label: "Text", name:"text" , widget: "text"}
-            ]}
+          - label: "Slogan"
+            name: slogan
+            widget: "object"
+            fields:
+              - {label: "Titel", name: title, widget: string}
+              - {label: "Text", name: text, widget: text}
+
+          - label: "Features"
+            name: features
+            widget: "list"
+            fields:
+              - {label: "Titel", name: title , widget: string}
+              - {label: "Bild", name: image , widget: image}
+              - {label: "Text", name: text , widget: text}
           - {label: "Mockup-Bild", name:"mockupImage" , widget: image}
           - {label: "Profil", name: box, widget: object, fields: [
               {label: "Titel", name: "title", widget: "string"},

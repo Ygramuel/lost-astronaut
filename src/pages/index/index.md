@@ -1,41 +1,38 @@
 ---
-templateKey: index-page
-path: "/"
 title: Startseite
-image: /img/chemex.jpg
+image: /img/products-grid1.jpg
 slogan:
-  undefined: SLOGAN
+  text: sloganText
+  title: Slogan
 features:
-  - undefined: beratung
-  - undefined: Grafikk
-  - undefined: WEB
+  - title: Fancy Feature
+    image: /img/meeting-space.png
+    text: Wir sind toll
+  - title: Webstuff
+    image: /img/coffee.png
+    text: können wir
 box:
-  text: |-
-    ProfilText
-
-
-
-    ......
-  : Unser Profil
+  text: Hiho Welst
+  title: unser Profil
 portfolios:
-  - title: Print
-    undefined: /img/products-grid2.jpg
+  - titel: portfolio titel1
+    undefined: /img/jumbotron.jpg
     url: /making-sense
-  - title: Kafe
-    undefined: /img/products-grid1.jpg
+  - titel: portfolio2
+    undefined: /img/tutorials.png
+    url: /making-sense
 kunden:
   kunde:
-    - bild: /img/coffee-gear.png
-      name: Googel
+    - bild: /img/jumbotron.jpg
+      name: Kunde1
       url: 'https://google.com'
-    - bild: /img/coffee.png
-      name: webstuff
-      url: 'https://amazon.de'
-  title: Unsere Kunden
+  titel: Unsere kunden
 kontakt:
-  buttontext: Schreib uns
-  text: EtwasText
-  title: Kontakt
+  bild: /img/jumbotron.jpg
+  buttontext: BUTTON
+  text: bitte rede mit uns
+  titel: Kontakt
   url: /kontakt/
-undefined: /img/anigif_enhanced-27067-1409867582-2.gif
+undefined: /img/chemex.jpg
 ---
+
