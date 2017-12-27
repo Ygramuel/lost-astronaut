@@ -1,0 +1,11 @@
+{
+  "left":
+    {"title":"Anschrift", "text": "Hierhin die Anschrift" },
+  "middle":
+    {"title": "Navigation", "nav": [
+      {"title":"Kontakt", "path":"/kontakt/"},
+      {"title":"Impressum", "path":"/impressum/"}
+      ]},
+  "right":
+    {"title":"Sozial Media", "facebook":"https://facebook.com", "instagramm":"https://leer.de"}
+}
