@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'gatsby-link'
 
 import Menu from "../components/Menu/Menu"
 
@@ -12,10 +13,14 @@ export const Footer = ({  }) => {
         <h6>{data.left.title}</h6>
         <p>{data.left.text}</p>
       </div>
-      
+
       <div>
         <h6>{data.middle.title}</h6>
-        <Menu elements={data.middle.nav} />
+        <ul>
+          {data.middle.nav.map(elem =>
+            <li><Link to={elem.path}>{elem.title}</Link></li>
+          )}
+        </ul>
       </div>
 
       <div>
