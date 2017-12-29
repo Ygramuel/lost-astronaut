@@ -10,7 +10,7 @@ export const Footer = ({  }) => {
     <footer>
       <div>
         <h6>{data.left.title}</h6>
-        <div>{data.left.text}</div>
+        <p>{data.left.text}</p>
       </div>
       
       <div>

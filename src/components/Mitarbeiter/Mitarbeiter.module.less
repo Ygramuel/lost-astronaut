@@ -1,3 +1,5 @@
+@import "../theme/theme.less";
+
 section{
   display: grid;
   grid-column: 1fr 1fr;
@@ -5,12 +7,28 @@ section{
   grid-gap: 20px;
 }
 
+.person>*{
+  padding: 0 @gross;
+}
+
 .person {
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: center;
 
   img{
     width: 100%;
+    padding: @klein 0;
+  }
+  
+  .name{
+    margin: 0;
+    color: @dark-gray;
+    font-size: 18px;
+  }
+  
+  .mail{
+    margin-bottom: @gross;
   }
 }
