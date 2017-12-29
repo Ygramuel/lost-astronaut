@@ -7,7 +7,7 @@ import Feature from './Feature'
 import Zeile from './Zeile'
 
 export const IndexPageTemplate =
-  ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt}) => {
+  ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt, portfolios}) => {
   return (
     <div>
       <Helmet>
@@ -38,6 +38,17 @@ export const IndexPageTemplate =
         <p>{box.text}</p>
       </div>
 
+      {/* Alle Portfolio Elemente */}
+      <div>
+        {portfolios.map((portfolio) =>
+          <Link to={portfolio.url}>
+            <h1>{portfolio.title}</h1>
+            <img src={portfolio.image} />
+          </Link>
+
+      )}
+      </div>
+
       {/* Alle Kunden Elemente */}
       <div>
         <h5>{kundenTitle}</h5>
@@ -64,6 +75,7 @@ export const IndexPageTemplate =
   )
 }
 
+// TODO fix this mess.
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <IndexPageTemplate
@@ -76,9 +88,11 @@ export default ({ data }) => {
     kundenTitle={post.frontmatter.kunden.title}
     kunden={post.frontmatter.kunden.kunde}
     kontakt={post.frontmatter.kontakt}
+    portfolios={post.frontmatter.portfolios}
   />;
 };
 
+// TODO use fragments and components
 export const indexPageQuery = graphql`
   query IndexPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
