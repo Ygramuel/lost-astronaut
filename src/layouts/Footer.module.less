@@ -1,4 +1,19 @@
+@import "../components/theme/theme.less";
+
 footer{
-  background: beige;
+  background: @light-gray;
   grid-area: footer;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: auto;
+  margin-top: 10vh;
+  padding: @gross;
+
+  div{
+    margin-bottom: @gross;
+  }
+  
+  h6{
+    color: @dark-gray;
+  }
 }
