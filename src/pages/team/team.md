@@ -4,35 +4,35 @@ path: /team
 title: Team
 image: /img/chemex.jpg
 mitarbeiter:
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: ardek@spam.com
     name: Robin Thier
     text: 'CEO, Creative Director'
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: bussi@busen.com
     name: Moritz Janowsky
     text: Creative Design
-  - bild: /img/anigif_enhanced-27067-1409867582-2.gif
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Amelie Haupt
     text: Content Management
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Patrick Schuster
     text: Strategy & Finance
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Sebastian Stüber
     text: Chief Technology Officer
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Lukas Schuster
     text: Communication & Service
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Viktoria Raeder
     text: Quality & Service
-  - bild: /img/profile-42914_1280.png
+  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Michael Cremann
     text: Public Relations
