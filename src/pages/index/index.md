@@ -2,10 +2,12 @@
 templateKey: index-page
 path: /
 title: Startseite
-image: /img/products-grid1.jpg
+image: /img/jumbotron.jpg
 slogan:
-  text: sloganText
-  title: Slogan
+  text: |-
+    Maßgeschneidertes Online-Marketing am Puls der Zeit
+    mit Inhalten, die Menschen bewegen.
+  title: You are Unique
 features:
   - title: Beratung & Konzeption
     image: /img/meeting-space.png
@@ -21,28 +23,37 @@ features:
     text: Bewegte Bilder die bewegen. Yeah.
 mockupimage: /img/products-grid1.jpg
 box:
-  text: Hiho Welst
-  title: unser Profil
+  text: >-
+    Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich
+    dem Filmemachen verschrieben haben. Dabei steht neben den eigenen
+    Vorstellungen von ästhetischem Bewegtbild auch die Komposition von Bild und
+    Ton im Vordergrund. Doch eine gelungene Einstellung oder ein guter
+    Soundtrack machen allein noch keinen guten Film aus. Ein guter Film, ein
+    gelungenes Projekt, entsteht nur durch die Zusammenarbeit von Enthusiasten.
+  title: Unser Profil
 portfolios:
-  - title: portfolio titel1
+  - title: Print Design
     image: /img/jumbotron.jpg
     url: /making-sense
-  - title: portfolio2
-    image: /img/tutorials.png
+  - title: Kaffee Fotografie
+    image: /img/flavor_wheel.jpg
     url: /making-sense
 kunden:
   kunde:
-    - image: /img/jumbotron.jpg
+    - image: /img/meeting-space.png
       name: Kunde1
       url: 'https://google.com'
-    - image: /img/jumbotron.jpg
+    - image: /img/coffee.png
       name: Kunde2
       url: 'https://google.com'
-  title: Unsere kunden
+  title: Unsere Kunden
 kontakt:
-  buttontext: BUTTON
+  buttontext: Schreib uns
   path: /kontakt/
-  text: bitte rede mit uns
+  text: >-
+    Es ist nur ein kleiner Schritt für die Menschen und so, aber ihr wisst
+    schon. Schreib uns eine E-Mail an unsere ständig von Michi besetzte
+    Servicehotline. Der ist nämlich unser bester Kommunikator!
   title: Kontakt
   image: /img/jumbotron.jpg
 ---
