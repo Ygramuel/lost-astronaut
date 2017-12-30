@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 
 import Feature from './Feature'
 import Zeile from './Zeile'
+import Button from '../../components/Button/Button'
 
 export const IndexPageTemplate =
   ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt, portfolios}) => {
@@ -66,10 +67,7 @@ export const IndexPageTemplate =
         <h3>{kontakt.title}</h3>
         <p>{kontakt.text}</p>
 
-        {/*TODO use button component */}
-        <Link to={kontakt.path}>
-          <button>{kontakt.buttontext}</button>
-        </Link>
+        <Button path={kontakt.path} title={kontakt.buttontext} />
       </div>
     </div>
   )
