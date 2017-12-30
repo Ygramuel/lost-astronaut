@@ -1,3 +1,30 @@
-.main {
-  background-color: red;
+@import "../../components/theme/theme.less";
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin: 8vw auto 0 auto;
+}
+
+/*Media-Queries*/
+
+@media @tablet{
+  .gallery{  
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media @landscape{
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media @desktop{
+  .gallery{
+    width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

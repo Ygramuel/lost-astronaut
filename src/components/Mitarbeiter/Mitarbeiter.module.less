@@ -1,13 +1,5 @@
 @import "../theme/theme.less";
 
-section{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  margin: 150px auto 0 auto;
-}
-
 .person>*{
   padding: 0 @gross;
 }
@@ -33,26 +25,5 @@ section{
   
   .mail{
     margin-bottom: @gross;
-  }
-}
-
-/*Media-Queries*/
-
-@media @tablet{
-  section{  
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media @landscape{
-  section{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media @desktop{
-  section{
-    width: 1200px;
-    grid-template-columns: repeat(4, 1fr);
   }
 }
