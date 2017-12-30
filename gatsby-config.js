@@ -30,6 +30,16 @@ module.exports = {
       }
     },
 
+    /// TODO add more options
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Lost Astronaut",
+        short_name: "LA",
+        start_url: "/",
+      }
+    },
+
     {  // make sure to put last in the array
      resolve: `gatsby-plugin-netlify`,
      options: {
