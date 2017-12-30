@@ -8,10 +8,11 @@ export const TeamPageTemplate = ({ title, text, mitarbeiter, image }) => {
   return (
     <section>
       <DefaultPage title={title} text={text} image={image} />
-
+    <div className={style.gallery}>
       {mitarbeiter.map((arbeiter) =>
         <Mitarbeiter name={arbeiter.name} mail={arbeiter.mail} text={arbeiter.beschreibung} bild={arbeiter.bild}/>
       )}
+    </div>
     </section>
   )
 }

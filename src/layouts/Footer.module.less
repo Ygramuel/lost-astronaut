@@ -3,11 +3,15 @@
 footer{
   background: @light-gray;
   grid-area: footer;
+  margin-top: 10vh;
+  padding: @gross;
   display: grid;
   grid-column: 1fr;
   grid-row: auto;
-  margin-top: 10vh;
-  padding: @gross;
+  grid-template-areas: 
+    "left"
+    "middle"
+    "right";
 
   div{
     margin-bottom: @gross;
@@ -16,4 +20,8 @@ footer{
   h6{
     color: @dark-gray;
   }
+}
+
+.middle{
+  
 }
