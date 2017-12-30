@@ -2,6 +2,7 @@
 
 
 .header{
+  width: 100%;
   background: black;
   grid-area: header; 
 }
@@ -22,7 +23,10 @@
 }
 
 @media @landscape{
-    
+  .header{
+    position: fixed;
+  }  
+  
   .wrapper{
     height: 100px;
     flex-direction: row;
