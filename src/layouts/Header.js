@@ -9,10 +9,12 @@ import logo from '../img/LostAstronaut.svg'
 export const Header = ({  }) => {
   return (
     <header className={style.header}>
-      <Link to='/'>
-        <img src={logo} className={style.logo} alt='Home'/>
-      </Link>
-      <Menu elements={data.menu}/>
+      <div className={style.wrapper}>
+        <Link to='/'>
+          <img src={logo} className={style.logo} alt='Home'/>
+        </Link>
+        <Menu elements={data.menu}/>
+      </div>
     </header>
   );
 };

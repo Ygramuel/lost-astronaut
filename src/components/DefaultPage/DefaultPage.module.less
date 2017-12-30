@@ -2,8 +2,8 @@
 
 .wrapper{
   display: grid;
-  grid-column: 1fr;
-  grid-row: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
     "title"
     "image"
@@ -16,8 +16,12 @@
 
 .title{
   grid-area: title;
+  width: 100%;
+  max-width: @text-width;
+  margin: 0 auto;
   font-size: 2.3em;
   color: @primary;
+  display: block;
 }
 
 .image{
@@ -26,10 +30,22 @@
   height: 50vh;
   object-fit: cover;
   padding: 0;
+  margin-bottom: @dynamisch;
 }
 
 .text{
   grid-area: text;
+  width: 100%;
+  max-width: @text-width;
+  margin: 0 auto;
+  padding: 0 @gross;
 }
 
-
+@media @tablet{
+  .wrapper{ 
+    grid-template-areas: 
+      "image"
+      "title"
+      "text"; 
+  }
+}
