@@ -37,6 +37,8 @@ module.exports = {
         name: "Lost Astronaut",
         short_name: "LA",
         start_url: "/",
+        lang: "de",
+        display: "minimal-ui",
       }
     },
     'gatsby-plugin-offline',
