@@ -2,7 +2,7 @@
 templateKey: kontakt-page
 path: /kontakt/
 title: Kontakt
-image: /img/chemex.jpg
+newimage: /img/chemex.jpg
 ---
 Kontakt Seite...
 ein bisschen text...

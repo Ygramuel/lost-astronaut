@@ -1,5 +1,25 @@
 const path = require('path');
 
+exports.onCreateNode = ({
+  node,
+  getNode,
+  loadNodeContent,
+  boundActionCreators,
+}) => {
+  const { frontmatter } = node
+  if (frontmatter) {
+    const { newimage } = frontmatter
+    if (newimage) {
+      if (newimage.indexOf('/img') === 0) {
+        frontmatter.newimage = path.relative(
+          path.dirname(node.fileAbsolutePath),
+          path.join(__dirname, '/static/', newimage)
+        )
+      }
+    }
+  }
+}
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
