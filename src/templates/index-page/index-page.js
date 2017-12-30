@@ -12,19 +12,20 @@ import Button from '../../components/Button/Button'
 export const IndexPageTemplate =
   ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt, portfolios}) => {
   return (
-    <div>
+    <div className={style.index}>
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <h1>{title}</h1>
-      <img src={image}/>
+      <h1 className={style.title}>{title}</h1>
+      <img className={style.titelbild} src={image}/>
 
-      <div>
+      <div className={style.slogan}>
         <h6>{slogan.title}</h6>
         <p>{slogan.text}</p>
       </div>
 
       {/* Alle Feature Elemente */}
+      <div className={style.features}>
       <Zeile
         elements=
           {features.map((feature) =>
@@ -32,17 +33,18 @@ export const IndexPageTemplate =
                       title={feature.title}
                       image={feature.image} />
         )}/>
+      </div>
 
-      <img src={mockupImage}/>
+      <img className={style.mockup} src={mockupImage}/>
 
       {/* Profil */}
-      <div>
+      <div className={style.profil}>
         <h5>{box.title}</h5>
         <p>{box.text}</p>
       </div>
 
       {/* Alle Portfolio Elemente */}
-      <div>
+      <div className={style.portfolios}>
         {portfolios.map((portfolio) =>
           <Link to={portfolio.url}>
             <h1>{portfolio.title}</h1>
@@ -53,7 +55,7 @@ export const IndexPageTemplate =
       </div>
 
       {/* Alle Kunden Elemente */}
-      <div>
+      <div className={style.kunden}>
         <h5>{kundenTitle}</h5>
         <Zeile elements={kunden.map((kunde) =>
           <a href={kunde.url}>
@@ -64,12 +66,13 @@ export const IndexPageTemplate =
       </div>
 
       {/* Kontakt */}
-      <div>
+      <div className={style.kontakt}>
         <img src={kontakt.image} />
-        <h3>{kontakt.title}</h3>
-        <p>{kontakt.text}</p>
-
-        <Button path={kontakt.path} title={kontakt.buttontext} />
+        <div className={style.kontaktinhalt}>
+          <h3>{kontakt.title}</h3>
+          <p>{kontakt.text}</p>
+          <Button path={kontakt.path} title={kontakt.buttontext} />
+        </div>
       </div>
     </div>
   )

@@ -1,3 +1,166 @@
+@import "../../components/theme/theme.less";
+
+.index{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "titel"
+    "titelbild"
+    "slogan"
+    "features"
+    "mockup"
+    "profil"
+    "portfolios"
+    "kunden"
+    "kontakt";
+}
+
 img{
   max-width: 100%;
+}
+
+.title{
+  grid-area: titel;
+  display: none;
+}
+
+.titelbild{
+  grid-area: titelbild;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  padding: 0;
+}
+
+.slogan{
+  grid-area: slogan;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  h6{
+    font-size: 4.6em;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  p{
+    font-size: 1.556em;
+  }
+}
+
+.features{
+  grid-area: features;
+  background: @light-gray;
+}
+
+.mockup{
+  grid-area: mockup;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.profil{
+  grid-area: profil;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: @gross;
+  
+  h5{
+    font-size: 2.333em;
+    margin: 0 0 @gross 0;
+    font-weight: 400;
+  }
+  
+  p{
+    font-size: 1.556em;
+    padding: 0;
+  }
+}
+
+.portfolios>*{
+  margin: @gross;
+}
+
+.portfolios{
+  grid-area: portfolios;
+  background: @light-gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: @gross;
+  
+  img{
+    margin: 0;
+  }
+}
+
+.kunden{
+  grid-area: kunden;
+  background: @secondary;
+  padding: @dynamisch 0;
+  
+  h5{
+    color: @bright;
+    border-bottom: 2px solid @bright;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto @dynamisch auto;
+  }
+  
+  .zeile{
+    padding: 0;
+  }
+}
+
+.kontakt{
+  grid-area: kontakt;
+  position: relative;
+  height: 70vh;
+  
+  img{
+    height: 70vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+.kontaktinhalt{
+  position: absolute;
+  top: 0;
+  padding: @dynamisch 20px;
+  
+  h3{
+    font-size: 2.333em;
+    margin: 0 0 @gross 0;
+    font-weight: 400;
+  }
+  
+  p{
+    padding: 0 0 @gross 0;
+    color: @bright;
+  }
+}
+
+@media @landscape{
+  .index{ 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "titelbild titelbild"
+      "titel titel"
+      "slogan slogan"
+      "features features"
+      "mockup mockup"
+      "profil portfolios"
+      "kunden kunden"
+      "kontakt kontakt";
+  }
 }
