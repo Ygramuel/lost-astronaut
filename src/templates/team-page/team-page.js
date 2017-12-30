@@ -10,7 +10,7 @@ export const TeamPageTemplate = ({ title, text, mitarbeiter, image }) => {
       <DefaultPage title={title} text={text} image={image} />
     <div className={style.gallery}>
       {mitarbeiter.map((arbeiter) =>
-        <Mitarbeiter name={arbeiter.name} mail={arbeiter.mail} text={arbeiter.beschreibung} bild={arbeiter.bild}/>
+        <Mitarbeiter name={arbeiter.name} mail={arbeiter.mail} text={arbeiter.text} bild={arbeiter.bild}/>
       )}
     </div>
     </section>
@@ -36,7 +36,7 @@ export const teamPageQuery = graphql`
         title
         image
         mitarbeiter {
-          beschreibung
+          text
           mail
           name
           bild

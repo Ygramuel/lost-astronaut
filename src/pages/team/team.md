@@ -16,19 +16,24 @@ mitarbeiter:
     mail: cc@spaaam.com
     name: Amelie Haupt
     text: Content Management
-  - mail: cc@spaaam.com
+  - bild: /img/profile-42914_1280.png
+    mail: cc@spaaam.com
     name: Patrick Schuster
     text: Strategy & Finance
-  - mail: cc@spaaam.com
+  - bild: /img/profile-42914_1280.png
+    mail: cc@spaaam.com
     name: Sebastian Stüber
     text: Chief Technology Officer
-  - mail: cc@spaaam.com
+  - bild: /img/profile-42914_1280.png
+    mail: cc@spaaam.com
     name: Lukas Schuster
     text: Communication & Service
-  - mail: cc@spaaam.com
+  - bild: /img/profile-42914_1280.png
+    mail: cc@spaaam.com
     name: Viktoria Raeder
     text: Quality & Service
-  - mail: cc@spaaam.com
+  - bild: /img/profile-42914_1280.png
+    mail: cc@spaaam.com
     name: Michael Cremann
     text: Public Relations
 ---
