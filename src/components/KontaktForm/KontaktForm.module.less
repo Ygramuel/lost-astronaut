@@ -9,7 +9,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: @gross;
-  grid-template-areas: 
+  grid-template-areas:
     "name"
     "mail"
     "message"
@@ -23,7 +23,7 @@
     border-radius: 30px;
     padding: @gross;
   }
-  
+
   p{
     margin: 0.5vw 0;
     padding: 0;
@@ -36,11 +36,11 @@
 
 .mail{
   grid-area: mail;
-  
+
   input:focus:valid{
     background: #c2d977;
   }
-  
+
   input:focus:invalid{
     background: #D7454A;
   }
@@ -48,10 +48,11 @@
 
 .message{
   grid-area: message;
-  
+
   textarea{
+    min-height: 150px;
     height: 150px;
-    resize: vertical; 
+    resize: vertical;
   }
 }
 
@@ -73,7 +74,7 @@
 @media @tablet{
   .form{
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "name mail"
       "message message"
       "button .";
