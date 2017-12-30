@@ -39,6 +39,7 @@ module.exports = {
         start_url: "/",
       }
     },
+    'gatsby-plugin-offline',
 
     {  // make sure to put last in the array
      resolve: `gatsby-plugin-netlify`,
