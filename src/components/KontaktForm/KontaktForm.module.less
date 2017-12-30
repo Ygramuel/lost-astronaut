@@ -3,7 +3,7 @@
 .form{
   width: 100%;
   max-width: @text-width;
-  margin: 0 auto @dynamisch auto;
+  margin: 0 auto 0 auto;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
@@ -36,6 +36,14 @@
 
 .mail{
   grid-area: mail;
+  
+  input:focus:valid{
+    background: #c2d977;
+  }
+  
+  input:focus:invalid{
+    background: #D7454A;
+  }
 }
 
 .message{
@@ -43,15 +51,16 @@
   
   textarea{
     height: 150px;
+    resize: vertical; 
   }
 }
 
 .button{
   grid-area: button;
-  width: 100%;
+  width: auto;
   border: none;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 20px;
   background: @primary;
   color: @bright;
   font-weight: 600;

@@ -6,7 +6,7 @@ import style from "./Button.module.less"
 export default ({ title, path }) => {
   return (
     <Link to={path}>
-      <button>{title}</button>
+      <button className={style.button}>{title}</button>
     </Link>
   );
 };

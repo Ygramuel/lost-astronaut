@@ -3,6 +3,8 @@ import Content, { HTMLContent } from '../../components/Content';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link'
 
+import style from "./index-page.module.less"
+
 import Feature from './Feature'
 import Zeile from './Zeile'
 import Button from '../../components/Button/Button'

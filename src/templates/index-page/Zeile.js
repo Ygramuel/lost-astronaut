@@ -1,8 +1,9 @@
 import React from 'react';
+import style from "./Zeile.module.less"
 
 export default ({ elements }) => {
 return (
-  <div>
+  <div className={style.zeile}>
     {elements.map((element) =>
       <div>{element}</div>
     )}
