@@ -31,7 +31,7 @@ module.exports = {
     },
 
     /// TODO add more options
-    {
+    /*{
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Lost Astronaut",
@@ -41,7 +41,7 @@ module.exports = {
         display: "minimal-ui",
       }
     },
-    'gatsby-plugin-offline',
+    'gatsby-plugin-offline', */
 
     {  // make sure to put last in the array
      resolve: `gatsby-plugin-netlify`,
