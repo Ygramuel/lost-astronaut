@@ -47,11 +47,13 @@ module.exports = {
      resolve: `gatsby-plugin-netlify`,
      options: {
         headers: {
+          // CSP rule for all "normal" Pages
         "/*": [
           "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
         ],
+          // The CSM is special, do not use CSP there
         "/admin/*": [
-          "Content-Security-Policy: default-src *"
+          "Content-Security-Policy: default-src * 'unsafe-inline'"
         ],
       },
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
