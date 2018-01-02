@@ -1,18 +1,16 @@
-import React from 'react';
-import PortBox from '../components/PortBox/PortBox';
-import Helmet from 'react-helmet';
+import React from 'react'
 
-export const PortfoliioPageTemplate = ({ title, bild, text, portfolios}) => {
+import PortBox from '../../components/PortBox/PortBox'
+import DefaultPage from '../../components/DefaultPage/DefaultPage'
+
+export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
   return (
     <div>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
-      <h1>{title}</h1>
+      <DefaultPage text={text} title={title} image={image} />
+
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}
                     path={work.frontmatter.path}
-                    text={work.frontmatter.description}
                     image={work.frontmatter.image}/>
         )}
     </div>
@@ -37,19 +35,15 @@ export default class PortfolioPage extends React.Component {
   }
 }
 
-export const portfolioQuery = graphql`
-  query PortfolioQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+export const portfolioPageQuery = graphql`
+  query PortfolioPageQuery {
+    allMarkdownRemark {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          id
           frontmatter {
+            templateKey
             title
             image
-            description
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
             path
           }
         }

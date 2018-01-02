@@ -3,10 +3,10 @@ import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import data from './data.json'
+
 export const PortfolioPostTemplate =
   ({ text, title, image, description, body, category, service }) => {
-    console.log('cat:')
-    console.log(category)
+
   return (
     <section>
       <DefaultPage image={image}/>
@@ -46,8 +46,8 @@ export default ({ data }) => {
   />;
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+export const portfolioQuery = graphql`
+  query portfolioPost($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
