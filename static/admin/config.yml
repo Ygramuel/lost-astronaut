@@ -16,10 +16,20 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-
+      - {label: "Beschreibung", name: "description", widget: "text"}
+      - {label: "Text", name: "body", widget: "markdown"}
+      - {label: "Bereich", name: bereich, widget: list, fields: [
+          {label: name, name: "name", widget: string}
+        ]}
+      - {label: "Service", name: service, widget: list, fields: [
+          {label: name, name: "name", widget: string}
+        ]}
+      - {label: "Icons", name: icons, widget: list, fields: [
+          {label: Icon, name: "icon", widget: image}
+        ]}
+      - {label: "Gallery", name: gallery, widget: list, fields: [
+          {label: Bild, name: "image", widget: image}
+        ]}
   - name: "pages"
     label: "Seiten"
     files:
