@@ -20,9 +20,6 @@ collections:
       - {label: "Titelbild", name: image, widget: image}
       - {label: "Beschreibung", name: "description", widget: "text"}
       - {label: "Text", name: "body", widget: "markdown"}
-      - {label: "Bereich", name: bereich, widget: list, fields: [
-          {label: name, name: "name", widget: string}
-        ]}
       - {label: "Service", name: service, widget: list, fields: [
           {label: name, name: "name", widget: string}
         ]}
