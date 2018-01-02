@@ -15,7 +15,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-post"}
       - {label: "Path", name: "path", widget: "string"}
+      - {label: "Kategorie", name: "category", widget: "select", options: ["web", "bild", "film"]}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Titelbild", name: image, widget: image}
       - {label: "Beschreibung", name: "description", widget: "text"}
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Bereich", name: bereich, widget: list, fields: [
