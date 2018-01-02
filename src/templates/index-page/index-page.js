@@ -67,7 +67,7 @@ export const IndexPageTemplate =
 
       {/* Kontakt */}
       <div className={style.kontakt}>
-        <img src={kontakt.image} />
+        <img className={style.kontaktimage} src={kontakt.image} />
         <div className={style.kontaktinhalt}>
           <h3>{kontakt.title}</h3>
           <p>{kontakt.text}</p>

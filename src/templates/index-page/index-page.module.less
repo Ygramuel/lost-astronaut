@@ -6,7 +6,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "titel"
     "titelbild"
     "slogan"
     "features"
@@ -21,8 +20,9 @@ img{
   max-width: 100%;
 }
 
+/**Titel**/
+
 .title{
-  grid-area: titel;
   display: none;
 }
 
@@ -34,11 +34,13 @@ img{
   padding: 0;
 }
 
+/**Slogan**/
+
 .slogan{
   grid-area: slogan;
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  min-height: 50vh;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -54,10 +56,15 @@ img{
   }
 }
 
+/**Features**/
+
 .features{
   grid-area: features;
   background: @light-gray;
+  padding: @dynamisch 0;
 }
+
+/**Mockup-Bild**/
 
 .mockup{
   grid-area: mockup;
@@ -65,6 +72,8 @@ img{
   height: 50vh;
   object-fit: cover;
 }
+
+/**Portfoliobereich**/
 
 .profil{
   grid-area: profil;
@@ -103,10 +112,13 @@ img{
   }
 }
 
+/**Kunden**/
+
 .kunden{
   grid-area: kunden;
   background: @secondary;
   padding: @dynamisch 0;
+  text-align: center;
   
   h5{
     color: @bright;
@@ -121,23 +133,31 @@ img{
   }
 }
 
+/**Kontakt**/
+
 .kontakt{
   grid-area: kontakt;
-  position: relative;
   height: 70vh;
-  
-  img{
-    height: 70vh;
-    width: auto;
-    object-fit: cover;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "kontaktimage kontaktimage"
+    "kontaktimage kontaktimage"
 }
 
+.kontaktimage{
+    grid-area: kontaktimage;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
 .kontaktinhalt{
-  position: absolute;
-  top: 0;
+  grid-column-start: kontaktimage-start;
+  grid-column-end: 3;
   padding: @dynamisch 20px;
-  
+
   h3{
     font-size: 2.333em;
     margin: 0 0 @gross 0;
@@ -149,6 +169,8 @@ img{
     color: @bright;
   }
 }
+
+/**Mobil**/
 
 @media @landscape{
   .index{ 
@@ -162,5 +184,16 @@ img{
       "profil portfolios"
       "kunden kunden"
       "kontakt kontakt";
+  }  
+  
+  .kontaktinhalt{
+    grid-column-end: 2;
+    padding: @dynamisch;
+  }
+}
+
+@media @desktop{
+  .profil{
+    padding: @dynamisch;
   }
 }
