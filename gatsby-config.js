@@ -37,6 +37,8 @@ module.exports = {
         name: "Lost Astronaut",
         short_name: "LA",
         start_url: "/",
+        background_color: "#434663",
+        theme_color: "#ff6666",
         lang: "de",
         display: "minimal-ui",
       }
