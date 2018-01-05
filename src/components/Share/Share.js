@@ -8,7 +8,9 @@ class Share extends React.Component {
       // By default don't display the share dialog
       // Only enable if "navigator.share" exists
       this.state = {
-        display: false,
+        display: true,
+        title: props.title ? props.title : "",
+        text: props.text ? props.text : ""
       }
     }
 
@@ -22,9 +24,9 @@ class Share extends React.Component {
       function sharePage(){
         if (navigator.share) {
           navigator.share({
-              title: 'Lost Astronaut',
-              text: 'ein Beispiel beschreibungs text',
-              url: 'https://lost-astronaut.netlify.com',
+              title: this.state.title,
+              text: this.state.text,
+              url: window.location.href ,
           })
             .then(() => console.log('Successful share'))
             .catch((error) => console.log('Error sharing', error));
@@ -35,7 +37,7 @@ class Share extends React.Component {
 
       if (display) {
         return (
-          <button onClick={sharePage}>
+          <button onClick={sharePage.bind(this)}>
             Share This Page
           </button>
         )

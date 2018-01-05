@@ -3,8 +3,6 @@ import Link from "gatsby-link"
 
 import Menu from "../components/Menu/Menu"
 import Offline from "../components/Offline/Offline.js"
-import Share from "../components/Share/Share.js"
-
 
 import style from "./Header.module.less"
 
@@ -21,7 +19,6 @@ export const Header = ({  }) => {
         <Menu elements={data.menu}/>
       </div>
       <Offline />
-      <Share />
     </header>
   );
 };
