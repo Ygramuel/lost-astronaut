@@ -3,32 +3,35 @@ import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import data from './data.json'
+import style from "./portfolio-post.module.less";
 
 export const PortfolioPostTemplate =
   ({ text, title, image, description, body, category, service }) => {
 
   return (
-    <section>
+    <section className={style.post}>
       <DefaultPage image={image}/>
-      <div>
-        <h1>{title}</h1>
-        <div>{description}</div>
-        <div>{body}</div>
+      <div className={style.textbox}>
+        <h1 className={style.title}>{title}</h1>
+        <div className={style.subtitle}>{description}</div>
+        <div className={style.text}>{body}</div>
       </div>
 
-      <div>
-        <h4>{data.bereich}</h4>
-        <div>{data.bereiche[category]}</div>
+      <div className={style.infobox}>
+        <h4 className={style.subtitle}>{data.bereich}</h4>
+        <div className={style.text}>{data.bereiche[category]}</div>
 
-        <h4>{data.section}</h4>
-        <ul>
+        <h4 className={style.subtitle}>{data.section}</h4>
+        <ul className={style.icons}>
           {service.map((element) =>
             <li>{element.name}</li>
           )}
         </ul>
       </div>
-      <h3>Gallerie:</h3>
-      <p>TODO</p>
+      <div className={style.gallery}>
+        <h3>Gallerie:</h3>
+        <p>TODO</p>
+      </div>
     </section>
   );
 }
