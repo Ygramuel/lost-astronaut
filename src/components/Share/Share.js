@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./Share.module.less";
 
 
 class Share extends React.Component {
@@ -37,8 +38,8 @@ class Share extends React.Component {
 
       if (display) {
         return (
-          <button onClick={sharePage.bind(this)}>
-            Share This Page
+          <button className={style.share} onClick={sharePage.bind(this)}>
+            S
           </button>
         )
       }else{
