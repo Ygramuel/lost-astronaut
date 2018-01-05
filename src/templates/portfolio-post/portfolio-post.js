@@ -9,9 +9,10 @@ export const PortfolioPostTemplate =
   ({ text, title, image, description, body, category, service }) => {
 
   return (
-    <section className={style.post}>
+    <section>
       <DefaultPage image={image}/>
-      <div className={style.textbox}>
+      <div className={style.post}>
+        <div className={style.textbox}>
         <h1 className={style.title}>{title}</h1>
         <div className={style.subtitle}>{description}</div>
         <div className={style.text}>{body}</div>
@@ -32,6 +33,7 @@ export const PortfolioPostTemplate =
         <h3>Gallerie:</h3>
         <p>TODO</p>
       </div>
+    </div>
     </section>
   );
 }

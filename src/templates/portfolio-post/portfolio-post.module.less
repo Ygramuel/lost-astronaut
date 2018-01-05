@@ -11,28 +11,62 @@
     "gallery"
 }
 
-.textbox{
-  grid-area: textbox;
+.textbox>*,
+.infobox>*{
   padding: @gross;
+}
+
+.textbox,
+.infobox{
+  padding-bottom: @dynamisch;
+  padding-top: @dynamisch;
+}
+
+.textbox{
+  width: 100%;
+  grid-area: textbox;
   
   .title{
     grid-area: title;
     max-width: @text-width;
-    margin: 0 auto;
+    margin: 0 auto @gross auto;
     font-size: 2.3em;
     color: @primary;
     display: block;
   }
-  
-  .subtitle{
-    
-  }
+}
+
+.subtitle{
+  font-size: 1em;
+  color: @dark-gray;
+  font-weight: 600;
+  margin-bottom: @gross;
+  padding-bottom: 0;
 }
 
 .infobox{
   grid-area: infobox;
+  width: 100%;
+  background: @light-gray;
+
+  .icons{
+    padding: 0 @gross @gross @gross;
+    list-style: none;
+  }
 }
 
 .gallery{
-  grid-area: infobox;
+  grid-area: gallery;
+  width: 100%;
+  height: auto;
+}
+
+@media @landscape{
+  .post{
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "titelbild titelbild"
+    "textbox infobox"
+    "gallery gallery"
+}
 }
