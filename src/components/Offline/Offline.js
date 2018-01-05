@@ -20,6 +20,8 @@ class Offline extends React.Component {
       function updateOnlineStatus(event) {
         that.setState({ online: navigator.onLine })
       }
+      
+      that.setState({ online: navigator.onLine })
 
       window.addEventListener('online',  updateOnlineStatus);
       window.addEventListener('offline', updateOnlineStatus);
