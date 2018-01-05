@@ -9,7 +9,7 @@ export const DefaultPage = ({ title, image, text }) => {
   image = encodeURI(image);
   return (
     <div className={style.wrapper}>
-      <Share title={title} text="TODO hier ein guten text finden"/>
+      <Share title={title}/>
 
       { title &&
         <div>
