@@ -47,7 +47,7 @@ class Share extends React.Component {
       if (display) {
         return (
           <img className={style.share} onClick={sharePage.bind(this)}
-              src={icon} alt="Teilen" width="55" height="55"/>
+              src={icon} alt="Teilen" width="45" height="45"/>
         )
       }else{
         return null
