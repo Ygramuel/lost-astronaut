@@ -7,7 +7,7 @@ import style from "./portfolio-page.module.less"
 export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
   return (
     <div>
-      <DefaultPage text={text} title={title} image={image} />
+      <DefaultPage title={title} />
         <div className={style.gallery}>
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}
