@@ -8,12 +8,14 @@ class Share extends React.Component {
   constructor(props) {
       super(props);
 
-      // By default don't display the share dialog
-      // Only enable if "navigator.share" exists
       this.state = {
+
+            // By default don't display the share dialog
+            // Only enable if "navigator.share" exists
         display: true,
-        title: props.title ? props.title : "",
-        text: props.text ? props.text : ""
+
+        title: props.title , //? props.title : "",
+        text: props.text, // ? props.text : ""
       }
     }
 
@@ -26,9 +28,10 @@ class Share extends React.Component {
     render() {
       function sharePage(){
         if (navigator.share) {
+          const docTitle = document.title;
           navigator.share({
-              title: this.state.title,
-              text: this.state.text,
+              title: this.state.title ? this.state.title : docTitle,
+              text: this.state.text ? this.state.text : docTitle,
               url: window.location.href ,
           })
             .then(() => console.log('Successful share'))
