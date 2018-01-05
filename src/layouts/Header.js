@@ -18,7 +18,9 @@ export const Header = ({  }) => {
         </Link>
         <Menu elements={data.menu}/>
       </div>
-      <Offline onlineMessage="Ich bin online" offlineMessage="Offline :/"/>
+      <Offline>
+        <p>Hallo Welt, ich bin off</p>
+      </Offline>
     </header>
   );
 };

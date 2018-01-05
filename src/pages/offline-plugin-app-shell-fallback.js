@@ -4,6 +4,8 @@ import Offline from "../components/Offline/Offline.js"
 
 export default ({  }) => {
   return (
-      <Offline onlineMessage="Seite wird geladen" offlineMessage="Du bist offline, Seite kann nicht geladen werden"/>
+      <Offline>
+        <p>Du bist offline, Seite kann nicht geladen werden</p>
+      </Offline>
   );
 };

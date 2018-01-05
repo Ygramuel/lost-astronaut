@@ -7,38 +7,31 @@ class Offline extends React.Component {
       super(props)
 
       this.state = {
-        online: true,   // I guess in the beginning we are online ...
-        onlineMessage: this.props.onlineMessage,
-        offlineMessage: this.props.offlineMessage,
+        online: true   // I guess in the beginning we are online ...
       }
     }
 
     componentDidMount() {
-      // TODO is there a better way?
-      // e.g. "bind()" ??
-      var that = this
+
       // Update state if we go online or offline
       function updateOnlineStatus(event) {
-        that.setState({ online: navigator.onLine })
+        this.setState({ online: navigator.onLine })
       }
 
       that.setState({ online: navigator.onLine })
 
-      window.addEventListener('online',  updateOnlineStatus);
-      window.addEventListener('offline', updateOnlineStatus);
+      window.addEventListener('online',  updateOnlineStatus.bind(this));
+      window.addEventListener('offline', updateOnlineStatus.bind(this));
     }
 
-    render() {
-      const { online, onlineMessage, offlineMessage } = this.state
+    render(  ) {
+      const { online } = this.state
 
-      if(online && onlineMessage){
-        return <p>{onlineMessage}</p>
-      }else if(!online && offlineMessage){
-        return <p>{offlineMessage}</p>
-      }else{
+      if(!online){
+        return this.props.children
+      }else
         return null
       }
-    }
 }
 
 export default Offline;
