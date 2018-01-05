@@ -12,7 +12,7 @@ class Share extends React.Component {
 
             // By default don't display the share dialog
             // Only enable if "navigator.share" exists
-        display: true,
+        display: false,
 
         title: props.title , //? props.title : "",
         text: props.text, // ? props.text : ""
@@ -38,7 +38,7 @@ class Share extends React.Component {
             .catch((error) => console.log('Error sharing', error));
         }else{
           // This should never run
-          alert("Bitte Benutze Chrome")
+          alert("Bitte Benutze Chrome ")
         }
       }
 
@@ -47,7 +47,7 @@ class Share extends React.Component {
       if (display) {
         return (
           <img className={style.share} onClick={sharePage.bind(this)}
-              src={icon} alt="Teilen" width="50" height="50"/>
+              src={icon} alt="Teilen" width="55" height="55"/>
         )
       }else{
         return null
