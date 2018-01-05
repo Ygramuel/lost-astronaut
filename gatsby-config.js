@@ -40,7 +40,7 @@ module.exports = {
         background_color: "#434663",
         theme_color: "#ff6666",
         lang: "de",
-        display: "minimal-ui",
+        display: "standalone",
       }
     },
     'gatsby-plugin-offline',
