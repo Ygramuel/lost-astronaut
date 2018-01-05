@@ -1,4 +1,6 @@
 import React from "react";
+
+import icon from './share.svg'
 import style from "./Share.module.less";
 
 
@@ -31,6 +33,9 @@ class Share extends React.Component {
           })
             .then(() => console.log('Successful share'))
             .catch((error) => console.log('Error sharing', error));
+        }else{
+          // This should never run
+          alert("Bitte Benutze Chrome")
         }
       }
 
@@ -38,9 +43,8 @@ class Share extends React.Component {
 
       if (display) {
         return (
-          <button className={style.share} onClick={sharePage.bind(this)}>
-            S
-          </button>
+          <img className={style.share} onClick={sharePage.bind(this)}
+              src={icon} alt="Teilen" width="50" height="50"/>
         )
       }else{
         return null
