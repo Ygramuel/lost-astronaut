@@ -1,7 +1,28 @@
-.name {
-  background-color: green;
+@import "../theme/theme.less";
+
+.box>*{
+  padding: 0 @gross;
 }
 
-.title{
-  background-color: blue;
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: @gross 0;
+  }
+  
+  .title{
+    margin: 0;
+    color: @dark-gray;
+    font-size: 1em;
+  }
 }

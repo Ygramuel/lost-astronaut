@@ -21,11 +21,11 @@ export const PortfolioPostTemplate =
           <div className={style.text}>{data.bereiche[category]}</div>
 
           <h4 className={style.subtitle}>{data.section}</h4>
-          <ul className={style.icons}>
+          <p><ul className={style.icons}>
             {service.map((element) =>
               <li>{element.name}</li>
             )}
-          </ul>
+          </ul></p>
         </div>
         <div className={style.gallery}>
           <h3>Gallerie:</h3>

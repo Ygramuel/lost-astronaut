@@ -1,5 +1,5 @@
 import React from "react";
-
+import style from "./Offline.module.less"
 
 // Displays a warning if the device is offline
 class Offline extends React.Component {
