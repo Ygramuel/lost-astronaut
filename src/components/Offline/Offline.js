@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// Displays a warning if the device is offline
 class Offline extends React.Component {
   constructor() {
       super()

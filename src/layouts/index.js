@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 import Header from "./Header.js"
 import Footer from "./Footer.js"
-import Offline from "./Offline.js"
 
 import style from "./index.module.less"
 import './reset.less';
@@ -19,7 +18,6 @@ const TemplateWrapper = ({ children }) => (
       <html lang="de" />
     </Helmet>
     <Header />
-    <Offline />
     <div className={style.content}>{children()}</div>
     <Footer />
   </div>
