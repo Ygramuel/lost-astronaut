@@ -14,7 +14,7 @@ class Share extends React.Component {
 
   componentDidMount() {
     if (navigator.share) {
-      that.setState({ display: true })
+      this.setState({ display: true })
     }
   }
 
