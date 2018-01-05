@@ -4,8 +4,19 @@ import React from "react";
 class Share extends React.Component {
   constructor(props) {
       super(props);
+
+      // By default don't display the share dialog
+      // Only enable if "navigator.share" exists
+      this.state = {
+        display: false,
+      }
     }
 
+  componentDidMount() {
+    if (navigator.share) {
+      that.setState({ display: true })
+    }
+  }
 
     render() {
       function sharePage(){
@@ -20,11 +31,18 @@ class Share extends React.Component {
         }
       }
 
-      return (
-        <button onClick={sharePage}>
-          Share This Page
-        </button>
-      )
+      const { display } = this.state
+
+      if (display) {
+        return (
+          <button onClick={sharePage}>
+            Share This Page
+          </button>
+        )
+      }else{
+        return null
+      }
+
     }
 }
 
