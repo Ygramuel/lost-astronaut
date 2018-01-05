@@ -11,47 +11,32 @@
     "gallery"
 }
 
-.textbox>*,
 .infobox>*{
-  padding: @gross;
-}
-
-.textbox,
-.infobox{
-  padding-bottom: @dynamisch;
-  padding-top: @dynamisch;
-}
-
-.textbox{
   width: 100%;
-  grid-area: textbox;
-  
-  .title{
-    grid-area: title;
-    max-width: @text-width;
-    margin: 0 auto @gross auto;
-    font-size: 2.3em;
-    color: @primary;
-    display: block;
-  }
-}
-
-.subtitle{
-  font-size: 1em;
-  color: @dark-gray;
-  font-weight: 600;
-  margin-bottom: @gross;
-  padding-bottom: 0;
+  margin: 0 auto;
 }
 
 .infobox{
   grid-area: infobox;
-  width: 100%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: @light-gray;
+  width: 100%;
+  padding: @gross;
 
   .icons{
-    padding: 0 @gross @gross @gross;
+    padding: 0;
     list-style: none;
+  }
+  
+  .subtitle{
+    font-size: 1em;
+    color: @dark-gray;
+    font-weight: 600;
+    margin-bottom: @gross;
+    padding-bottom: 0;
   }
 }
 
@@ -68,5 +53,9 @@
     "titelbild titelbild"
     "textbox infobox"
     "gallery gallery"
-}
+  }
+  
+  .infobox{
+    padding: @dynamisch;
+  }
 }

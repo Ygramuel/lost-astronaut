@@ -1,0 +1,23 @@
+@import "../../components/theme/theme.less";
+
+.gallery{
+  width: 100%;
+  max-width: @wrapper;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5vw;
+  margin: 0 auto @dynamisch auto;
+}
+
+/*Media-Queries*/
+
+@media @tablet{
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery>*:first-child{
+    grid-area: 1 / span 2;
+  }
+}

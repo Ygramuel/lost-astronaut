@@ -4,7 +4,7 @@ import style from "./TextBox.module.less"
 
 export default ({ title, subtitle, text }) => {
 return (
-  <div>
+  <div className={style.textbox}>
     { title &&
       <h4 className={style.title}>{title}</h4>
     }

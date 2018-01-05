@@ -1,5 +1,5 @@
 import React from "react";
-
+import style from "./Offline.module.less"
 
 // Displays a warning if the device is offline
 class Offline extends React.Component {
@@ -32,9 +32,9 @@ class Offline extends React.Component {
       const { online, onlineMessage, offlineMessage } = this.state
 
       if(online && onlineMessage){
-        return <p>{onlineMessage}</p>
+        return <p className={style.offline}>{onlineMessage}</p>
       }else if(!online && offlineMessage){
-        return <p>{offlineMessage}</p>
+        return <p className={style.offline}>{offlineMessage}</p>
       }else{
         return null
       }
