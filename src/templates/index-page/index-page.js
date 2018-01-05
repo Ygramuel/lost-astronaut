@@ -8,6 +8,7 @@ import style from "./index-page.module.less"
 import Feature from './Feature'
 import Zeile from './Zeile'
 import Button from '../../components/Button/Button'
+import TextBox from '../../components/TextBox/TextBox'
 
 export const IndexPageTemplate =
   ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt, portfolios}) => {
@@ -38,10 +39,7 @@ export const IndexPageTemplate =
       <img className={style.mockup} src={mockupImage}/>
 
       {/* Profil */}
-      <div className={style.profil}>
-        <h5>{box.title}</h5>
-        <p>{box.text}</p>
-      </div>
+      <TextBox title={box.title} text={box.text} />
 
       {/* Alle Portfolio Elemente */}
       <div className={style.portfolios}>
