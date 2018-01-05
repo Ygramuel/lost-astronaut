@@ -5,11 +5,28 @@ import style from "./Menu.module.less"
 class Menu extends React.Component {
   render() {
     return (
-      <ul className={style.menu}>
-        {this.props.elements.map(elem =>
-          <li className={style.item}><Link to={elem.path}>{elem.title}</Link></li>
-        )}
-      </ul>
+      <div>
+        <label>
+          <input type="checkbox" />
+            {/* This is the Burger-menu
+                With some CSS magic */}
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+          </label>
+
+          <ul className={style.menu}>
+            {this.props.elements.map(elem =>
+              <li className={style.item} key={elem.path}>
+                <Link to={elem.path}>
+                  {elem.title}
+                </Link>
+              </li>
+            )}
+          </ul>
+      </div>
     );
   }
 }
