@@ -11,11 +11,11 @@ import './reset.less';
 import './font.less';
 
 
-
+// TODO remove hardcoded "Lost Astronaut"
 const TemplateWrapper = ({ children }) => (
   <div className={style.wrapper}>
     <Helmet
-    //  titleTemplate="%s | MyAwesomeWebsite.com"
+      titleTemplate="%s | Lost Astronaut"
     >
       <html lang="de" />
     </Helmet>
