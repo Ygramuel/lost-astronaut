@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div className={style.content}>{children()}</div>
 
-    <Share title="Lost AStronaut"/>
+    <Share title="Lost Astronaut"/>
 
     <Footer />
   </div>

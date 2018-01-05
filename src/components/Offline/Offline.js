@@ -3,12 +3,13 @@ import React from "react";
 
 // Displays a warning if the device is offline
 class Offline extends React.Component {
-  constructor() {
-      super()
+  constructor(props) {
+      super(props)
 
-      // I guess in the beginning we are online ...
       this.state = {
-        online: true,
+        online: true,   // I guess in the beginning we are online ...
+        onlineMessage: this.props.onlineMessage,
+        offlineMessage: this.props.offlineMessage,
       }
     }
 
@@ -20,7 +21,7 @@ class Offline extends React.Component {
       function updateOnlineStatus(event) {
         that.setState({ online: navigator.onLine })
       }
-      
+
       that.setState({ online: navigator.onLine })
 
       window.addEventListener('online',  updateOnlineStatus);
@@ -28,13 +29,15 @@ class Offline extends React.Component {
     }
 
     render() {
-      const { online } = this.state
+      const { online, onlineMessage, offlineMessage } = this.state
 
-      return (
-        <div>
-          {online ? <h1>ONLINE</h1> :<h1>OFFLINE</h1>}
-        </div>
-      )
+      if(online && onlineMessage){
+        return <p>{onlineMessage}</p>
+      }else if(!online && offlineMessage){
+        return <p>{offlineMessage}</p>
+      }else{
+        return null
+      }
     }
 }
 
