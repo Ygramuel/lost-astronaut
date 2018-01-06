@@ -13,6 +13,9 @@ export const PortfolioPostTemplate =
   return (
     <section>
       <DefaultPage image={image}/>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className={style.post}>
         <TextBox title={title} subtitle={description} text={body} />
 
