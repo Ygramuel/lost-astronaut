@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
