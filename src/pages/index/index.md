@@ -10,16 +10,16 @@ slogan:
   title: You are Unique
 features:
   - title: Beratung & Konzeption
-    image: /img/meeting-space.png
+    image: /img/beratung.svg
     text: Wir lassen uns etwas einfallen. Definitiv.
   - title: Grafik & Design
-    image: /img/coffee.png
+    image: /img/grafik.svg
     text: Bunte Bilder können wir. Genau unser Ding.
   - title: Online Marketing
-    image: /img/meeting-space.png
+    image: /img/marketing.svg
     text: Auch mit dem Neuland kennen wir uns aus.
   - title: Photographie & Film
-    image: /img/tutorials.png
+    image: /img/foto.svg
     text: Bewegte Bilder die bewegen. Yeah.
 mockupimage: /img/products-grid1.jpg
 box:
@@ -40,10 +40,10 @@ portfolios:
     url: /making-sense
 kunden:
   kunde:
-    - image: /img/meeting-space.png
+    - image: /img/google-logo-gray.png
       name: Kunde1
       url: 'https://google.com'
-    - image: /img/coffee.png
+    - image: /img/google-logo-gray.png
       name: Kunde2
       url: 'https://google.com'
   title: Unsere Kunden
