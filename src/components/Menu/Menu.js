@@ -8,7 +8,7 @@ class Menu extends React.Component {
     return (
       <div>
         <input type="checkbox" id="mobile-menue" className={style.menu_check} />
-      	<label htmlFor="mobile-menue" className={style.menu_label}>
+      	<label htmlFor="mobile-menue" className={style.burger}>
           {/* Inline SVG is required in order to be animated with CSS */}
           <svg viewBox="0 0 800 600">
               <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
