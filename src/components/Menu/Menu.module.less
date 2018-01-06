@@ -42,8 +42,17 @@
 .burger{
   display: block;
 }
+
+.menu_check{
+  display: none;
+}
   
-.menu_check:checked ~ label ~ *{
+.menu_check ~ label ~ .menu{
+  max-height:0;
+  transition: max-height 0.5s ease;
+}
+
+.menu_check:checked ~ label ~ .menu{
   max-height:1000px;
 }
 
@@ -60,37 +69,36 @@
   path {
     fill: none;
     transition: 
-    stroke-dashoffset 0.5s ease,
-    stroke-dasharray 0.5s ease;
+      stroke-dashoffset 0.5s ease,
+      stroke-dasharray 0.5s ease;
     stroke-width: 40px;
     stroke: #fff;
     stroke-dashoffset: 0px;
     stroke-linecap: round;
   }
   
-  path#top,
-  path#bottom {
+  path:nth-child(1),
+  path:nth-child(3) {
     stroke-dasharray: 240px 950px;
   }
   
-  path#middle {
+  path:nth-child(2) {
     stroke-dasharray: 240px 300px;
   }
 }
 
-.menu_check:checked ~ label{
-  path#top,
-  path#bottom {
+.menu_check:checked ~ .burger{
+  path:nth-child(1),
+  path:nth-child(3){
     stroke-dashoffset: -650px;
   }
   
-  path#middle {
+  path:nth-child(2) {
     stroke-dashoffset: 280px;
   }
 }
 
 @media @landscape{
-  .menu_check,
   .burger{
     display: none;
   }
