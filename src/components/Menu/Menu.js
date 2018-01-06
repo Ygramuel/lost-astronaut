@@ -6,8 +6,8 @@ class Menu extends React.Component {
   render() {
     return (
       <div>
-        <label>
-          <input type="checkbox" />
+        <label className={style.menu_label}>
+          <input className={style.menu_check} type="checkbox" />
             {/* This is the Burger-menu
                 With some CSS magic */}
               <div>

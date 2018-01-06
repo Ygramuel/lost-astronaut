@@ -1,5 +1,9 @@
 @import "../theme/theme.less";
 
+/*--------------------------------------------------------------
+# Menü
+--------------------------------------------------------------*/
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -27,5 +31,67 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1.5em;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Mobile Menü-Animation
+--------------------------------------------------------------*/
+  
+.menu_label{
+  display: block;
+}
+  
+.menu_check:checked ~ label ~ *{
+  max-height:1000px;
+}
+
+.menu_label{
+  height: 60px;
+  width: 60px;
+  
+  svg {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  path {
+    fill: none;
+    transition: 
+    stroke-dashoffset 0.5s ease,
+    stroke-dasharray 0.5s ease;
+    stroke-width: 40px;
+    stroke: #fff;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+  }
+  
+  path#top,
+  path#bottom {
+    stroke-dasharray: 240px 950px;
+  }
+  
+  path#middle {
+    stroke-dasharray: 240px 300px;
+  }
+}
+
+.menu_check:checked ~ label{
+  path#top,
+  path#bottom {
+    stroke-dashoffset: -650px;
+  }
+  
+  path#middle {
+    stroke-dashoffset: 280px;
+  }
+}
+
+@media @landscape{
+  .menu_check,
+  .menu_label{
+    display: none;
   }
 }
