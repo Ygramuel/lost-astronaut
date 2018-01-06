@@ -12,7 +12,7 @@ return (
       <h6 className={style.subtitle}>{subtitle}</h6>
     }
     { text &&
-      <p className={style.text}>{text}</p>
+      <div className={style.text}>{text}</div>
     }
   </div>
 ); }

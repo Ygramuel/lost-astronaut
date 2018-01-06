@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import TextBox from '../../components/TextBox/TextBox'
+import SimpleSlider from '../../components/SimpleSlider/SimpleSlider'
 
 import data from './data.json'
 import style from "./portfolio-post.module.less";
@@ -25,15 +26,19 @@ export const PortfolioPostTemplate =
           <div className={style.text}>{data.bereiche[category]}</div>
 
           <h4 className={style.subtitle}>{data.section}</h4>
-          <p><ul className={style.icons}>
+          <ul className={style.icons}>
             {service.map((element) =>
               <li>{element.name}</li>
             )}
-          </ul></p>
+          </ul>
         </div>
         <div className={style.gallery}>
           <h3>Gallerie:</h3>
-          <p>TODO</p>
+          <SimpleSlider>
+            <img src={image} />
+            <img src={image} />
+            <img src={image} />
+          </SimpleSlider>
         </div>
       </div>
     </section>

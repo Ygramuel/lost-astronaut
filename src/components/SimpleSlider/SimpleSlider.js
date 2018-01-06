@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import Slider from 'react-slick'
 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+
+import style from "./Slider.module.less"
 
 class SimpleSlider extends React.Component {
   render() {
@@ -18,15 +20,10 @@ class SimpleSlider extends React.Component {
     };
     return (
       <Slider {...settings}>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
+        {this.props.children}
       </Slider>
     );
   }
 }
 
-export default SimpleSlider
+export default SimpleSlider;
