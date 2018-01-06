@@ -40,10 +40,10 @@ portfolios:
     url: /making-sense
 kunden:
   kunde:
-    - image: /img/meeting-space.png
+    - image: /img/google-logo-gray.png
       name: Kunde1
       url: 'https://google.com'
-    - image: /img/coffee.png
+    - image: /img/google-logo-gray.png
       name: Kunde2
       url: 'https://google.com'
   title: Unsere Kunden
