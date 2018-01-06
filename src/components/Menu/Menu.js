@@ -3,7 +3,7 @@ import Link from "gatsby-link"
 
 import style from "./Menu.module.less"
 
-import burgerSVG from './burger.svg'
+import menuSVG from './menu.svg'
 
 class Menu extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Menu extends React.Component {
       <div>
         <input type="checkbox" name="mobile-menue" className={style.menu_check} />
       	<label htmlFor="mobile-menue" className={style.menu_label}>
-      	   <img src={burgerSVG} alt="Menu" />
+      	   <img src={menuSVG} alt="Menu" />
         </label>
 
           <ul className={style.menu}>
