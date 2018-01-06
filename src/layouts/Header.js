@@ -14,7 +14,7 @@ export const Header = ({  }) => {
     <header className={style.header}>
       <div className={style.wrapper}>
         <Link to='/'>
-          <img src={logo} className={style.logo} alt='Home'/>
+          <img src={logo} className={style.logo} alt='Home' width='148' height='80'/>
         </Link>
         <Menu elements={data.menu}/>
       </div>
