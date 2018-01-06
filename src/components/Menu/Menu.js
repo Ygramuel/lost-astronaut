@@ -4,10 +4,34 @@ import Link from "gatsby-link"
 import style from "./Menu.module.less"
 
 class Menu extends React.Component {
+  constructor() {
+      super()
+
+      this.state = {
+        display: false   // Don't show menu by default
+      }
+    }
+
+/* This Menu works without JS!!!
+  I am still using a shitload og JS (and especially the state.display)
+  Because the menu should auto-close if a link in there is clicked
+*/
   render() {
+    // Call this if the checkbox was changed
+    function toggleMenu(event){
+      this.setState({ display: !this.state.display })
+    }
+    toggleMenu = toggleMenu.bind(this)
+
+    // Call after a link has been clicked
+    function hideMenu(elem){
+      this.setState({ display: false })
+    }
+    hideMenu = hideMenu.bind(this)
+
     return (
       <div>
-        <input type="checkbox" id="mobile-menue" className={style.menu_check} />
+        <input type="checkbox" id="mobile-menue" className={style.menu_check} checked={this.state.display} onChange={toggleMenu}/>
       	<label htmlFor="mobile-menue" className={style.burger}>
           {/* Inline SVG is required in order to be animated with CSS */}
           <svg viewBox="0 0 800 600" width="60" height="60">
@@ -20,7 +44,7 @@ class Menu extends React.Component {
           <ul className={style.menu}>
             {this.props.elements.map(elem =>
               <li className={style.item} key={elem.path}>
-                <Link to={elem.path}>
+                <Link to={elem.path} onClick={hideMenu}>
                   {elem.title}
                 </Link>
               </li>
