@@ -10,7 +10,7 @@ class Menu extends React.Component {
     return (
       <div>
         <input type="checkbox" name="mobile-menue" className={style.menu_check} />
-      	<label for="mobile-menue" className={style.menu_label}>
+      	<label htmlFor="mobile-menue" className={style.menu_label}>
       	   <img src={burgerSVG} alt="Menu" />
         </label>
 
