@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`
+    title: `Lost Astronaut`,
+    siteUrl: `https://lost-astronaut.netlify.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,6 +28,33 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: []
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage (
+            filter: {
+              path: {
+                regex: "/^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback)).*$/"
+              }
+            }
+          ){
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`
       }
     },
 
