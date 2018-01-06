@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import style from './DefaultPage.module.less'
 
 export const DefaultPage = ({ title, image, text }) => {
-  image = encodeURI(image);
   return (
     <div className={style.wrapper}>
 
@@ -17,7 +16,7 @@ export const DefaultPage = ({ title, image, text }) => {
         </div>
       }
       { image &&
-        <img src={image} className={style.image} alt="" />
+        <img src={encodeURI(image)} className={style.image} alt="" />
       }
       { text &&
         <div className={style.text}>{text}</div>
