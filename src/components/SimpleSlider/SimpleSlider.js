@@ -19,7 +19,7 @@ class SimpleSlider extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <Slider {...settings}>
+      <Slider className={style.slider} {...settings}>
         {this.props.children}
       </Slider>
     );

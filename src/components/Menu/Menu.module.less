@@ -4,10 +4,16 @@
 # Menü
 --------------------------------------------------------------*/
 
+.menubox{
+  background: @primary;
+}
+
 .menu{
   display: flex;
   flex-direction: column;
-  padding: 0 0 1.5em @gross;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
 .item{
@@ -26,6 +32,10 @@
 }
 
 @media @landscape{
+  .menubox{
+    background: none;
+  }
+  
   .menu{
     flex-direction: row;
     justify-content: flex-end;

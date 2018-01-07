@@ -75,20 +75,24 @@ img{
 
 /**Portfoliobereich**/
 
-.portfolios>*{
-  margin: @gross;
-}
-
 .portfolios{
   grid-area: portfolios;
   background: @light-gray;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: @gross;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: @dynamisch;
+  
+  h3{
+    margin: 0;
+    color: #444;
+    font-size: 1em;
+    padding-bottom: calc(@gross + @gross);
+  }
   
   img{
     margin: 0;
+    padding-bottom: @klein;
   }
 }
 
@@ -110,6 +114,11 @@ img{
   
   .zeile{
     padding: 0;
+  }
+  
+  .kunde{
+    max-width: 250px;
+    height: auto;
   }
 }
 

@@ -30,7 +30,7 @@ class Menu extends React.Component {
     hideMenu = hideMenu.bind(this)
 
     return (
-      <div>
+      <div className={style.menubox}>
         <input type="checkbox" id="mobile-menue" className={style.menu_check} checked={this.state.display} onChange={toggleMenu}/>
       	<label htmlFor="mobile-menue" className={style.burger}>
           {/* Inline SVG is required in order to be animated with CSS */}

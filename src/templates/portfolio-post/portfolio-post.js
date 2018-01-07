@@ -33,7 +33,6 @@ export const PortfolioPostTemplate =
           </ul>
         </div>
         <div className={style.gallery}>
-          <h3>Gallerie:</h3>
           <SimpleSlider>
             <img src={image} />
             <img src={image} />

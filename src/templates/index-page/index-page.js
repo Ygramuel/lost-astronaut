@@ -45,8 +45,8 @@ export const IndexPageTemplate =
       <div className={style.portfolios}>
         {portfolios.map((portfolio) =>
           <Link to={portfolio.url}>
-            <h1>{portfolio.title}</h1>
             <img src={portfolio.image} />
+            <h3>{portfolio.title}</h3>
           </Link>
 
       )}
@@ -57,7 +57,7 @@ export const IndexPageTemplate =
         <h5>{kundenTitle}</h5>
         <Zeile elements={kunden.map((kunde) =>
           <a href={kunde.url}>
-            <img src={kunde.image}/>
+            <img className={style.kunde} src={kunde.image}/>
             {/*<p>{kunde.name}</p>*/}
           </a>
         )} />
