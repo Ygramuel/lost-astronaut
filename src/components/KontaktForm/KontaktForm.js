@@ -10,7 +10,7 @@ import style from "./KontaktForm.module.less"
 // discard the submission
 
 export default () =>
-    <form className={style.form} name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
+    <form className={style.form} name="contact" data-netlify="true" data-netlify-honeypot="bot-honey-hell">
         <label htmlFor="bot-honey-hell" style={{display: "none"}} >
           <p>Don’t fill this out:</p>
           <input type="text" name="bot-honey-hell" />
