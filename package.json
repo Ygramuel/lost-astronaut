@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "Lost Astronaut",
+  "description": "Lost Astronaut site",
   "version": "1.0.0",
-  "author": "Austin Green",
+  "author": "Sebastian Stuber",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
@@ -25,7 +25,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "npm run build:cms && npm run build:site",
