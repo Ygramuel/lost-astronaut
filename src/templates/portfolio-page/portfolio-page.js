@@ -12,7 +12,8 @@ export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}
                     path={work.frontmatter.path}
-                    image={work.frontmatter.image}/>
+                    image={work.frontmatter.image}
+                    icon={work.frontmatter.icons[0].icon}/>
         )}
       </div>
     </div>
@@ -22,11 +23,7 @@ export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
 export default class PortfolioPage extends React.Component {
   render() {
     const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-
-    // ToDo: make this in graphQL
-    // And set limit
-    const portfolios = posts.filter(post => post.node.frontmatter.templateKey === 'portfolio-post');
+    const { edges: portfolios } = data.allMarkdownRemark;
 
     return (
       <PortfoliioPageTemplate
@@ -39,14 +36,19 @@ export default class PortfolioPage extends React.Component {
 
 export const portfolioPageQuery = graphql`
   query PortfolioPageQuery {
-    allMarkdownRemark {
+    allMarkdownRemark (
+      limit: 5
+      filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
+    ){
       edges {
         node {
           frontmatter {
-            templateKey
             title
             image
             path
+            icons{
+              icon
+            }
           }
         }
       }
