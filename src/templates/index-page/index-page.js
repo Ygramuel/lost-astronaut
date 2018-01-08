@@ -30,7 +30,8 @@ export const IndexPageTemplate =
       <Zeile
         elements=
           {features.map((feature) =>
-            <Feature  text={feature.text}
+            <Feature  key={feature.text}
+                      text={feature.text}
                       title={feature.title}
                       image={feature.image} />
         )}/>
@@ -44,7 +45,7 @@ export const IndexPageTemplate =
       {/* Alle Portfolio Elemente */}
       <div className={style.portfolios}>
         {portfolios.map((portfolio) =>
-          <Link to={portfolio.url}>
+          <Link to={portfolio.url} key={portfolio.url}>
             <img src={portfolio.image} />
             <h3>{portfolio.title}</h3>
           </Link>
@@ -56,7 +57,7 @@ export const IndexPageTemplate =
       <div className={style.kunden}>
         <h5>{kundenTitle}</h5>
         <Zeile elements={kunden.map((kunde) =>
-          <a href={kunde.url}>
+          <a href={kunde.url} key={kunde.url}>
             <img className={style.kunde} src={kunde.image}/>
             {/*<p>{kunde.name}</p>*/}
           </a>

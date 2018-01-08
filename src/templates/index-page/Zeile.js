@@ -4,8 +4,9 @@ import style from "./Zeile.module.less"
 export default ({ elements }) => {
 return (
   <div className={style.zeile}>
-    {elements.map((element) =>
+    { elements }
+    {/*elements.map((element) =>
       <div>{element}</div>
-    )}
+    )*/}
   </div>
 ); }

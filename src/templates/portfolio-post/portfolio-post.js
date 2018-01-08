@@ -36,13 +36,15 @@ export const PortfolioPostTemplate =
           {/* @Robin why did you name this icons? These are not icons */}
           <ul className={style.icons}>
             {service.map((element) =>
-              <li>{element.name}</li>
+              <li key={element.name}>
+                {element.name}
+              </li>
             )}
           </ul>
           {/* Icons */}
           <ul className={style.icons}>
             {icons.map((image) =>
-              <li>
+              <li key={image.icon}>
                 <img src={encodeURI(image.icon)} alt="" />
               </li>
             )}
@@ -51,7 +53,7 @@ export const PortfolioPostTemplate =
         <div className={style.gallery}>
           <SimpleSlider>
             {gallery.map((image) =>
-              <img src={encodeURI(image.image)} />
+              <img key={image.image} src={encodeURI(image.image)} />
             )}
           </SimpleSlider>
         </div>

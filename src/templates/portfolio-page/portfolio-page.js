@@ -12,7 +12,8 @@ export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
       <DefaultPage title={title} text={text} image={image}/>
         <div className={style.gallery}>
         {portfolios.map(({ node: work }) =>
-          <PortBox  title={work.frontmatter.title}
+          <PortBox  key={work.frontmatter.path}
+                    title={work.frontmatter.title}
                     path={work.frontmatter.path}
                     image={work.frontmatter.image}
                     icon={work.frontmatter.icons[0].icon}/>

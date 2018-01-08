@@ -35,9 +35,9 @@ portfolios:
   - title: Print Design
     image: /img/jumbotron.jpg
     url: /making-sense
-  - title: Kaffee Fotografie
+  - title: Katzen
     image: /img/flavor_wheel.jpg
-    url: /making-sense
+    url: /cats
 kunden:
   kunde:
     - image: /img/google-logo-gray.png
@@ -45,7 +45,7 @@ kunden:
       url: 'https://google.com'
     - image: /img/google-logo-gray.png
       name: Kunde2
-      url: 'https://google.com'
+      url: 'https://seitenwaelzer.de'
   title: Unsere Kunden
 kontakt:
   buttontext: Schreib uns
@@ -57,4 +57,3 @@ kontakt:
   title: Kontakt
   image: /img/jumbotron.jpg
 ---
-

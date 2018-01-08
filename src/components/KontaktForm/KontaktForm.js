@@ -11,23 +11,23 @@ import style from "./KontaktForm.module.less"
 
 export default () =>
     <form className={style.form} name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
-        <label for="bot-honey-hell" style={{display: "none"}} >
+        <label htmlFor="bot-honey-hell" style={{display: "none"}} >
           <p>Don’t fill this out:</p>
           <input type="text" name="bot-honey-hell" />
         </label>
-        <label for="name" className={style.name}>
+        <label htmlFor="name" className={style.name}>
           <p>Name</p>
-          <input type="text" name="name" placeholder="Max Mustermann" minlength="4" required autocomplete="name"/>
+          <input type="text" name="name" placeholder="Max Mustermann" minLength="4" required autoComplete="name"/>
         </label>
 
-        <label for="email" className={style.mail}>
+        <label htmlFor="email" className={style.mail}>
           <p>E-Mail</p>
-          <input type="email" name="email" placeholder="name@example.com" minlength="4" required autocomplete="email"/>
+          <input type="email" name="email" placeholder="name@example.com" minLength="4" required autoComplete="email"/>
         </label>
 
-        <label for="text" className={style.message}>
+        <label htmlFor="text" className={style.message}>
           <p>Nachricht</p>
-          <textarea name="text" required minlength="10"></textarea>
+          <textarea name="text" required minLength="10"></textarea>
         </label>
         <button className={style.button} type="submit">Absenden</button>
     </form>

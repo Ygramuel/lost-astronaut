@@ -17,11 +17,11 @@ export const Footer = ({  }) => {
 
         <div className={style.middle}>
           <h6>{data.middle.title}</h6>
-          <p><ul>
+          <ul>
             {data.middle.nav.map(elem =>
-              <li><Link to={elem.path}>{elem.title}</Link></li>
+              <li key={elem.title}><Link to={elem.path}>{elem.title}</Link></li>
             )}
-          </ul></p>
+          </ul>
         </div>
 
 
