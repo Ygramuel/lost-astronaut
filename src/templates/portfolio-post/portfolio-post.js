@@ -10,33 +10,49 @@ import data from './data.json'
 import style from "./portfolio-post.module.less";
 
 export const PortfolioPostTemplate =
-  ({ text, title, image, description, body, category, service }) => {
+  ({ text, title, image, description, body, category, service, icons, gallery }) => {
 
   return (
     <section>
+      {/* Title image */}
       <DefaultPage image={image}/>
       <Helmet>
         <title>{title}</title>
       </Helmet>
+
+      {/* First Text-Row */}
       <div className={style.post}>
+
+        {/* Left side */}
         <TextBox title={title} subtitle={description} text={body} />
 
+        {/* Right side */}
         <div className={style.infobox}>
           <h4 className={style.subtitle}>{data.bereich}</h4>
           <div className={style.text}>{data.bereiche[category]}</div>
 
-          <h4 className={style.subtitle}>{data.section}</h4>
+          {/* Services */}
+          <h4 className={style.subtitle}>{data.service}</h4>
+          {/* @Robin why did you name this icons? These are not icons */}
           <ul className={style.icons}>
             {service.map((element) =>
               <li>{element.name}</li>
             )}
           </ul>
+          {/* Icons */}
+          <ul className={style.icons}>
+            {icons.map((image) =>
+              <li>
+                <img src={encodeURI(image.icon)} alt="" />
+              </li>
+            )}
+          </ul>
         </div>
         <div className={style.gallery}>
           <SimpleSlider>
-            <img src={image} />
-            <img src={image} />
-            <img src={image} />
+            {gallery.map((image) =>
+              <img src={encodeURI(image.image)} />
+            )}
           </SimpleSlider>
         </div>
       </div>
@@ -54,6 +70,8 @@ export default ({ data }) => {
     description={post.frontmatter.description}
     category={post.frontmatter.category}
     service={post.frontmatter.service}
+    icons ={post.frontmatter.icons}
+    gallery={post.frontmatter.gallery}
   />;
 }
 
