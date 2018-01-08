@@ -2,12 +2,14 @@ import React from 'react'
 
 import PortBox from '../../components/PortBox/PortBox'
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
+import Content, { HTMLContent } from '../../components/Content';
+
 import style from "./portfolio-page.module.less"
 
 export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
   return (
     <div>
-      <DefaultPage title={title} />
+      <DefaultPage title={title} text={text} image={image}/>
         <div className={style.gallery}>
         {portfolios.map(({ node: work }) =>
           <PortBox  title={work.frontmatter.title}
@@ -25,9 +27,13 @@ export default class PortfolioPage extends React.Component {
     const { data } = this.props;
     const { edges: portfolios } = data.allMarkdownRemark;
 
+    const pageData = data.markdownRemark
+
     return (
       <PortfoliioPageTemplate
-        title="Portfolio Seite (Hardcoded)"
+        title={pageData.frontmatter.title}
+        image={pageData.frontmatter.image}
+        text={<HTMLContent content={pageData.html} />}
         portfolios = {portfolios}
         />
     );
@@ -35,7 +41,15 @@ export default class PortfolioPage extends React.Component {
 }
 
 export const portfolioPageQuery = graphql`
-  query PortfolioPageQuery {
+  query PortfolioPageQuery($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        path
+        title
+        image
+      }
+    }
     allMarkdownRemark (
       limit: 5
       filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
