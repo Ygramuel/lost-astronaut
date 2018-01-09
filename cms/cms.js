@@ -48,7 +48,7 @@ const IndexPreview = ({ entry, widgetFor, getAsset }) => {
     kunden = {content.kunden.kunde}/>
   };
 
-  // CMS.registerPreviewTemplate('index', IndexPreview);
+  CMS.registerPreviewTemplate('index', IndexPreview);
 
   /*
   *   Kontakt-Section
