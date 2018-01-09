@@ -85,6 +85,9 @@ module.exports = {
         "/admin/*": [
           "Content-Security-Policy: default-src * 'unsafe-inline'"
         ],
+        "/kontaktFormParanoid/*": [
+          "Content-Security-Policy: default-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self';"
+        ],
       },
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
        //allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
