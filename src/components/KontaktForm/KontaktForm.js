@@ -9,6 +9,9 @@ import style from "./KontaktForm.module.less"
 // "bot-honey-hell" is a honeypot for bots, if there is content netlify will
 // discard the submission
 
+
+// The iframe is inspired by: 
+// https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 export default () =>
   <div>
    <iframe src="/kontaktFormParanoid/" sandbox="allow-forms"></iframe>
