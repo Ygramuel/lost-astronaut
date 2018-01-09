@@ -1,28 +1,17 @@
 import React from "react";
 
-import Slider from 'react-slick'
+// https://github.com/leandrowd/react-responsive-carousel
+import { Carousel } from 'react-responsive-carousel'
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-//import "slick-carousel/slick/slick.css"
-//import "slick-carousel/slick/slick-theme.css"
-
-import style from "./Slider.module.less"
+// import style from "./Slider.module.less"
 
 class SimpleSlider extends React.Component {
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     return (
-      <div>TODO. This should be the slider</div>
-      /*<Slider className={style.slider} {...settings}>
+      <Carousel dynamicHeight={true} autoPlay={true}>
         {this.props.children}
-      </Slider>*/
+      </Carousel>
     );
   }
 }
