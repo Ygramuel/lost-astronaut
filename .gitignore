@@ -6,6 +6,5 @@ plugins
 # Build directory
 public/
 static/admin/*.bundle.*
-static/admin/stylesCMS.css
 .DS_Store
 yarn-error.log

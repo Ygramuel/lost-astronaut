@@ -11,7 +11,7 @@ import Button from '../../components/Button/Button'
 import TextBox from '../../components/TextBox/TextBox'
 
 export const IndexPageTemplate =
-  ({ title, content, image, slogan, kunden, box, features, mockupImage, kundenTitle, kontakt, portfolios}) => {
+  ({ title, content, image, slogan, kunden, box, features, mockupimage, kundenTitle, kontakt, portfolios}) => {
   return (
     <div className={style.index}>
       <Helmet>
@@ -37,7 +37,7 @@ export const IndexPageTemplate =
         )}/>
       </div>
 
-      <img className={style.mockup} src={mockupImage}/>
+      <img className={style.mockup} src={mockupimage}/>
 
       {/* Profil */}
       <TextBox title={box.title} text={box.text} />
@@ -86,7 +86,7 @@ export default ({ data }) => {
     slogan={post.frontmatter.slogan}
     features={post.frontmatter.features}
     box={post.frontmatter.box}
-    mockupImage={post.frontmatter.mockupimage}
+    mockupimage={post.frontmatter.mockupimage}
     kundenTitle={post.frontmatter.kunden.title}
     kunden={post.frontmatter.kunden.kunde}
     kontakt={post.frontmatter.kontakt}

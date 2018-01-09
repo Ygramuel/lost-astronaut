@@ -2,8 +2,8 @@ import React from "react";
 
 import Slider from 'react-slick'
 
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+//import "slick-carousel/slick/slick.css"
+//import "slick-carousel/slick/slick-theme.css"
 
 import style from "./Slider.module.less"
 
@@ -19,9 +19,10 @@ class SimpleSlider extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <Slider className={style.slider} {...settings}>
+      <div>TODO. This should be the slider</div>
+      /*<Slider className={style.slider} {...settings}>
         {this.props.children}
-      </Slider>
+      </Slider>*/
     );
   }
 }

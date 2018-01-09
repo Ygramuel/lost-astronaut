@@ -11,6 +11,7 @@ import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 import { IndexPageTemplate } from 'site/templates/index-page/index-page';
 import { KontaktPageTemplate } from 'site/templates/kontakt-page/kontakt-page';
 import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
+import { PortfolioPostTemplate } from 'site/templates/portfolio-post/portfolio-post';
 
 
 
@@ -33,25 +34,21 @@ const TeamPreview = ({ entry, widgetFor, getAsset }) => {
   *   Index-Section
   */
 const IndexPreview = ({ entry, widgetFor, getAsset }) => {
-  const entrySlogans = entry.getIn(['data', 'slogans']);
-  const slogans = entrySlogans ? entrySlogans.toJS() : []
+  const entrySlogans = entry.getIn(['data', 'slogan']);
+  const slogans = entrySlogans.toJS()
 
   const entryKunden = entry.getIn(['data', 'kunden']);
   const kunden = entryKunden ? entryKunden.toJS() : []
 
   const box = entry.getIn(['data', 'box']).toJS();
 
-  return <IndexPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    image={entry.getIn(['data', 'image'])}
-    content=''
-    box={box}
-    slogans={slogans}
-    kunden={kunden}
-  />
+  const content = entry.getIn(['data']).toJS()
+  return <IndexPageTemplate {... content}
+    kundenTitle = {content.kunden.title}
+    kunden = {content.kunden.kunde}/>
   };
 
-  //CMS.registerPreviewTemplate('index', IndexPreview);
+  CMS.registerPreviewTemplate('index', IndexPreview);
 
   /*
   *   Kontakt-Section
@@ -80,7 +77,22 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
     CMS.registerPreviewTemplate('404', ArtikelPreview);
 
 
-  CMS.registerPreviewStyle('/admin/stylesCMS.css')
+
+    /*
+    * PortfolioPostTemplate
+    */
+    const PortfolioPostPreview = ({ entry, widgetFor, getAsset }) => {
+      const content = entry.getIn(['data']).toJS()
+
+      return <PortfolioPostTemplate {... content}
+        text = {widgetFor('body')}
+         />
+      };
+
+      CMS.registerPreviewTemplate('portfolio', PortfolioPostPreview);
+
+
+  CMS.registerPreviewStyle('/admin/cms.bundle.css')
 
 /*
 import Features from 'site/components/Features'

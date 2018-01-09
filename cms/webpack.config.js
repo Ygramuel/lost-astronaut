@@ -4,7 +4,7 @@ const path = require('path')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractLess = new ExtractTextPlugin({
-    filename: "stylesCMS.css",
+    filename: "cms.bundle.css",
     // path: path.resolve(__dirname, '../static/admin/'),
     //disable: process.env.NODE_ENV === "development"
 });
@@ -55,6 +55,9 @@ module.exports = {
       },
     ],
   },
+
+ devtool: 'source-map',
+
   plugins: [
        extractLess
    ],
