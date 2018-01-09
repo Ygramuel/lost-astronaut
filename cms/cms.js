@@ -48,7 +48,7 @@ const IndexPreview = ({ entry, widgetFor, getAsset }) => {
     kunden = {content.kunden.kunde}/>
   };
 
-  CMS.registerPreviewTemplate('index', IndexPreview);
+  // CMS.registerPreviewTemplate('index', IndexPreview);
 
   /*
   *   Kontakt-Section
@@ -75,6 +75,7 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
 
     CMS.registerPreviewTemplate('impressum', ArtikelPreview);
     CMS.registerPreviewTemplate('404', ArtikelPreview);
+    CMS.registerPreviewTemplate('portfolioPage', ArtikelPreview);
 
 
 
@@ -89,7 +90,7 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
          />
       };
 
-      CMS.registerPreviewTemplate('portfolio', PortfolioPostPreview);
+      CMS.registerPreviewTemplate('portfolioPost', PortfolioPostPreview);
 
 
   CMS.registerPreviewStyle('/admin/cms.bundle.css')

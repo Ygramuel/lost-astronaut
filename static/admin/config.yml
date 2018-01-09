@@ -7,7 +7,7 @@ media_folder: /static/img
 public_folder: /img
 
 collections:
-  - name: "portfolio"
+  - name: "portfolioPost"
     label: "Portfolio"
     folder: "src/pages/portfolio"
     create: true
@@ -96,6 +96,16 @@ collections:
               {label: "URL", name: "path", widget: "string"},
               {label: "Button Text", name: "buttontext", widget: "string"},
             ]}
+
+      - file: "src/pages/portfolio.md"
+        label: "Portfolio"
+        name: "portfolioPage"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/portfolio/"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Titelbild", name: image, widget: image, required: false}
+          - {label: "Text", name: "body", widget: "markdown"}
 
       - file: "src/pages/kontakt/kontakt.md"
         label: "Kontakt"
