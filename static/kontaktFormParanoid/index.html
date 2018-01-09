@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Secure Kontakt</title>
+  </head>
+
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
+        <label for="bot-honey-hell">
+          <p>Don’t fill this out:</p>
+          <input type="text" name="bot-honey-hell" />
+        </label>
+        <label for="name">
+          <p>Name</p>
+          <input type="text" name="name" placeholder="Max Mustermann" minLength="4" required autocomplete="name"/>
+        </label>
+
+        <label for="email">
+          <p>E-Mail</p>
+          <input type="email" name="email" placeholder="name@example.com" minLength="4" required autocomplete="email"/>
+        </label>
+
+        <label for="text">
+          <p>Nachricht</p>
+          <textarea name="text" required minLength="10"></textarea>
+        </label>
+        <button type="submit">Absenden</button>
+    </form>
+  </body>
+</html>

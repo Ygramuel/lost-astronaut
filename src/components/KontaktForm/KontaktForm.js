@@ -10,7 +10,9 @@ import style from "./KontaktForm.module.less"
 // discard the submission
 
 export default () =>
-    <form className={style.form} name="contact" data-netlify="true" data-netlify-honeypot="bot-honey-hell">
+  <div>
+   <iframe src="/kontaktFormParanoid/" sandbox="allow-forms"></iframe>
+    {/* <form className={style.form} name="contact" data-netlify="true" data-netlify-honeypot="bot-honey-hell">
         <label htmlFor="bot-honey-hell" style={{display: "none"}} >
           <p>Don’t fill this out:</p>
           <input type="text" name="bot-honey-hell" />
@@ -30,4 +32,5 @@ export default () =>
           <textarea name="text" required minLength="10"></textarea>
         </label>
         <button className={style.button} type="submit">Absenden</button>
-    </form>
+    </form> */}
+  </div>
