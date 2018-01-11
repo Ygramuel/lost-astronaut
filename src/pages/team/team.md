@@ -2,7 +2,7 @@
 templateKey: team-page
 path: /team
 title: Team
-image: /img/chemex.jpg
+image: /img/fachpersonal.jpg
 mitarbeiter:
   - bild: /img/amelie.jpg
     mail: ardek@spam.com
