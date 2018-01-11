@@ -1,11 +1,15 @@
 import React from "react";
 import Helmet from 'react-helmet';
 
+import SEO from '../SEO/SEO'
+
 import style from './DefaultPage.module.less'
 
-export const DefaultPage = ({ title, image, text }) => {
+export const DefaultPage = (props) => {
+  const { title, image, text, path } = props
   return (
     <div className={style.wrapper}>
+      <SEO description={text} title="hi" path="HI" image="HI" />
 
       { title &&
         <div>

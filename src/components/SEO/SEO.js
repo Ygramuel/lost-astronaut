@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import config from "../../../data/SiteConfig";
+
+import config from "../../../data/SiteConfig.json";
 
 class SEO extends Component {
   render() {
     const { path, title, description, image } = this.props;
 
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
-    image = config.siteUrl + realPrefix + image;
+    const blogImage = config.siteUrl + realPrefix + image;
     const blogURL = config.siteUrl + config.pathPrefix;
     const postURL = blogURL + path;
 
+    // TODO
+    const postSEO = false
+    
     const schemaOrgJSONLD = [
       {
         "@context": "http://schema.org",
@@ -32,7 +36,7 @@ class SEO extends Component {
               item: {
                 "@id": postURL,
                 name: title,
-                image
+                blogImage
               }
             }
           ]
@@ -46,7 +50,7 @@ class SEO extends Component {
           headline: title,
           image: {
             "@type": "ImageObject",
-            url: image
+            url: blogImage
           },
           description
         }
@@ -56,7 +60,7 @@ class SEO extends Component {
       <Helmet>
         {/* General tags */}
         <meta name="description" content={description} />
-        <meta name="image" content={image} />
+        <meta name="image" content={blogImage} />
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
@@ -68,7 +72,7 @@ class SEO extends Component {
         {/* postSEO ? <meta property="og:type" content="article" /> : null */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={blogImage} />
         <meta
           property="fb:app_id"
           content={config.siteFBAppID ? config.siteFBAppID : ""}
@@ -82,7 +86,7 @@ class SEO extends Component {
         />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={blogImage} />
       </Helmet>
     );
   }
