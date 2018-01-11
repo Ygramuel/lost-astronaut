@@ -78,7 +78,7 @@ module.exports = {
      options: {
         headers: {
           // CSP rule for all "normal" Pages
-        "/*": [
+        "*": [
           "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
         ],
           // The CSM is special, do not use CSP there
