@@ -9,7 +9,7 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 class SimpleSlider extends React.Component {
   render() {
     return (
-      <Carousel dynamicHeight={true} autoPlay={true}>
+      <Carousel dynamicHeight={false} autoPlay={true}>
         {this.props.children}
       </Carousel>
     );

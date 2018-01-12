@@ -9,6 +9,8 @@ import Share from "../components/Share/Share.js"
 import style from "./index.module.less"
 import './reset.less';
 import './font.less';
+import 'typeface-roboto'
+import 'typeface-poiret-one'
 
 
 // TODO remove hardcoded "Lost Astronaut"
