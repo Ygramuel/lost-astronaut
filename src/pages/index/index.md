@@ -2,7 +2,7 @@
 templateKey: index-page
 path: /
 title: Startseite
-image: /img/jumbotron.jpg
+image: /img/erde.jpg
 slogan:
   text: |-
     Maßgeschneidertes Online-Marketing am Puls der Zeit
@@ -55,5 +55,6 @@ kontakt:
     schon. Schreib uns eine E-Mail an unsere ständig von Michi besetzte
     Servicehotline. Der ist nämlich unser bester Kommunikator!
   title: Kontakt
-  image: /img/jumbotron.jpg
+  image: /img/launch.jpg
 ---
+

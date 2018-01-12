@@ -15,6 +15,6 @@ icons:
   - icon: /img/coffee.png
 gallery:
   - image: /img/anigif_enhanced-27067-1409867582-2.gif
-  - image: '/img/img_7855#b_justforfun.jpg'
+  - image: '/img/nightsky.jpg'
 ---
 Text-body
