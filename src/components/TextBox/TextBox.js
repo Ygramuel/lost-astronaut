@@ -6,7 +6,7 @@ export default ({ title, subtitle, text }) => {
 return (
   <div className={style.textbox}>
     { title &&
-      <h4 className={style.title}>{title}</h4>
+      <h2 className={style.title}>{title}</h2>
     }
     { subtitle &&
       <h6 className={style.subtitle}>{subtitle}</h6>

@@ -12,7 +12,7 @@ export const DefaultPage = ({ title, image, text }) => {
           <Helmet>
             <title>{title}</title>
           </Helmet>
-          <h5 className={style.title}>{title}</h5>
+          <h2 className={style.title}>{title}</h2>
         </div>
       }
       { image &&

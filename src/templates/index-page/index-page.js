@@ -21,7 +21,7 @@ export const IndexPageTemplate =
       <img className={style.titelbild} src={image}/>
 
       <div className={style.slogan}>
-        <h6>{slogan.title}</h6>
+        <h2>{slogan.title}</h2>
         <p>{slogan.text}</p>
       </div>
 
@@ -47,7 +47,7 @@ export const IndexPageTemplate =
         {portfolios.map((portfolio) =>
           <Link to={portfolio.url} key={portfolio.url}>
             <img src={portfolio.image} />
-            <h3>{portfolio.title}</h3>
+            <h5>{portfolio.title}</h5>
           </Link>
 
       )}
@@ -68,7 +68,7 @@ export const IndexPageTemplate =
       <div className={style.kontakt}>
         <img className={style.kontaktimage} src={kontakt.image} />
         <div className={style.kontaktinhalt}>
-          <h3>{kontakt.title}</h3>
+          <h1>{kontakt.title}</h1>
           <p>{kontakt.text}</p>
           <Button path={kontakt.path} title={kontakt.buttontext} />
         </div>
