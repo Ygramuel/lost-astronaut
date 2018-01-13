@@ -9,7 +9,7 @@ export const DefaultPage = (props) => {
   const { title, image, text, path } = props
   return (
     <div className={style.wrapper}>
-      <SEO description={text} title="hi" path="HI" image="HI" />
+      <SEO {... props} />
 
       { title &&
         <div>

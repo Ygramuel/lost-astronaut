@@ -6,10 +6,10 @@ import Content, { HTMLContent } from '../../components/Content';
 
 import style from "./portfolio-page.module.less"
 
-export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
+export const PortfoliioPageTemplate = ({ title, image, text, portfolios, path}) => {
   return (
     <div>
-      <DefaultPage title={title} text={text} image={image}/>
+      <DefaultPage title={title} text={text} image={image} path={path}/>
         <div className={style.gallery}>
         {portfolios.map(({ node: work }) =>
           <PortBox  key={work.frontmatter.path}
@@ -36,6 +36,7 @@ export default class PortfolioPage extends React.Component {
         image={pageData.frontmatter.image}
         text={<HTMLContent content={pageData.html} />}
         portfolios = {portfolios}
+        path={pageData.frontmatter.path}
         />
     );
   }

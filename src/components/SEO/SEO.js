@@ -14,12 +14,12 @@ class SEO extends Component {
 
     // TODO
     const postSEO = false
-    
+
     const schemaOrgJSONLD = [
       {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        url: blogURL,
+        url: postURL,
         name: title,
         alternateName: config.siteTitleAlt ? config.siteTitleAlt : ""
       }
@@ -44,7 +44,7 @@ class SEO extends Component {
         {
           "@context": "http://schema.org",
           "@type": "BlogPosting",
-          url: blogURL,
+          url: postURL,
           name: title,
           alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
           headline: title,
@@ -68,7 +68,7 @@ class SEO extends Component {
         </script>
 
         {/* OpenGraph tags */}
-        <meta property="og:url" content={blogURL} />
+        <meta property="og:url" content={postURL} />
         {/* postSEO ? <meta property="og:type" content="article" /> : null */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />

@@ -9,14 +9,16 @@ import Feature from './Feature'
 import Zeile from './Zeile'
 import Button from '../../components/Button/Button'
 import TextBox from '../../components/TextBox/TextBox'
+import SEO from '../../components/SEO/SEO'
 
 export const IndexPageTemplate =
-  ({ title, content, image, slogan, kunden, box, features, mockupimage, kundenTitle, kontakt, portfolios}) => {
+  ({ title, content, image, slogan, kunden, box, features, mockupimage, kundenTitle, kontakt, portfolios, path}) => {
   return (
     <div className={style.index}>
       <Helmet>
         <title>{title}</title>
       </Helmet>
+      <SEO path={path} title={title} image={image} description={slogan.text} />
       <h1 className={style.title}>{title}</h1>
       <img className={style.titelbild} src={image}/>
 
@@ -91,6 +93,7 @@ export default ({ data }) => {
     kunden={post.frontmatter.kunden.kunde}
     kontakt={post.frontmatter.kontakt}
     portfolios={post.frontmatter.portfolios}
+    path={post.frontmatter.path}
   />;
 };
 
@@ -99,6 +102,7 @@ export const indexPageQuery = graphql`
   query IndexPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
+        path
         title
         image
         slogan{

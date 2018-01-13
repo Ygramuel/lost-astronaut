@@ -11,10 +11,8 @@ export const ArtikelPageTemplate = ({ title, text, image }) => {
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
-  return <ArtikelPageTemplate
-    title={post.frontmatter.title}
+  return <ArtikelPageTemplate {... post.frontmatter}
     text={<HTMLContent content={post.html} />}
-    image={post.frontmatter.image}
   />;
 };
 

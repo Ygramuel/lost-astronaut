@@ -5,12 +5,13 @@ import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import TextBox from '../../components/TextBox/TextBox'
 import SimpleSlider from '../../components/SimpleSlider/SimpleSlider'
+import SEO from '../../components/SEO/SEO'
 
 import data from './data.json'
 import style from "./portfolio-post.module.less";
 
 export const PortfolioPostTemplate =
-  ({ text, title, image, description, body, category, service, icons, gallery }) => {
+  ({ text, title, image, description, body, category, service, icons, gallery, path }) => {
 
   return (
     <section>
@@ -19,6 +20,7 @@ export const PortfolioPostTemplate =
       <Helmet>
         <title>{title}</title>
       </Helmet>
+      <SEO title={title} description={description} image={image} path={path} />
 
       {/* First Text-Row */}
       <div className={style.post}>
@@ -74,6 +76,7 @@ export default ({ data }) => {
     service={post.frontmatter.service}
     icons ={post.frontmatter.icons}
     gallery={post.frontmatter.gallery}
+    path={post.frontmatter.path}
   />;
 }
 
