@@ -79,7 +79,7 @@ module.exports = {
         headers: {
           // CSP rule for all "normal" Pages
         "/*": [
-          "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+          "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' ; font-src 'self' ; frame-ancestors 'none' ; form-action 'none' ; disown-opener; reflected-xss block; manifest-src 'self' ;"
         ],
           // The CSM is special, do not use CSP there
         "/admin/*": [
