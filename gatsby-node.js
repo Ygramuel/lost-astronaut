@@ -1,5 +1,18 @@
 const path = require('path');
 
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  if(stage === "build-css"){
+    config.loader("style", {
+      test: '*',
+      loaders: [`style?attrs:{id:"id"}`],
+    })
+  }
+
+
+  return config;
+};
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
