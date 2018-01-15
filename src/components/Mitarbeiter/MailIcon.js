@@ -2,7 +2,7 @@ import React from "react";
 
 export default ( ) => {
   return (
-  <svg version="1.1" id="Ebene_1" x="0px" y="0px"
+  <svg version="1.1" x="0px" y="0px"
   	 width="50px" height="50px" viewBox="-15 -15 50 50" enableBackground="new -15 -15 50 50">
   <path d="M30.222-3.167h-40.444c-2.091,0-3.792,1.701-3.792,3.792v22.75c0,2.091,1.701,3.791,3.792,3.791h40.444
   	c2.091,0,3.792-1.7,3.792-3.791V0.625C34.014-1.466,32.313-3.167,30.222-3.167z M30.222-0.639c0.074,0,0.148,0.007,0.22,0.02
