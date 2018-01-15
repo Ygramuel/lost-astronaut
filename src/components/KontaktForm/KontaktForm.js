@@ -14,7 +14,7 @@ import style from "./KontaktForm.module.less"
 // https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 export default () =>
   <div>
-   <iframe src="/kontaktFormParanoid/" sandbox="allow-forms allow-same-origin"></iframe>
+   <iframe src="/kontaktFormParanoid/" sandbox="allow-forms"></iframe>
     {/* <form className={style.form} name="contact" data-netlify="true" data-netlify-honeypot="bot-honey-hell">
         <label htmlFor="bot-honey-hell" style={{display: "none"}} >
           <p>Don’t fill this out:</p>
