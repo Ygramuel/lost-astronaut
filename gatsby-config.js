@@ -86,7 +86,7 @@ module.exports = {
           "Content-Security-Policy: default-src * 'unsafe-inline'"
         ],
         "/kontaktFormParanoid/*": [
-          "Content-Security-Policy: default-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self';"
+          "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'self'; form-action 'self'; frame-ancestors 'self';"
         ],
       },
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
