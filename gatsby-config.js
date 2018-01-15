@@ -79,7 +79,7 @@ module.exports = {
         headers: {
           // CSP rule for all "normal" Pages
         "/*": [
-          "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' data: ; font-src 'self' ; connect-src 'self' ; frame-src 'self' ; frame-ancestors 'none' ; form-action 'none' ; base-uri 'none'; manifest-src 'self' 'self'; ",
+          "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' data: ; font-src 'self' ; connect-src 'self' ; frame-src 'self' ; frame-ancestors 'none' ; form-action 'none' ; base-uri 'none'; manifest-src 'self' 'self'; sandbox allow-scripts allow-top-navigation allow-popups-to-escape-sandbox",
           "Strict-Transport-Security: max-age=63072000;",
           "Referrer-Policy: no-referrer",
         ],
