@@ -14,13 +14,10 @@ features:
     text: Wir lassen uns etwas einfallen. Definitiv.
   - title: Grafik & Design
     image: /img/grafik.svg
-    text: Bunte Bilder können wir. Genau unser Ding.
-  - title: Online Marketing
-    image: /img/marketing.svg
-    text: Auch mit dem Neuland kennen wir uns aus.
+    text: 'Impressionen mit Stil oder Style, maßgeschneidert für Sie.'
   - title: Photographie & Film
     image: /img/foto.svg
-    text: Bewegte Bilder die bewegen. Yeah.
+    text: 'Bewegte Bilder, die bewegen.'
 mockupimage: /img/products-grid1.jpg
 box:
   text: >-
@@ -48,12 +45,15 @@ kunden:
       url: 'https://seitenwaelzer.de'
   title: Unsere Kunden
 kontakt:
-  buttontext: Schreib uns
+  buttontext: Zum Kontaktformular
   path: /kontakt/
   text: >-
-    Es ist nur ein kleiner Schritt für die Menschen und so, aber ihr wisst
-    schon. Schreib uns eine E-Mail an unsere ständig von Michi besetzte
-    Servicehotline. Der ist nämlich unser bester Kommunikator!
+    Sie wollen hoch und noch höher hinaus und dabei immer mit beiden Beinen auf
+    dem Boden stehen? Oder sind Höhen nicht ihr Ding und sie Bestreiten Ihre
+    Herausforderungen lieber von einer fundierten Basis aus? In beiden Fällen
+    und in vielen anderen, möchten wir Ihnen helfen Ihre Visionen und Pläne zu
+    verwirklichen oder ins rechte Licht zu rücken. Rufen Sie uns an, schreiben
+    Sie uns und vereinbaren Sie einen persönlichen Termin.  
   title: Kontakt
   image: /img/launch.jpg
 ---
