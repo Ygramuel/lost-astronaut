@@ -9,22 +9,6 @@ mitarbeiter:
     name: Robin Thier
     text: 'CEO, Creative Director'
   - bild: /img/amelie.jpg
-    mail: bussi@busen.com
-    name: Moritz Janowsky
-    text: Creative Design
-  - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
-    name: Amelie Haupt
-    text: Content Management
-  - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
-    name: Patrick Schuster
-    text: Strategy & Finance
-  - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
-    name: Sebastian Stüber
-    text: Chief Technology Officer
-  - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Lukas Schuster
     text: Communication & Service
