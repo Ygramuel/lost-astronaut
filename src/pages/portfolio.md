@@ -4,4 +4,4 @@ path: /portfolio/
 title: Portfolio
 image: /img/portfoliolandschaft.jpg
 ---
-Beschreibungstext über Portfolios
+Ein Überblick über unsere Arbeiten.
