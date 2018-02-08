@@ -3,12 +3,12 @@
 .form{
   width: 100%;
   max-width: @text-width;
-  margin: 0 auto @dynamisch auto;
+  margin: 0 auto 3vw auto;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: @gross;
+  grid-gap: 20px;
   grid-template-areas:
     "name"
     "mail"
@@ -21,7 +21,7 @@
     background: #efefef;
     border: none;
     border-radius: 30px;
-    padding: @gross;
+    padding: 20px;
     outline: 0;
   }
 
@@ -62,12 +62,12 @@
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
-  background: @primary;
-  color: @bright;
+  background: #ff6666;
+  color: #fff;
   font-weight: 600;
 
   &:hover{
-    background: @secondary;
+    background: #434663;
   }
 }
 

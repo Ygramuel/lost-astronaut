@@ -11,26 +11,110 @@
   </head>
 
   <body>
-    <form name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
+    <form class="form" name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
         <label for="bot-honey-hell">
           <p>Don’t fill this out:</p>
           <input type="text" name="bot-honey-hell" />
         </label>
-        <label for="name">
+        <label class="name" for="name">
           <p>Name</p>
           <input type="text" name="name" placeholder="Max Mustermann" minLength="4" required autocomplete="name"/>
         </label>
 
-        <label for="email">
+        <label class="mail" for="email" >
           <p>E-Mail</p>
           <input type="email" name="email" placeholder="name@example.com" minLength="4" required autocomplete="email"/>
         </label>
 
-        <label for="text">
+        <label class="message" for="text" >
           <p>Nachricht</p>
           <textarea name="text" required minLength="10"></textarea>
         </label>
-        <button type="submit">Absenden</button>
+        <button class="button" type="submit" >Absenden</button>
     </form>
+    
+    <style>      
+      .form{
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto 3vw auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas:
+          "name"
+          "mail"
+          "message"
+          "button";
+      }
+      
+      .form input,
+      .form textarea{
+          width: 100%;
+          background: #efefef;
+          border: none;
+          border-radius: 30px;
+          padding: 20px;
+          outline: 0;
+        }
+
+      .form p{
+          margin: 0.5vw 0;
+          padding: 0;
+        }
+
+      .name{
+        grid-area: name;
+      }
+
+      .mail{
+        grid-area: mail;
+      }
+      
+      .mail input:focus:valid{
+        background: #c2d977;
+      }
+
+      .mail input:focus:invalid{
+        background: #D7454A;
+      }
+  
+      .message{
+        grid-area: message;
+      }
+        
+      .message textarea{
+          min-height: 150px;
+          resize: vertical;
+        }
+
+      .button{
+        grid-area: button;
+        width: auto;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        background: #ff6666;
+        color: #fff;
+        font-weight: 600;
+      }
+      
+        .button:hover{
+          background: #434663;
+        }
+
+      @media (min-width: 600px){
+        .form{
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas:
+            "name mail"
+            "message message"
+            "button .";
+        }
+      }
+    
+    </style>
   </body>
 </html>

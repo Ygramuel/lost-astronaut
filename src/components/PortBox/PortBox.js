@@ -8,7 +8,7 @@ export const PortBox = ({ title, path, image, icon }) => {
         <img className={style.image} src={image} />
         <h3 className={style.title}>{title}</h3>
         { icon &&
-          <img src={icon} />
+          <img className={style.icon} src={icon} />
         }
     </Link>
   );

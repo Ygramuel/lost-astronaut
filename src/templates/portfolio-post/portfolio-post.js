@@ -33,8 +33,7 @@ export const PortfolioPostTemplate =
 
           {/* Services */}
           <h4 className={style.subtitle}>{data.service}</h4>
-          {/* @Robin why did you name this icons? These are not icons */}
-          <ul className={style.icons}>
+          <ul className={style.list}>
             {service.map((element) =>
               <li key={element.name}>
                 {element.name}
@@ -42,7 +41,7 @@ export const PortfolioPostTemplate =
             )}
           </ul>
           {/* Icons */}
-          <ul className={style.icons}>
+          <ul className={style.list}>
             {icons.map((image) =>
               <li key={image.icon}>
                 <img src={encodeURI(image.icon)} alt="" />
