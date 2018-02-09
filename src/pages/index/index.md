@@ -5,9 +5,9 @@ title: Startseite
 image: /img/erde.jpg
 slogan:
   text: |-
-    Maßgeschneidertes Online-Marketing am Puls der Zeit
+    Maßgeschneidertes Kultur-Marketing am Puls der Zeit
     mit Inhalten, die Menschen bewegen.
-  title: You are Unique
+  title: 'Thinking Beyond '
 features:
   - title: Beratung & Konzeption
     image: /img/beratung.svg
@@ -22,11 +22,10 @@ mockupimage: /img/products-grid1.jpg
 box:
   text: >-
     Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich
-    dem Filmemachen verschrieben haben. Dabei steht neben den eigenen
-    Vorstellungen von ästhetischem Bewegtbild auch die Komposition von Bild und
-    Ton im Vordergrund. Doch eine gelungene Einstellung oder ein guter
-    Soundtrack machen allein noch keinen guten Film aus. Ein guter Film, ein
-    gelungenes Projekt, entsteht nur durch die Zusammenarbeit von Enthusiasten.
+    innovativem Marketing verschrieben haben. Ob Gestaltung, Photographie oder
+    Bewegtbild, unser Team setzt seine gesammelte Erfahrung ein, um Ihr Projekt
+    ins beste Licht zu rücken. Dabei stehen Sie und Ihre Idee immer im
+    Mittelpunkt.
   title: Unser Profil
 portfolios:
   - title: Print Design
