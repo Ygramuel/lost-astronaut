@@ -14,7 +14,7 @@ import style from "./KontaktForm.module.less"
 // https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 export default () =>
   <div>
-   <iframe src="/kontaktFormParanoid/" sandbox="allow-forms" title="Kontakt Formular">
+   <iframe  className={style.contact} src="/kontaktFormParanoid/" sandbox="allow-forms" title="Kontakt Formular">
      <a href="/kontaktFormParanoid/">
        Hier geht es zu unserem Kontaktformular
      </a>

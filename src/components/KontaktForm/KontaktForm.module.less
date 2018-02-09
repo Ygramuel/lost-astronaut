@@ -1,82 +1,11 @@
 @import "../theme/theme.less";
+/*Styles INLINE*/
 
-.form{
-  width: 100%;
-  max-width: @text-width;
-  margin: 0 auto 3vw auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  grid-template-areas:
-    "name"
-    "mail"
-    "message"
-    "button";
-
-  input,
-  textarea{
-    width: 100%;
-    background: #efefef;
-    border: none;
-    border-radius: 30px;
-    padding: 20px;
-    outline: 0;
-  }
-
-  p{
-    margin: 0.5vw 0;
-    padding: 0;
-  }
-}
-
-.name{
-  grid-area: name;
-}
-
-.mail{
-  grid-area: mail;
-
-  input:focus:valid{
-    background: #c2d977;
-  }
-
-  input:focus:invalid{
-    background: #D7454A;
-  }
-}
-
-.message{
-  grid-area: message;
-
-  textarea{
-    min-height: 150px;
-    resize: vertical;
-  }
-}
-
-.button{
-  grid-area: button;
-  width: auto;
+.contact{
+  width: 650px;
+  height: 600px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 @gross;
   border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  background: #ff6666;
-  color: #fff;
-  font-weight: 600;
-
-  &:hover{
-    background: #434663;
-  }
-}
-
-@media @tablet{
-  .form{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "name mail"
-      "message message"
-      "button .";
-  }
 }
