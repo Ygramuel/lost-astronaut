@@ -7,18 +7,14 @@ mitarbeiter:
   - bild: /img/amelie.jpg
     mail: ardek@spam.com
     name: Robin Thier
-    text: 'CEO, Creative Director'
-  - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
-    name: Lukas Schuster
-    text: Communication & Service
-  - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
-    name: Viktoria Raeder
-    text: Quality & Service
+    text: ' '
   - bild: /img/amelie.jpg
     mail: cc@spaaam.com
     name: Michael Cremann
-    text: Public Relations
+    text: ''
+  - bild: /img/amelie.jpg
+    mail: penispumpenshop24@spaaam.com
+    name: Moritz Janowsky
+    text: ''
 ---
-Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich dem Filmemachen verschrieben haben. Dabei steht neben den eigenen Vorstellungen von ästhetischem Bewegtbild auch die Komposition von Bild und Ton im Vordergrund. Doch eine gelungene Einstellung oder ein guter Soundtrack machen allein noch keinen guten Film aus. Ein guter Film, ein gelungenes Projekt, entsteht nur durch die Zusammenarbeit von Enthusiasten.
+In unserem Team verbinden wir kulturelle Kompetenz mit innovativem Marketing. Durch unser diverses Profil bilden wir die Schnittstelle zwischen Ihnen und Ihren Kunden. Jetzt sind Sie am Zug.
