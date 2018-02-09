@@ -4,4 +4,4 @@ path: /portfolio/
 title: Portfolio
 image: /img/portfoliolandschaft.jpg
 ---
-Ein Überblick über unsere Arbeiten.
+Sie befinden sich in guter Gesellschaft: Hier finden Sie einen Auszug unserer bisherigen Projekte. Lassen Sie sich inspirieren und überzeugen.
