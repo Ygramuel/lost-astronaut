@@ -18,7 +18,7 @@ features:
   - title: Photographie & Film
     image: /img/foto.svg
     text: 'Bewegte Bilder, die bewegen.'
-mockupimage: /img/products-grid1.jpg
+mockupimage: /img/dgamn-3d-web.jpg
 box:
   text: >-
     Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich
@@ -29,10 +29,10 @@ box:
   title: Unser Profil
 portfolios:
   - title: Print Design
-    image: /img/jumbotron.jpg
+    image: /img/altertumsverein-flyer-mockup.jpg
     url: /making-sense
-  - title: Katzen
-    image: /img/flavor_wheel.jpg
+  - title: Logogestaltung
+    image: /img/memoria-logo-mockup.jpg
     url: /cats
 kunden:
   kunde:
