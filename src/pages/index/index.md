@@ -44,6 +44,7 @@ kunden:
       url: 'https://dgamn.de/'
     - image: /img/memoria.svg
       name: Projekt Memoria
+      url: 'https://www.youtube.com/channel/UCJp5evplNHvly-puLyLlXjg'
   title: Unsere Kunden
 kontakt:
   buttontext: Zum Kontaktformular
