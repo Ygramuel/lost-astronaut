@@ -3,7 +3,7 @@ templateKey: portfolio-post
 path: /dgamn
 category: web
 title: Deutsche Gesellschaft für Archäologie des Mittelalters und der Neuzeit
-image: /img/nightsky.jpg
+image: /img/dgamn-3d-web.jpg
 description: Neue Umgebung für historische Projekte
 service:
   - name: Webseitengestaltung
@@ -12,6 +12,6 @@ icons:
   - icon: ''
   - icon: ''
 gallery:
-  - image: /img/pexels-photo-386009.jpeg
+  - image: /img/dgamn-3d-web.jpg
 ---
 Ziel des Projekts war die Gestaltung einer neuen Internetplattform der DGAMN. Hierbei galt es, das Corporate Design zu wahren und einen modernen, zeitgemäßen Ansatz zu finden, der auch auf mobilen Geräten funktioniert. Trotzdem sollte der Fokus auf den Inhalten liegen und der Aufbau einer klaren Struktur folgen.
