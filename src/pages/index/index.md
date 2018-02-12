@@ -39,7 +39,7 @@ kunden:
     - image: /img/edition_sonblom_logo_sw.png
       name: Edition Sonblom
       url: 'https://edition-sonblom.de/'
-    - image: ''
+    - image: /img/dgamn_logo_freigestellt.png
       name: DGAMN
       url: 'https://dgamn.de/'
     - image: /img/memoria_w.svg
