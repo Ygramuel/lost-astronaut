@@ -78,11 +78,12 @@ module.exports = {
      options: {
         headers: {
           // CSP rule for all "normal" Pages
-        "/*": [
+	// TODO this currently breaks the build
+        /* "/*": [
           "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' data: ; font-src 'self' ; connect-src 'self' ; frame-src 'self' ; frame-ancestors 'none' ; form-action 'self' ; base-uri 'none'; manifest-src 'self' 'self';",
           "Strict-Transport-Security: max-age=63072000;",
           "Referrer-Policy: no-referrer",
-        ],
+        ],*/
           // The CSM is special, do not use CSP there
         "/admin/*": [
           "Content-Security-Policy: default-src * 'unsafe-inline'"
