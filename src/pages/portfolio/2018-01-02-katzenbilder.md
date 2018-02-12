@@ -20,7 +20,6 @@ gallery:
   - image: /img/draeger_standbild001_format.jpg
   - image: /img/draeger-1_format.jpg
   - image: /img/memoria_werner_mp4_standbild002_format.jpg
-  - image: ''
 ---
 Beim Projekt: MEMORIA handelt es sich um eine Interviewreihe, in der ältere Menschen ihre ganz eigene Geschichte erzählen. Es geht um Wissen, das eben nicht im Geschichtsbuch steht, aber trotzdem genauso auch zu unserer Geschichte gehört. Dieses Wissen soll konserviert und für die Nachwelt erhalten werden. 
 
