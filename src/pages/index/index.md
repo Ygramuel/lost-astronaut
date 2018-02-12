@@ -39,10 +39,10 @@ kunden:
     - image: /img/edition_sonblom_logo_sw.png
       name: Edition Sonblom
       url: 'https://edition-sonblom.de/'
-    - image: /img/dgamn_logo_sw.png
+    - image: ''
       name: DGAMN
       url: 'https://dgamn.de/'
-    - image: /img/memoria.svg
+    - image: /img/memoria_w.svg
       name: Projekt Memoria
       url: 'https://www.youtube.com/channel/UCJp5evplNHvly-puLyLlXjg'
   title: Unsere Kunden
