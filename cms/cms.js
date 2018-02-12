@@ -11,7 +11,7 @@ import { TeamPageTemplate } from 'site/templates/team-page/team-page';
 import { IndexPageTemplate } from 'site/templates/index-page/index-page';
 import { KontaktPageTemplate } from 'site/templates/kontakt-page/kontakt-page';
 import { ArtikelPageTemplate } from 'site/templates/artikel-page/artikel-page';
-import { PortfolioPostTemplate } from 'site/templates/portfolio-post/portfolio-post';
+//import { PortfolioPostTemplate } from 'site/templates/portfolio-post/portfolio-post';
 
 
 
@@ -82,7 +82,8 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
     /*
     * PortfolioPostTemplate
     */
-    const PortfolioPostPreview = ({ entry, widgetFor, getAsset }) => {
+// TODO: deaktivated, because the slider loads its own react... and thats bad, breaks the entire site
+/*    const PortfolioPostPreview = ({ entry, widgetFor, getAsset }) => {
       const content = entry.getIn(['data']).toJS()
 
       return <PortfolioPostTemplate {... content}
@@ -91,7 +92,7 @@ const KontaktPreview = ({ entry, widgetFor, getAsset }) => {
       };
 
       CMS.registerPreviewTemplate('portfolioPost', PortfolioPostPreview);
-
+*/
 
   CMS.registerPreviewStyle('/admin/cms.bundle.css')
 
