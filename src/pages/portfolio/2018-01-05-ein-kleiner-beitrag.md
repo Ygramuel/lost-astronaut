@@ -1,9 +1,9 @@
 ---
 templateKey: portfolio-post
-path: /kleinerbeitrag
+path: /portraitshootings
 category: bild
-title: Ein kleiner Beitrag
-image: /img/pexels-photo-386009.jpeg
+title: Portrait-Shootings
+image: /img/michi_format.jpg
 description: 'Jaja, so war das damals'
 service:
   - name: Gestaltung
