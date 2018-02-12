@@ -1,11 +1,11 @@
 {
   "left":
-    {"title":"Anschrift", "text": "Hierhin die Anschrift" },
+    {"title":"Anschrift", "text": "Lühnstiege 8-9 | 48151 Münster" },
   "middle":
     {"title": "Navigation", "nav": [
       {"title":"Kontakt", "path":"/kontakt/"},
       {"title":"Impressum", "path":"/impressum/"}
       ]},
   "right":
-    {"title":"Sozial Media", "facebook":"https://facebook.com", "instagramm":"https://leer.de"}
+    {"title":"Social Media", "facebook":"https://www.instagram.com/astronautlost/"}
 }

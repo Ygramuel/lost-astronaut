@@ -1,10 +1,10 @@
 ---
 templateKey: portfolio-post
-path: /kleinerbeitrag
+path: /portraitshootings
 category: bild
-title: Ein kleiner Beitrag
-image: /img/pexels-photo-386009.jpeg
-description: 'Jaja, so war das damals'
+title: Portrait-Shootings
+image: /img/michi_format.jpg
+description: Menschen hautnah im Studio
 service:
   - name: Gestaltung
   - name: Produkt- & Stockfotografie

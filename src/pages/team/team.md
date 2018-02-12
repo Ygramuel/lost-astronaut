@@ -8,7 +8,7 @@ mitarbeiter:
     mail: thier@lost-astronaut.com
     name: Robin Thier
     text: ' '
-  - bild: /img/amelie.jpg
+  - bild: /img/michi_format.jpg
     mail: cremann@lost-astronaut.com
     name: Michael Cremann
     text: ''

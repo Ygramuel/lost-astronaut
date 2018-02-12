@@ -1,20 +1,23 @@
 ---
 templateKey: portfolio-post
-path: /cats
-category: web
-title: Katzenbilder
+path: /projekt-memoria
+category: film
+title: 'Projekt: MEMORIA'
 image: /img/flavor_wheel.jpg
 description: |
-  Beschreibung:
+  Hinter die Fassade der Geschichtsschreibung blicken
 service:
-  - name: Katze gefunden
-  - name: Ball gegeben
-  - name: Foto gemacht
+  - name: Logogestaltung
+  - name: Entwurf des Beleuchtungskonzepts am Set
+  - name: Dreharbeiten
+  - name: Nachbearbeitung und Schnitt von Audio und Video
 icons:
-  - icon: /img/coffee-gear.png
-  - icon: /img/coffee.png
+  - icon: ''
+  - icon: ''
 gallery:
   - image: /img/anigif_enhanced-27067-1409867582-2.gif
-  - image: '/img/nightsky.jpg'
+  - image: /img/nightsky.jpg
 ---
-Text-body
+Beim Projekt: MEMORIA handelt es sich um eine Interviewreihe, in der ältere Menschen ihre ganz eigene Geschichte erzählen. Es geht um Wissen, das eben nicht im Geschichtsbuch steht, aber trotzdem genauso auch zu unserer Geschichte gehört. Dieses Wissen soll konserviert und für die Nachwelt erhalten werden. 
+
+Lost Astronaut entwarf das Projektlogo und war für die technische Umsetzung der Interviews zuständig.
