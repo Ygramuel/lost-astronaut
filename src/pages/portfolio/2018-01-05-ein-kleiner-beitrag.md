@@ -4,7 +4,7 @@ path: /portraitshootings
 category: bild
 title: Portrait-Shootings
 image: /img/michi_format.jpg
-description: 'Jaja, so war das damals'
+description: Menschen hautnah im Studio
 service:
   - name: Gestaltung
   - name: Produkt- & Stockfotografie
