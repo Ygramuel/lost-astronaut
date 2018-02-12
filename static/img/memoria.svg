@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="484.476px" height="146.993px" viewBox="0 0 484.476 146.993" enable-background="new 0 0 484.476 146.993"
+	 xml:space="preserve">
+<g id="Memoria_weiß">
+</g>
+<g id="Projekt_weiß">
+</g>
+<g id="Klappe_weiß">
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#010202" points="28.936,107.021 72.656,132.888 72.656,38.087 
+		28.936,12.22 	"/>
+</g>
+<g id="Gesicht_weiß">
+</g>
+<g id="Memoria">
+	<text transform="matrix(1 0 0 1 154.7134 132.9785)" font-family="'Poppins-Medium'" font-size="67.1754">MEMORIA</text>
+</g>
+<g id="Projekt">
+	<text transform="matrix(1 0 0 1 156.7305 68.0049)" font-family="'Poppins-Light'" font-size="43.3319">Projekt:</text>
+</g>
+<g id="Klappe">
+</g>
+<g id="Gesicht">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#8F2626" d="M75.571,132.888V38.087h41.897v0.029h0.063
+		c1.547,1.223,3.232,2.75,4.422,4.557c2.269,3.436,4.185,7.119,6.312,10.668c0.587,0.99,1.012,2.094,1.493,3.158
+		c1.354,3.014,1.307,6.178,0.695,9.424c-0.446,2.359,0.027,4.477,1.553,6.209c1.343,1.541,2.782,2.988,4.175,4.488
+		c1.978,2.135,4.031,4.191,5.89,6.438c2.117,2.566,1.393,5.393-1.584,6.797c-0.844,0.395-1.703,0.746-2.529,1.182
+		c-2.066,1.086-2.886,2.988-2.335,5.346c0.144,0.631,0.205,0.822,0.523,1.873c0.334,1.104,0.291,2.289,0.396,3.439
+		c0.006,0.184-0.374,0.83-0.526,0.979c-0.585,0.574-0.967,0.738-1.595,1.322c0.168,0.158,0.271,0.256,0.368,0.342
+		c1.593,1.381,1.602,2.586,1.151,4.68c-0.29,1.348-1.1,2.539-1.695,3.781c-0.552,1.137-0.574,2.248-0.135,3.391
+		c0.15,0.398,0.301,0.807,0.451,1.207c0.753,1.986,1.269,4.004,0.949,6.229c-0.385,2.646-1.504,4.719-3.684,6.102
+		c-2.123,1.348-4.474,1.828-6.851,2.178c-2.423,0.359-4.834,0.816-7.253,1.031L75.571,132.888z"/>
+</g>
+</svg>
