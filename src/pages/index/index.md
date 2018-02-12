@@ -36,12 +36,14 @@ portfolios:
     url: /cats
 kunden:
   kunde:
-    - image: /img/google-logo-gray.png
-      name: Kunde1
-      url: 'https://google.com'
-    - image: /img/google-logo-gray.png
-      name: Kunde2
-      url: 'https://seitenwaelzer.de'
+    - image: /img/edition_sonblom_logo_sw.png
+      name: Edition Sonblom
+      url: 'https://edition-sonblom.de/'
+    - image: /img/dgamn_logo_sw.png
+      name: DGAMN
+      url: 'https://dgamn.de/'
+    - image: /img/memoria.svg
+      name: Projekt Memoria
   title: Unsere Kunden
 kontakt:
   buttontext: Zum Kontaktformular
@@ -54,6 +56,6 @@ kontakt:
     verwirklichen oder ins rechte Licht zu rücken. Rufen Sie uns an, schreiben
     Sie uns und vereinbaren Sie einen persönlichen Termin.  
   title: Kontakt
-  image: /img/launch.jpg
+  image: /img/space-shuttle-774_dark.jpg
 ---
 
