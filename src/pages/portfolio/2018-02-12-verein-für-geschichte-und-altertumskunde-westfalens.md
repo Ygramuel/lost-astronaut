@@ -3,7 +3,7 @@ templateKey: portfolio-post
 path: /altertumskunde-westfalens
 category: web
 title: Verein für Geschichte und Altertumskunde Westfalens
-image: /img/flavor_wheel.jpg
+image: /img/altertumsverein-flyer-mockup.jpg
 description: Geschichte in modernem Gewand
 service:
   - name: Fotografie
@@ -11,7 +11,7 @@ service:
 icons:
   - icon: /img/beratung.svg
 gallery:
-  - image: /img/launch.jpg
+  - image: /img/altertumsverein-flyer-mockup.jpg
 ---
 Der Verein für Geschichte und Altertumskunde Westfalens war auf der Suche nach einem Design für eine Gutscheinkarte. Sie sollte zum einen den vorherigen Designansatz fortführen, ihn zum anderen aber um einige visuelle Elemente ergänzen um die Karte ansprechend und zugleich informativ zu gestalten. 
 
