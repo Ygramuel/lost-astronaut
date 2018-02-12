@@ -4,16 +4,16 @@ path: /team
 title: Team
 image: /img/fachpersonal.jpg
 mitarbeiter:
-  - bild: /img/amelie.jpg
-    mail: ardek@spam.com
+  - bild: /img/550d_ts-014_format.jpg
+    mail: thier@lost-astronaut.com
     name: Robin Thier
     text: ' '
   - bild: /img/amelie.jpg
-    mail: cc@spaaam.com
+    mail: cremann@lost-astronaut.com
     name: Michael Cremann
     text: ''
-  - bild: /img/amelie.jpg
-    mail: penispumpenshop24@spaaam.com
+  - bild: /img/img_7265_format.jpg
+    mail: janowsky@lost-astronaut.com
     name: Moritz Janowsky
     text: ''
 ---
