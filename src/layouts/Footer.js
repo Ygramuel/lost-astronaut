@@ -27,7 +27,7 @@ export const Footer = ({  }) => {
 
       <div className={style.right}>
         <h6>{data.right.title}</h6>
-        <a href={data.right.facebook}>FACEBOOK</a>
+        <a href={data.right.facebook}>Instagram</a>
       </div>
     </div>
     </footer>
