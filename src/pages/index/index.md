@@ -18,7 +18,7 @@ features:
   - title: Photographie & Film
     image: /img/foto.svg
     text: 'Bewegte Bilder, die bewegen.'
-mockupimage: /img/dgamn-3d-web.jpg
+mockupimage: /img/banner.jpg
 box:
   text: >-
     Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich
