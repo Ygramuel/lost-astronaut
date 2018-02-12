@@ -6,7 +6,7 @@
 
   <body>
     <form class="form" name="contact" data-netlify="true" netlify-honeypot="bot-honey-hell">
-        <label for="bot-honey-hell">
+        <label class="honey" for="bot-honey-hell">
           <p>Don’t fill this out:</p>
           <input type="text" name="bot-honey-hell" />
         </label>
@@ -33,7 +33,6 @@
         width: 100%;
         max-width: 650px;
         margin: 0 auto 3vw auto;
-        padding: 20px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -60,6 +59,10 @@
           padding: 0;
         }
 
+      .honey{
+        display: none;
+      }
+      
       .name{
         grid-area: name;
       }
@@ -87,7 +90,7 @@
 
       .button{
         grid-area: button;
-        width: auto;
+        width: 66%;
         border: none;
         border-radius: 30px;
         padding: 10px 20px;
