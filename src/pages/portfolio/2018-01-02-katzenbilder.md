@@ -3,7 +3,7 @@ templateKey: portfolio-post
 path: /projekt-memoria
 category: film
 title: 'Projekt: MEMORIA'
-image: /img/flavor_wheel.jpg
+image: /img/memoria-logo-mockup.jpg
 description: |
   Hinter die Fassade der Geschichtsschreibung blicken
 service:
