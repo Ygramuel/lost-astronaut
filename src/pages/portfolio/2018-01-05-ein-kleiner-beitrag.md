@@ -9,7 +9,7 @@ service:
   - name: Portraitfotografie
   - name: Retusche
 icons:
-  - icon: /img/share.svg
+  - icon: /img/foto.svg
 gallery:
   - image: /img/550d_ds-174_format.jpg
   - image: /img/550d_ts-058_format.jpg
