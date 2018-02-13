@@ -8,9 +8,7 @@ description: Neue Umgebung für historische Projekte
 service:
   - name: Webseitengestaltung
 icons:
-  - icon: ''
-  - icon: ''
-  - icon: ''
+  - icon: /img/grafik.svg
 gallery:
   - image: /img/dgamn-3d-web.jpg
 ---
