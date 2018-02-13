@@ -12,8 +12,8 @@ service:
   - name: Dreharbeiten
   - name: Nachbearbeitung und Schnitt von Audio und Video
 icons:
-  - icon: ''
-  - icon: ''
+  - icon: /img/foto.svg
+  - icon: /img/grafik.svg
 gallery:
   - image: /img/brakelmann_gesamt_mp4_standbild001_format.jpg
   - image: /img/brakelmann_gesamt_mp4_standbild003_format.jpg
