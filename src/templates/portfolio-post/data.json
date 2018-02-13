@@ -2,6 +2,8 @@
   "bereich": "Bereich",
   "service": "Service",
   "bereiche": {
-    "web": "Ich bin ein WEB Bereich!!"
+    "film": "Film",
+    "gestaltung": "Gestaltung",
+    "foto": "Fotografie"
   }
 }
