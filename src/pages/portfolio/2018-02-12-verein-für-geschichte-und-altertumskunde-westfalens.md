@@ -9,7 +9,7 @@ service:
   - name: Fotografie
   - name: Flyer-Entwurf und -gestaltung
 icons:
-  - icon: /img/beratung.svg
+  - icon: /img/grafik.svg
 gallery:
   - image: /img/altertumsverein-flyer-mockup.jpg
 ---
