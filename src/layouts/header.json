@@ -5,7 +5,7 @@
     {"title":"Team", "path":"/team/"},
     {"title":"Kontakt", "path":"/kontakt/"},
     {"title":"Portfolio", "path":"/portfolio/"},
-    {"title":"Impressum", "path":"/impressum/"},
-    {"title":"404", "path":"/404.html"}
+    {"title":"Instagram", "path":"https://www.instagram.com/astronautlost/"},
+    {"title":"Impressum", "path":"/impressum/"}
   ]
 }
