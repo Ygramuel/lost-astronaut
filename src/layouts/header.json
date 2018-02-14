@@ -1,11 +1,10 @@
 {
-  "title": "Go Back Home",
+  "title": "Lost Astronaut",
   "menu": [
     {"title":"Home", "path":"/"},
     {"title":"Team", "path":"/team/"},
     {"title":"Kontakt", "path":"/kontakt/"},
     {"title":"Portfolio", "path":"/portfolio/"},
-    {"title":"Instagram", "path":"https://www.instagram.com/astronautlost/"},
     {"title":"Impressum", "path":"/impressum/"}
   ]
 }

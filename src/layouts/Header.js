@@ -8,6 +8,7 @@ import style from "./Header.module.less"
 
 import data from './header.json'
 import logo from '../img/LostAstronaut.svg'
+import instagram from '../img/instagram.svg'
 
 export const Header = ({  }) => {
   return (
@@ -17,9 +18,12 @@ export const Header = ({  }) => {
           <img src={logo} className={style.logo} alt='Home' width='148' height='80'/>
         </Link>
         <Menu elements={data.menu}/>
+        <a href="https://www.instagram.com/astronautlost/" target="_blank" rel="noopener">
+          <img src={instagram} className={style.insta}  alt='Instagram' width='56' height='56'/>
+        </a>
       </div>
       <Offline>
-        <p>Hallo Welt, ich bin off</p>
+        <p>Du bist offline!</p>
       </Offline>
     </header>
   );
