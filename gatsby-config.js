@@ -92,7 +92,7 @@ module.exports = {
           // CSP rule for all "normal" Pages
          "/*": [
           "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' data: ; font-src 'self' ; connect-src 'self' ; frame-src 'self' ; frame-ancestors 'none' ; form-action 'self' ; base-uri 'none'; manifest-src 'self';",
-          // "Strict-Transport-Security: max-age=63072000;",
+          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
           "Referrer-Policy: no-referrer",
         ],
           // The CSM is special, do not use CSP there
