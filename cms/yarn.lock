@@ -1169,6 +1169,10 @@ detect-libc@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
 
+diacritics@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/diacritics/-/diacritics-1.3.0.tgz#3efa87323ebb863e6696cebb0082d48ff3d6f7a1"
+
 diffie-hellman@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.2.tgz#b5835739270cfe26acf632099fded2a07f209e5e"
@@ -2477,12 +2481,13 @@ nan@^2.3.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
-netlify-cms@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.3.5.tgz#3831dc2afc69ce8fa083de2dd115ccb8859990a2"
+netlify-cms@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.5.0.tgz#f3347fe52680dd7c1adf561298da30749f8125b2"
   dependencies:
     classnames "^2.2.5"
     create-react-class "^15.6.0"
+    diacritics "^1.3.0"
     fuzzy "^0.1.1"
     gotrue-js "^0.9.15"
     gray-matter "^3.0.6"
