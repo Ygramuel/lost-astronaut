@@ -3,7 +3,7 @@ templateKey: portfolio-post
 path: /portraitshootings
 category: bild
 title: Portrait-Shootings
-image: /img/vicky_k.jpg
+image: /img/550D_VPP-1181_retouch-inverted_n.jpg
 description: Menschen hautnah im Studio
 service:
   - name: Portraitfotografie
