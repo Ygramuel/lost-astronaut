@@ -15,7 +15,7 @@ gallery:
   - image: /img/550d_ts-058_format.jpg
   - image: /img/550d_ts-211_format.jpg
   - image: /img/550d_vpp-1141_format.jpg
-  - image: /img/550d_vpp-1181_format.jpg
+  - image: /img/vicky.jpg
 ---
 Bei der Fotografie von Menschen muss stets die Entscheidung gefällt werden, ob das Model in einer natürlichen oder kontrollierten Umgebung festgehalten werden soll. In diesen Fällen haben wir uns für letzteres entschieden, um zum einen den Fokus auf die fotografierte Person zu lenken und möglicherweise ablenkende Elemente zu minimieren, zum anderen, um einen minimalistischen Black&White-Look erzielen zu können, bei dem dennoch Details im Vordergrund stehen.
 
