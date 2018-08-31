@@ -30,10 +30,10 @@ box:
 portfolios:
   - title: Print Design
     image: /img/altertumsverein-flyer-mockup.jpg
-    url: /making-sense
+    url: /altertumskunde-westfalens/
   - title: Logogestaltung
     image: /img/memoria-logo-mockup.jpg
-    url: /cats
+    url: /projekt-memoria/
 kunden:
   kunde:
     - image: /img/edition_sonblom_logo_sw.png
