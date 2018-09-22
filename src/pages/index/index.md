@@ -36,7 +36,7 @@ portfolios:
     url: /projekt-memoria/
 kunden:
   kunde:
-    - image: /img/edition_sonblom.svg
+    - image: /img/edition-sonblom.svg
       name: Edition Sonblom
       url: 'https://edition-sonblom.de/'
     - image: /img/logo_raumgestaltung.svg
