@@ -39,6 +39,9 @@ kunden:
     - image: /img/edition_sonblom_logo_sw.png
       name: Edition Sonblom
       url: 'https://edition-sonblom.de/'
+    - image: /img/logo_raumgestaltung.svg
+      name: Schwarte Raumgestaltung
+      url: 'https://www.schwarte-raumgestaltung.de/'
     - image: /img/dgamn_logo_freigestellt.png
       name: DGAMN
       url: 'https://dgamn.de/'
