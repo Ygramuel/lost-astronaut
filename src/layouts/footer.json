@@ -1,9 +1,6 @@
 {
   "left":
-    {"title":"Anschrift", "text": [
-      "Lühnstiege 8-9 | 48151 Münster"
-      "0251 39653914"
-      ]},
+    {"title":"Anschrift", "text": "Lühnstiege 8-9 | 48151 Münster"},
   "middle": 
     {"title": "Navigation", "nav": [
       {"title":"Kontakt", "path":"/kontakt/"},
