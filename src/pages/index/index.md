@@ -28,9 +28,9 @@ box:
     Mittelpunkt.
   title: Unser Profil
 portfolios:
-  - title: Print Design
-    image: /img/altertumsverein-flyer-mockup.jpg
-    url: /altertumskunde-westfalens/
+  - title: Imagefilm
+    image: /img/schwarte_01.jpg
+    url: /raumgestaltung-schwarte/
   - title: Logogestaltung
     image: /img/memoria-logo-mockup.jpg
     url: /projekt-memoria/
