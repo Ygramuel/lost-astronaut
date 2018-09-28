@@ -1,6 +1,6 @@
 {
   "left":
-    {"title":"Anschrift", "text": },
+    {"title":"Kontakt"},
   "middle": 
     {"title": "Navigation", "nav": [
       {"title":"Kontakt", "path":"/kontakt/"},
