@@ -1,6 +1,6 @@
 {
   "left":
-    {"title":"Anschrift", "text": "Lühnstiege 8-9<br>48151 Münster<br><a href:'mailto:mail@lost-astronaut.com'>mail@lost-astronaut.com</a><br><a href='tel:025139653914'>0251 39653914</a>},
+    {"title":"Anschrift", "text": "Lühnstiege 8-9<br>48151 Münster<br><a href:'mailto:mail@lost-astronaut.com'>mail@lost-astronaut.com</a><br><a href='tel:025139653914'>0251 39653914</a>"},
   "middle": 
     {"title": "Navigation", "nav": [
       {"title":"Kontakt", "path":"/kontakt/"},
