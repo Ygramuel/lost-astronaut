@@ -12,7 +12,10 @@ export const Footer = ({  }) => {
       <div className={style.wrapper}>
         <div className={style.left}>
           <h6>{data.left.title}</h6>
-          <p>{data.left.text}</p>
+          <p>Lühnstiege 8-9</p>
+          <p>48151 Münster</p>
+            <a href:'mailto:mail@lost-astronaut.com'>mail@lost-astronaut.com</a></br>
+            <a href='tel:025139653914'>0251 39653914</a>
         </div>
 
         <div className={style.middle}>
