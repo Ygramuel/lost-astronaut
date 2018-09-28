@@ -13,3 +13,5 @@ gallery:
   - image: /img/edition-sonblom.png
 ---
 Die Kunstbücher des Verlags “Edition Sonblom” benötigten ein neues Zuhause. Die Webseite wurde auf der inhaltlichen Basis ihrer Vorgängerin komplett neu aufgesetzt und dabei die Präsentation der Bücher und deren KünstlerInnen in den Mittelpunkt gerückt.
+
+[Hier geht es zur Webseite](https://edition-sonblom.de/)
