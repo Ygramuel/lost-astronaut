@@ -10,13 +10,13 @@ slogan:
   title: 'Thinking Beyond '
 features:
   - title: Beratung & Konzeption
-    image: /img/beratung.svg
+    image: /img/beratung_1.svg
     text: Wir lassen uns etwas einfallen. Definitiv.
   - title: Grafik & Design
-    image: /img/grafik.svg
+    image: /img/grafik_1.svg
     text: 'Impressionen mit Stil oder Style, maßgeschneidert für Sie.'
   - title: Photographie & Film
-    image: /img/foto.svg
+    image: /img/foto_1.svg
     text: 'Bewegte Bilder, die bewegen.'
 mockupimage: /img/banner.jpg
 box:
