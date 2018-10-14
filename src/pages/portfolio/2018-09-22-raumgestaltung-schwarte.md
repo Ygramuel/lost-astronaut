@@ -1,7 +1,7 @@
 ---
 templateKey: portfolio-post
 path: /raumgestaltung-schwarte
-category: bild
+category: Film
 title: Raumgestaltung Schwarte
 image: /img/schwarte_01.jpg
 description: Ein Imagefilm für die Polsterei Schwarte

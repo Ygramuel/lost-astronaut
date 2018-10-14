@@ -1,7 +1,7 @@
 ---
 templateKey: portfolio-post
 path: /altertumskunde-westfalens
-category: web
+category: Gestaltung
 title: Verein für Geschichte und Altertumskunde Westfalens
 image: /img/altertumsverein-flyer-mockup.jpg
 description: Geschichte in modernem Gewand
