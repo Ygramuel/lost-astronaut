@@ -3,13 +3,17 @@ import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import KontaktForm from '../../components/KontaktForm/KontaktForm'
 
+import Layout from '../../layouts/'
+
 
 export const KontaktPageTemplate = ({ title, text, image }) => {
   return (
+    <Layout>
     <section>
       <DefaultPage title={title} text={text} image={image} />
       <KontaktForm />
     </section>
+    </Layout>
     );
 }
 

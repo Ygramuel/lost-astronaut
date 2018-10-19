@@ -3,6 +3,7 @@ import Content, { HTMLContent } from '../../components/Content';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link'
 
+import Layout from '../../layouts/'
 import style from "./index-page.module.less"
 
 import Feature from './Feature'
@@ -13,6 +14,7 @@ import TextBox from '../../components/TextBox/TextBox'
 export const IndexPageTemplate =
   ({ title, content, image, slogan, kunden, box, features, mockupimage, kundenTitle, kontakt, portfolios}) => {
   return (
+  <Layout>
     <div className={style.index}>
       <Helmet>
         <title>{title}</title>
@@ -74,6 +76,7 @@ export const IndexPageTemplate =
         </div>
       </div>
     </div>
+  </Layout>
   )
 }
 

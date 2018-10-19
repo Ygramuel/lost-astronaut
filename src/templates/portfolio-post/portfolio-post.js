@@ -9,11 +9,13 @@ import SimpleSlider from '../../components/SimpleSlider/SimpleSlider'
 import data from './data.json'
 import style from "./portfolio-post.module.less";
 
+import Layout from '../../layouts/'
+
 export const PortfolioPostTemplate =
   ({ text, title, image, description, body, category, service, icons, gallery }) => {
 
   return (
-    <section>
+    <Layout>
       {/* Title image */}
       <DefaultPage image={image}/>
       <Helmet>
@@ -57,7 +59,7 @@ export const PortfolioPostTemplate =
           </SimpleSlider>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 }
 
