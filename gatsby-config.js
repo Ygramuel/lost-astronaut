@@ -91,7 +91,7 @@ module.exports = {
         headers: {
           // CSP rule for all "normal" Pages
          "/*": [
-          "Content-Security-Policy: default-src 'self' data: ;  base-uri 'none'",
+          "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; base-uri 'none'; manifest-src 'self';",
           "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
           "Referrer-Policy: no-referrer",
         ],
