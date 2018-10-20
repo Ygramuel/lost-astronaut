@@ -93,6 +93,7 @@ module.exports = {
          "/*": [
           "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; base-uri 'none'; manifest-src 'self';",
           "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+          "X-Frame-Options: SAMEORIGIN",
           "Referrer-Policy: no-referrer",
         ],
           // The CSM is special, do not use CSP there
@@ -100,8 +101,7 @@ module.exports = {
           "Content-Security-Policy: default-src * 'unsafe-inline'"
         ],
         "/kontaktFormParanoid/*": [
-          "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'self';",
-          "X-Frame-Options: SAMEORIGIN"
+          "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'self';"
         ],
       },
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
