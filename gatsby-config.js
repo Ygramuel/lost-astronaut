@@ -95,6 +95,9 @@ module.exports = {
           "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
           "X-Frame-Options: SAMEORIGIN",
           "Referrer-Policy: no-referrer",
+          "X-XSS-Protection: 1; mode=block",
+          "X-Content-Type-Options: nosniff",
+
         ],
           // The CSM is special, do not use CSP there
         "/admin/*": [
@@ -104,6 +107,7 @@ module.exports = {
           "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'self';"
         ],
       },
+      mergeSecurityHeaders: false,
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
        //allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers (disabled by default, until gzip is fixed for server push)
