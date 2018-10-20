@@ -4,16 +4,18 @@ import Mitarbeiter from '../../components/Mitarbeiter/Mitarbeiter'
 import style from "./team.module.less"
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
+import Layout from '../../layouts/'
+
 export const TeamPageTemplate = ({ title, text, mitarbeiter, image }) => {
   return (
-    <section>
+    <Layout>
       <DefaultPage title={title} text={text} image={image} />
     <div className={style.gallery}>
       {mitarbeiter.map((arbeiter) =>
         <Mitarbeiter key={arbeiter.name} name={arbeiter.name} mail={arbeiter.mail} text={arbeiter.text} bild={arbeiter.bild}/>
       )}
     </div>
-    </section>
+    </Layout>
   )
 }
 

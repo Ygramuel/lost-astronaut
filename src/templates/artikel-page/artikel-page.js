@@ -2,10 +2,13 @@ import React from 'react';
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
+import Layout from '../../layouts/'
 
 export const ArtikelPageTemplate = ({ title, text, image }) => {
   return (
+    <Layout>
       <DefaultPage title={title} text={text} image={image} />
+    </Layout>
     );
 }
 

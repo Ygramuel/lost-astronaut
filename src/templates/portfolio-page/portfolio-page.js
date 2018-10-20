@@ -6,9 +6,11 @@ import Content, { HTMLContent } from '../../components/Content';
 
 import style from "./portfolio-page.module.less"
 
+import Layout from '../../layouts/'
+
 export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
   return (
-    <div>
+    <Layout>
       <DefaultPage title={title} text={text} image={image}/>
         <div className={style.gallery}>
         {portfolios.map(({ node: work }) =>
@@ -19,7 +21,7 @@ export const PortfoliioPageTemplate = ({ title, image, text, portfolios}) => {
                     icon={work.frontmatter.icons[0].icon}/>
         )}
       </div>
-    </div>
+    </Layout>
   );
 }
 

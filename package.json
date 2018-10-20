@@ -4,25 +4,28 @@
   "version": "1.0.0",
   "author": "Sebastian Stuber",
   "dependencies": {
-    "bulma": "^0.7.1",
-    "gatsby": "^1.9.273",
-    "gatsby-link": "^1.6.45",
-    "gatsby-plugin-less": "^1.1.8",
-    "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-netlify": "^1.0.21",
-    "gatsby-plugin-offline": "^1.0.18",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sharp": "^1.6.48",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-remark-images": "^1.5.67",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "gatsby-transformer-sharp": "^1.6.27",
-    "npm": "^6.1.0",
+    "bulma": "^0.7.2",
+    "gatsby": "^2.0.27",
+    "gatsby-link": "^2.0.4",
+    "gatsby-plugin-less": "^2.0.5",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-netlify": "^2.0.1",
+    "gatsby-plugin-offline": "^2.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-plugin-sitemap": "^2.0.1",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-source-filesystem": "^2.0.5",
+    "gatsby-transformer-remark": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "less": "^3.8.1",
+    "npm": "^6.4.1",
     "npm-check-updates": "^2.14.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-load-script": "0.0.6",
-    "react-responsive-carousel": "^3.1.41",
+    "react-responsive-carousel": "^3.1.43",
     "typeface-poiret-one": "0.0.54",
     "typeface-roboto": "0.0.54"
   },
@@ -43,6 +46,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.13.6"
+    "prettier": "^1.14.3"
   }
 }
