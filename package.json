@@ -34,9 +34,8 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "npm run build:cms && npm run build:site",
+    "build": "npm run build:site",
     "build:site": "gatsby build",
-    "build:cms": "cd cms && yarn && npm run build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "_format": "prettier --trailing-comma es5 --no-semi --single-quote --write",
