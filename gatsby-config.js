@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lost Astronaut`,
-    siteUrl: `https://lost-astronaut.netlify.com`,
+    siteUrl: `https://www.lost-astronaut.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
