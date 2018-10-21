@@ -2,13 +2,13 @@
 templateKey: index-page
 path: /
 title: Startseite
-image: /img/erde.jpg
+titleimage: './titelbild.jpg'
 slogan:
   text: |-
     Maßgeschneidertes Kultur-Marketing am Puls der Zeit
     mit Inhalten, die Menschen bewegen.
   title: 'Thinking Beyond '
-features:
+features: # Bilder sind in "static/img"
   - title: Beratung & Konzeption
     image: /img/beratung_1.svg
     text: Wir lassen uns etwas einfallen. Definitiv.
@@ -18,7 +18,7 @@ features:
   - title: Photographie & Film
     image: /img/foto_1.svg
     text: 'Bewegte Bilder, die bewegen.'
-mockupimage: /img/banner.jpg
+mockupimage: banner.jpg
 box:
   text: >-
     Hinter Lost Astronaut verbirgt sich ein Team aus kreativen Köpfen, die sich
@@ -29,10 +29,10 @@ box:
   title: Unser Profil
 portfolios:
   - title: Imagefilm
-    image: /img/schwarte_01.jpg
+    image: schwarte_01.jpg
     url: /raumgestaltung-schwarte/
   - title: Logogestaltung
-    image: /img/memoria-logo-mockup.jpg
+    image: memoria-logo-mockup.jpg
     url: /projekt-memoria/
 kunden:
   kunde:
@@ -60,6 +60,5 @@ kontakt:
     verwirklichen oder ins rechte Licht zu rücken. Rufen Sie uns an, schreiben
     Sie uns und vereinbaren Sie einen persönlichen Termin.  
   title: Kontakt
-  image: /img/space-shuttle-774_dark.jpg
+  image: space-shuttle.jpg
 ---
-

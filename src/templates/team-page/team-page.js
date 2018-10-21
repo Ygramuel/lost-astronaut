@@ -1,15 +1,22 @@
 import React from 'react';
+
+import { graphql } from 'gatsby'
+
 import Content, { HTMLContent } from '../../components/Content';
 import Mitarbeiter from '../../components/Mitarbeiter/Mitarbeiter'
 import style from "./team.module.less"
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
 import Layout from '../../layouts/'
+import largeImage from '../../components/IMGFragment'
 
-export const TeamPageTemplate = ({ title, text, mitarbeiter, image }) => {
+
+export default ( {data: {markdownRemark: data } }) => {
+  const { title, mitarbeiter, titleimage } = data.frontmatter
+  const text = (<HTMLContent content={data.html} />);
   return (
     <Layout>
-      <DefaultPage title={title} text={text} image={image} />
+      <DefaultPage title={title} text={text} image={titleimage} />
     <div className={style.gallery}>
       {mitarbeiter.map((arbeiter) =>
         <Mitarbeiter key={arbeiter.name} name={arbeiter.name} mail={arbeiter.mail} text={arbeiter.text} bild={arbeiter.bild}/>
@@ -18,7 +25,7 @@ export const TeamPageTemplate = ({ title, text, mitarbeiter, image }) => {
     </Layout>
   )
 }
-
+/*
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <TeamPageTemplate
@@ -27,7 +34,7 @@ export default ({ data }) => {
     image={post.frontmatter.image}
     mitarbeiter={post.frontmatter.mitarbeiter}
   />;
-};
+};*/
 
 export const teamPageQuery = graphql`
   query TeamPage($path: String!) {
@@ -36,7 +43,7 @@ export const teamPageQuery = graphql`
       frontmatter {
         path
         title
-        image
+        titleimage {...largeImage}
         mitarbeiter {
           text
           mail

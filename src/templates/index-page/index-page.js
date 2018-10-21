@@ -1,8 +1,9 @@
 import React from 'react';
-import Content, { HTMLContent } from '../../components/Content';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link'
+import { graphql, Link } from 'gatsby'
+import Img from "gatsby-image"
 
+import largeImage from '../../components/IMGFragment'
 import Layout from '../../layouts/'
 import style from "./index-page.module.less"
 
@@ -11,16 +12,18 @@ import Zeile from './Zeile'
 import Button from '../../components/Button/Button'
 import TextBox from '../../components/TextBox/TextBox'
 
-export const IndexPageTemplate =
-  ({ title, content, image, slogan, kunden, box, features, mockupimage, kundenTitle, kontakt, portfolios}) => {
+
+export default ( {data: {markdownRemark: {frontmatter: data } } }) => {
+    const { title, content, titleimage, slogan, kunden, box, features, mockupimage, kontakt, portfolios} = data
   return (
   <Layout>
     <div className={style.index}>
       <Helmet>
         <title>{title}</title>
       </Helmet>
+
       <h1 className={style.title}>{title}</h1>
-      <img className={style.titelbild} src={image}/>
+      <Img className={style.titleimage} {...titleimage.childImageSharp}/>
 
       <div className={style.slogan}>
         <h2>{slogan.title}</h2>
@@ -39,7 +42,7 @@ export const IndexPageTemplate =
         )}/>
       </div>
 
-      <img className={style.mockup} src={mockupimage}/>
+      <Img className={style.mockup} {...mockupimage.childImageSharp}/>
 
       {/* Profil */}
       <TextBox title={box.title} text={box.text} />
@@ -48,7 +51,7 @@ export const IndexPageTemplate =
       <div className={style.portfolios}>
         {portfolios.map((portfolio) =>
           <Link to={portfolio.url} key={portfolio.url}>
-            <img src={portfolio.image} />
+            <Img alt={portfolio.title} {...portfolio.image.childImageSharp} />
             <h5>{portfolio.title}</h5>
           </Link>
 
@@ -57,10 +60,10 @@ export const IndexPageTemplate =
 
       {/* Alle Kunden Elemente */}
       <div className={style.kunden}>
-        <h5>{kundenTitle}</h5>
-        <Zeile elements={kunden.map((kunde) =>
+        <h5>{kunden.titel}</h5>
+        <Zeile elements={kunden.kunde.map((kunde) =>
           <a href={kunde.url} key={kunde.url}>
-            <img className={style.kunde} src={kunde.image}/>
+            <img className={style.kunde} src={kunde.image} alt={kunde.name}/>
             {/*<p>{kunde.name}</p>*/}
           </a>
         )} />
@@ -68,7 +71,7 @@ export const IndexPageTemplate =
 
       {/* Kontakt */}
       <div className={style.kontakt}>
-        <img className={style.kontaktimage} src={kontakt.image} />
+        <Img className={style.kontaktimage} {...kontakt.image.childImageSharp} />
         <div className={style.kontaktinhalt}>
           <h1>{kontakt.title}</h1>
           <p>{kontakt.text}</p>
@@ -81,7 +84,7 @@ export const IndexPageTemplate =
 }
 
 // TODO fix this mess.
-export default ({ data }) => {
+/*export default ({ data }) => {
   const { markdownRemark: post } = data;
   return <IndexPageTemplate
     title={post.frontmatter.title}
@@ -95,7 +98,19 @@ export default ({ data }) => {
     kontakt={post.frontmatter.kontakt}
     portfolios={post.frontmatter.portfolios}
   />;
-};
+};*/
+
+
+export const portfolioImage = graphql`
+fragment portfolioImage on File {
+      childImageSharp {
+        fixed(width: 100, height: 100, quality: 80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+}
+`;
+
 
 // TODO use fragments and components
 export const indexPageQuery = graphql`
@@ -103,7 +118,9 @@ export const indexPageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
-        image
+        titleimage{ ...largeImage }
+
+
         slogan{
           title
           text
@@ -113,7 +130,7 @@ export const indexPageQuery = graphql`
           image
           text
         }
-        mockupimage
+        mockupimage {...largeImage}
         box {
           title
           text
@@ -121,7 +138,7 @@ export const indexPageQuery = graphql`
         portfolios{
           title
           url
-          image
+          image {... portfolioImage }
         }
         kunden{
           title
@@ -134,7 +151,7 @@ export const indexPageQuery = graphql`
         kontakt{
           title
           text
-          image
+          image{...largeImage}
           path
           buttontext
         }

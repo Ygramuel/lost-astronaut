@@ -25,9 +25,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               templateKey
               path
-              title
-              image
-              description
             }
           }
         }
