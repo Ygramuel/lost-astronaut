@@ -23,7 +23,7 @@ export default ( {data: {markdownRemark: {frontmatter: data } } }) => {
       </Helmet>
 
       <h1 className={style.title}>{title}</h1>
-      <Img className={style.titleimage} {...titleimage.childImageSharp}/>
+      <Img className={style.titelbild} {...titleimage.childImageSharp}/>
 
       <div className={style.slogan}>
         <h2>{slogan.title}</h2>
@@ -51,7 +51,7 @@ export default ( {data: {markdownRemark: {frontmatter: data } } }) => {
       <div className={style.portfolios}>
         {portfolios.map((portfolio) =>
           <Link to={portfolio.url} key={portfolio.url}>
-            <Img alt={portfolio.title} {...portfolio.image.childImageSharp} />
+            <Img className={style.portfolioBild} alt={portfolio.title} {...portfolio.image.childImageSharp} />
             <h5>{portfolio.title}</h5>
           </Link>
 
@@ -104,8 +104,8 @@ export default ( {data: {markdownRemark: {frontmatter: data } } }) => {
 export const portfolioImage = graphql`
 fragment portfolioImage on File {
       childImageSharp {
-        fixed(width: 100, height: 100, quality: 80) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 250quality: 80) {
+          ...GatsbyImageSharpFluid
         }
       }
 }
