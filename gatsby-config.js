@@ -88,7 +88,7 @@ module.exports = {
         ],
       }
     },
-    'gatsby-plugin-offline',
+    //'gatsby-plugin-offline',      // ServiceWorker
 
     {  // make sure to put last in the array
      resolve: `gatsby-plugin-netlify`,
