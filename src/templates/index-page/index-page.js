@@ -104,7 +104,7 @@ export default ( {data: {markdownRemark: {frontmatter: data } } }) => {
 export const portfolioImage = graphql`
 fragment portfolioImage on File {
       childImageSharp {
-        fluid(maxWidth: 250quality: 80) {
+        fluid(maxWidth: 250, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
