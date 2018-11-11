@@ -61,7 +61,7 @@ export const portfolioPageQuery = graphql`
     }
     allMarkdownRemark (
       limit: 5
-      sort: {fields: [id], order: DESC}
+      sort: {fields: [frontmatter___sort], order: ASC}
       filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
     ){
       edges {
