@@ -1,6 +1,7 @@
 ---
 templateKey: portfolio-post
 path: /edition-sonblom
+sort: 4
 category: Web
 title: Edition Sonblom
 titleimage: edition-sonblom.jpg

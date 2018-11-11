@@ -1,6 +1,7 @@
 ---
 templateKey: portfolio-post
 path: /raumgestaltung-schwarte
+sort: 1
 category: Film
 title: Raumgestaltung Schwarte
 titleimage: schwarte.jpg

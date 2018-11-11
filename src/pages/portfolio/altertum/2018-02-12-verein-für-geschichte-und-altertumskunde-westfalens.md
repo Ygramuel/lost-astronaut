@@ -1,6 +1,7 @@
 ---
 templateKey: portfolio-post
 path: /altertumskunde-westfalens
+sort: 2
 category: Gestaltung
 title: Verein für Geschichte und Altertumskunde Westfalens
 titleimage: altertumsverein-flyer-mockup.jpg
