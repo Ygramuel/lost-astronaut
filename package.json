@@ -32,10 +32,10 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "npm run build:site",
-    "build:site": "gatsby build",
+    "build": "gatsby telemetry --disable && gatsby --version && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "_format": "prettier --trailing-comma es5 --no-semi --single-quote --write",
     "format": "npm run format:src & npm run format:cms",
     "format:src": "npm run _format 'src/**/*.js'",
