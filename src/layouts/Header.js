@@ -19,7 +19,7 @@ export const Header = ({  }) => {
         </Link>
         <Menu elements={data.menu}/>
         <a href="https://www.instagram.com/astronautlost/" target="_blank" rel="noopener">
-          <img src={instagram} className={style.insta}  alt='Instagram' width='56' height='56'/>
+          <img src={instagram} className={style.insta}  alt='Instagram' width='36' height='36'/>
         </a>
       </div>
       <Offline>

@@ -1,1 +1,5 @@
-http://lost-astronaut.netlify.com/* https://lost-astronaut.netlify.com/:splat 301!
+# Redirect domain aliases to primary domain
+https://lost-astronaut.de/* https://www.lost-astronaut.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://pedantic-kowalevski-343bbe.netlify.com/* https://www.lost-astronaut.com/:splat 301!

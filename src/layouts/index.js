@@ -32,7 +32,9 @@ const TemplateWrapper = ({ children }) => (
 
     </Helmet>
     <Header />
-    <div className={style.content}>{children()}</div>
+    <div className={style.content}>
+      {children}
+    </div>
 
     <Share title="Lost Astronaut"/>
 

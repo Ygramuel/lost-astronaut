@@ -1,6 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import { graphql } from 'gatsby'
+import largeImage from '../../components/IMGFragment'
+
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import TextBox from '../../components/TextBox/TextBox'
@@ -9,13 +12,15 @@ import SimpleSlider from '../../components/SimpleSlider/SimpleSlider'
 import data from './data.json'
 import style from "./portfolio-post.module.less";
 
+import Layout from '../../layouts/'
+
 export const PortfolioPostTemplate =
-  ({ text, title, image, description, body, category, service, icons, gallery }) => {
+  ({ text, title, titleimage, description, body, category, service, icons, gallery }) => {
 
   return (
-    <section>
+    <Layout>
       {/* Title image */}
-      <DefaultPage image={image}/>
+      <DefaultPage image={titleimage}/>
       <Helmet>
         <title>{title}</title>
       </Helmet>
@@ -57,7 +62,7 @@ export const PortfolioPostTemplate =
           </SimpleSlider>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 }
 
@@ -67,7 +72,7 @@ export default ({ data }) => {
   return <PortfolioPostTemplate
     body={<HTMLContent content={post.html} />}
     title={post.frontmatter.title}
-    image={post.frontmatter.image}
+    titleimage={post.frontmatter.titleimage}
     description={post.frontmatter.description}
     category={post.frontmatter.category}
     service={post.frontmatter.service}
@@ -82,7 +87,7 @@ export const portfolioQuery = graphql`
       html
       frontmatter {
         path
-        image
+        titleimage{...largeImage}
         title
         description
         category

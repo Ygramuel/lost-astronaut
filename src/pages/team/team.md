@@ -2,7 +2,7 @@
 templateKey: team-page
 path: /team
 title: Team
-image: /img/fachpersonal.jpg
+titleimage: 'fachpersonal.jpg'
 mitarbeiter:
   - bild: /img/550d_ts-014_format.jpg
     mail: thier@lost-astronaut.com

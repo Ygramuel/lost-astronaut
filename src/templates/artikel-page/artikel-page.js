@@ -1,22 +1,25 @@
 import React from 'react';
+import { graphql } from 'gatsby'
+
+import largeImage from '../../components/IMGFragment'
+
 import Content, { HTMLContent } from '../../components/Content';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
+import Layout from '../../layouts/'
 
-export const ArtikelPageTemplate = ({ title, text, image }) => {
+
+export default({data: {markdownRemark: data } }) => {
+  const { title, titleimage } = data.frontmatter
+  const text = (<HTMLContent content={data.html} />)
   return (
-      <DefaultPage title={title} text={text} image={image} />
+    <Layout>
+    <section>
+      <DefaultPage title={title} text={text} image={titleimage} />
+    </section>
+    </Layout>
     );
 }
-
-export default ({ data }) => {
-  const { markdownRemark: post } = data;
-  return <ArtikelPageTemplate
-    title={post.frontmatter.title}
-    text={<HTMLContent content={post.html} />}
-    image={post.frontmatter.image}
-  />;
-};
 
 export const ArtikelPageQuery = graphql`
   query artikelPage($path: String!) {
@@ -25,7 +28,7 @@ export const ArtikelPageQuery = graphql`
       frontmatter {
         path
         title
-        image
+        titleimage {...largeImage}
       }
     }
   }
