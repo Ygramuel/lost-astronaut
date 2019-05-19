@@ -1,9 +1,10 @@
 ---
 templateKey: portfolio-post
 path: /edition-sonblom
-category: web
+sort: 4
+category: Web
 title: Edition Sonblom
-image: /img/edition-sonblom.jpg
+titleimage: edition-sonblom.jpg
 description: Seitenweise Kunst
 service:
   - name: Webseiten

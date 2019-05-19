@@ -1,6 +1,6 @@
 const path = require('path');
 
-
+/*
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if(stage === "build-css"){
     config.loader("style", {
@@ -8,11 +8,9 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
       loaders: [`style?attrs:{id:"id"}`],
     })
   }
-
-
   return config;
 };
-
+*/
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
@@ -27,9 +25,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               templateKey
               path
-              title
-              image
-              description
             }
           }
         }

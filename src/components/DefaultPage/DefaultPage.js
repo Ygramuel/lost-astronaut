@@ -1,5 +1,7 @@
 import React from "react";
 import Helmet from 'react-helmet';
+import Img from "gatsby-image"
+
 
 import style from './DefaultPage.module.less'
 
@@ -16,7 +18,7 @@ export const DefaultPage = ({ title, image, text }) => {
         </div>
       }
       { image &&
-        <img src={encodeURI(image)} className={style.image} alt="" />
+        <Img className={style.image} alt="" {...image.childImageSharp} />
       }
       { text &&
         <div className={style.text}>{text}</div>

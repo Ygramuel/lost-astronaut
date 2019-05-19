@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /admin/
 
 
-Sitemap: https://lost-astronaut.com/sitemap.xml
+Sitemap: https://www.lost-astronaut.com/sitemap.xml

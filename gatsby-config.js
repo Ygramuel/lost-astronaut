@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lost Astronaut`,
-    siteUrl: `https://lost-astronaut.netlify.com`,
+    siteUrl: `https://www.lost-astronaut.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -22,7 +22,12 @@ module.exports = {
         name: 'images'
       }
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve:`gatsby-plugin-sharp`,
+      options: {
+        quality: 100
+      }
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -83,7 +88,7 @@ module.exports = {
         ],
       }
     },
-    'gatsby-plugin-offline',
+    //'gatsby-plugin-offline',      // ServiceWorker
 
     {  // make sure to put last in the array
      resolve: `gatsby-plugin-netlify`,
@@ -91,19 +96,23 @@ module.exports = {
         headers: {
           // CSP rule for all "normal" Pages
          "/*": [
-          "Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; img-src 'self' data: ; font-src 'self' ; connect-src 'self' ; frame-src 'self' ; frame-ancestors 'none' ; form-action 'self' ; base-uri 'none'; manifest-src 'self';",
+          "Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline' ; base-uri 'none'; manifest-src 'self';",
           "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+          "X-Frame-Options: SAMEORIGIN",
           "Referrer-Policy: no-referrer",
+          "X-XSS-Protection: 1; mode=block",
+          "X-Content-Type-Options: nosniff",
+
         ],
           // The CSM is special, do not use CSP there
         "/admin/*": [
           "Content-Security-Policy: default-src * 'unsafe-inline'"
         ],
         "/kontaktFormParanoid/*": [
-          "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'self';",
-          "X-Frame-Options: SAMEORIGIN"
+          "Content-Security-Policy: default-src 'none'; base-uri 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'self';"
         ],
       },
+      mergeSecurityHeaders: false,
        //headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
        //allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers (disabled by default, until gzip is fixed for server push)
