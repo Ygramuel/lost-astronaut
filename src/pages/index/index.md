@@ -10,14 +10,17 @@ slogan:
   title: 'Thinking Beyond '
 features: # Bilder sind in "static/img"
   - title: Beratung & Konzeption
-    image: /img/beratung_1.svg
+    image: /img/beratung.svg
     text: Wir lassen uns etwas einfallen. Definitiv.
   - title: Grafik & Design
-    image: /img/grafik_1.svg
+    image: /img/grafik.svg
     text: 'Impressionen mit Stil oder Style, maßgeschneidert für Sie.'
   - title: Photographie & Film
-    image: /img/foto_1.svg
+    image: /img/foto.svg
     text: 'Bewegte Bilder, die bewegen.'
+  - title: Podcast
+    image: /img/marketing.svg
+    text: 'Am Puls der Zeit: Podcastsproduktion und -beratung.'
 mockupimage: banner.jpg
 box:
   text: >-
