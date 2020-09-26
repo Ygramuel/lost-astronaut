@@ -1,6 +1,0 @@
-User-agent: *
-# This is the CMS backend
-Disallow: /admin/
-
-
-Sitemap: https://www.lost-astronaut.com/sitemap.xml
