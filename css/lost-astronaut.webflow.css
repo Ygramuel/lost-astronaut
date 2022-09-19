@@ -78,33 +78,6 @@ a {
   background-image: url('../images/fachpersonal.jpg');
 }
 
-.hero.hero-portfolio {
-  background-image: url('../images/Sonnenuntergang.jpg');
-  background-position: 50% 50%;
-}
-
-.hero.hero-edition {
-  background-image: url('../images/edition-sonblom.jpg');
-  background-position: 50% 0%;
-}
-
-.hero.hero-schwarte {
-  background-image: url('../images/schwarte_01.jpg');
-}
-
-.hero.hero-dgamn {
-  background-image: url('../images/dgamn-3d-web.jpg');
-}
-
-.hero.hero-altertum {
-  background-image: url('../images/altertumsverein-flyer-mockup.jpg');
-  background-position: 50% 0%;
-}
-
-.hero.hero-portrait {
-  background-image: url('../images/vicky_k.jpg');
-}
-
 .hero.hero-impressum {
   background-image: url('../images/space-shuttle-774_dark.jpg');
 }
@@ -383,136 +356,6 @@ a {
   max-width: 1250px;
 }
 
-.portfolio-grid {
-  display: -ms-grid;
-  display: grid;
-  max-width: 1250px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 7vw;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 45px;
-  grid-row-gap: 45px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.portfolio-item {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.portfolio-name {
-  margin-top: 10px;
-  color: #444;
-  font-size: 24px;
-}
-
-.portfolio-img {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.portfolio-icon {
-  position: absolute;
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 75px;
-  height: 75px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #efefef;
-}
-
-.image-5 {
-  width: 50px;
-}
-
-.portfolio-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.portfolio-text {
-  width: 50%;
-  padding: 7vw;
-}
-
-.portfolio-text.portfolio-leistungen {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  background-color: #efefef;
-}
-
-.leistungen {
-  font-size: 1.111em;
-}
-
-.image-6 {
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .gallery-section {
   display: block;
   grid-auto-columns: 1fr;
@@ -526,27 +369,6 @@ a {
   width: 100%;
   margin-right: 0px;
   margin-bottom: 40px;
-}
-
-.section {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 25px;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.image-7 {
-  width: 100%;
-}
-
-.image-8 {
-  width: 100%;
 }
 
 .div-block-2 {
@@ -690,11 +512,6 @@ a {
     padding: 30px;
   }
 
-  .portfolio-grid {
-    padding-right: 7vw;
-    padding-left: 7vw;
-  }
-
   .gallery-section {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -755,28 +572,6 @@ a {
     padding: 40px 20px;
   }
 
-  .portfolio-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .portfolio-text {
-    width: 100%;
-  }
-
-  .section {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .container-3 {
     max-width: 90%;
   }
@@ -822,15 +617,6 @@ a {
 
   .hero {
     height: 30vh;
-  }
-
-  .portfolio-grid {
-    padding-right: 0vw;
-    padding-left: 0vw;
-  }
-
-  .portfolio-img {
-    height: 250px;
   }
 
   .gallery-section {
