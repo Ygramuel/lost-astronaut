@@ -224,6 +224,8 @@ a {
 .image-2 {
   width: 36px;
   height: 36px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .nav-menu {
@@ -725,4 +727,8 @@ a {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+.nav-language .nav-link {
+  margin-left: 15px;
 }
